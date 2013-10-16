@@ -1,0 +1,70 @@
+/**
+ * Forms
+ *
+ * @author magnify
+ */
+
+
+input,
+textarea,
+select {
+  font-family: $font-body;
+  font-size: $font-size-reset;
+  letter-spacing: 1px;
+}
+
+select {
+  @include transition(all 0.15s linear);
+  @include border-radius(8px);
+  @include box-sizing(border-box);
+  @include background-image(linear-gradient($gray-light, $gray-lighter));
+
+  border: 1px solid $gray;
+  //min-width: 100%;
+  padding: 8px;
+}
+
+select:not([multiple="multiple"]) {
+  height: 36px;
+  /* Required for setting height in webkit browsers on mac */
+  -webkit-appearance: menulist-button;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+  @include transition(all 0.15s linear);
+  @include border-radius($base-border-radius);
+  @include box-sizing(border-box);
+
+  background-color: $white;
+  border: 1px solid transparentize($black, .6);
+  display: block;
+  font-family: $font-body;
+  font-size: $font-size-reset;
+  min-height: 15px;
+  margin-bottom: 15px;
+  padding: 15px;
+  //min-width: 100%;
+
+  &:focus {
+    background-color: darken($white, 3%);
+    border: 1px solid darken($red, 15%);
+    color: darken($black, 10%);
+  }
+
+  &[disabled] {
+    @include box-shadow(0 0 0);
+
+    background-color: lighten($gray-light, 5%);
+    border: 1px solid $gray-light;
+  }
+}
