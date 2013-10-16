@@ -1,0 +1,53 @@
+/**
+ * Layout
+ *
+ * @author magnify
+ */
+
+
+body {
+  @include zen-grid-container();
+}
+
+%layout-wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.header {
+  @include zen-grid-item(12, 1);
+
+  background: url('/images/header-colors.png') left bottom repeat-x;
+}
+
+.header-inner {
+  @extend %layout-wrapper;
+
+  min-height: 80px;
+}
+
+.logo {
+  @include zen-grid-item(6, 1);
+  @include zen-nested-container();
+}
+
+.navigation {
+  @include zen-grid-item(6, 1, right);
+  @include zen-nested-container();
+
+  text-align: right;
+}
+
+.content {
+  @include zen-clear(both);
+  @include zen-grid-item(12, 1);
+
+  @extend %layout-wrapper;
+}
+
+.footer {
+  @include zen-clear(both);
+  @include zen-grid-item(12, 1);
+
+  @extend %layout-wrapper;
+}
