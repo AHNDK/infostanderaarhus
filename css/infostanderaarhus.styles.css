@@ -443,7 +443,7 @@ table {
 /* line 8, ../sass/framework/_base.scss */
 body {
   background-color: white;
-  color: #595959;
+  color: #242424;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 15px;
   line-height: 24px;
@@ -456,11 +456,12 @@ h3,
 h4,
 h5,
 h6 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: "Source Sans Pro Semi Bold", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-weight: normal;
   /* This fixes huge spaces when a heading wraps onto two lines */
   line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 15px;
   /* Voodoo to enable ligatures and kerning */
   text-rendering: optimizeLegibility;
 }
@@ -471,7 +472,7 @@ h3 a:link,
 h4 a:link,
 h5 a:link,
 h6 a:link {
-  color: #595959;
+  color: #242424;
   text-decoration: none;
 }
 /* line 39, ../sass/framework/_base.scss */
@@ -481,7 +482,7 @@ h3 a:visited,
 h4 a:visited,
 h5 a:visited,
 h6 a:visited {
-  color: #1a1a1a;
+  color: black;
 }
 /* line 43, ../sass/framework/_base.scss */
 h1 a:hover,
@@ -490,7 +491,7 @@ h3 a:hover,
 h4 a:hover,
 h5 a:hover,
 h6 a:hover {
-  color: #1a1a1a;
+  color: black;
 }
 /* line 47, ../sass/framework/_base.scss */
 h1 a:focus,
@@ -499,7 +500,7 @@ h3 a:focus,
 h4 a:focus,
 h5 a:focus,
 h6 a:focus {
-  color: #1a1a1a;
+  color: black;
 }
 /* line 51, ../sass/framework/_base.scss */
 h1 a:active,
@@ -509,12 +510,12 @@ h4 a:active,
 h5 a:active,
 h6 a:active {
   background-color: transparent;
-  color: #1a1a1a;
+  color: black;
 }
 
 /* line 59, ../sass/framework/_base.scss */
 h1 {
-  font-size: 275%;
+  font-size: 300%;
 }
 
 /* line 63, ../sass/framework/_base.scss */
@@ -560,31 +561,27 @@ em strong {
    ========================================================================== */
 /* line 103, ../sass/framework/_base.scss */
 a:link {
-  color: #0000cc;
+  color: #0099cc;
   text-decoration: none;
 }
 /* line 108, ../sass/framework/_base.scss */
 a:visited {
-  color: #0000b3;
+  color: #0086b3;
   text-decoration: none;
 }
 /* line 113, ../sass/framework/_base.scss */
 a:hover {
-  color: #0000d6;
+  color: #007aa3;
   text-decoration: underline;
 }
-/* line 117, ../sass/framework/_base.scss */
-a:hover i[class^="icon-"] {
-  text-decoration: none;
-}
-/* line 122, ../sass/framework/_base.scss */
+/* line 118, ../sass/framework/_base.scss */
 a:focus {
-  color: #0000d6;
+  color: #007aa3;
 }
 
 /* Paragraph
    ========================================================================== */
-/* line 131, ../sass/framework/_base.scss */
+/* line 127, ../sass/framework/_base.scss */
 p {
   margin-top: 0;
   margin-bottom: 15px;
@@ -592,7 +589,7 @@ p {
 
 /* Image
    ========================================================================== */
-/* line 141, ../sass/framework/_base.scss */
+/* line 137, ../sass/framework/_base.scss */
 img {
   display: inline;
   height: auto;
@@ -602,19 +599,19 @@ img {
 
 /* Lists
    ========================================================================== */
-/* line 153, ../sass/framework/_base.scss */
+/* line 149, ../sass/framework/_base.scss */
 ul {
   margin: 0;
   padding-left: 20px;
 }
-/* line 157, ../sass/framework/_base.scss */
+/* line 153, ../sass/framework/_base.scss */
 ul li {
   list-style: none;
 }
 
 /* Selection color
    ========================================================================== */
-/* line 168, ../sass/framework/_base.scss */
+/* line 164, ../sass/framework/_base.scss */
 ::-moz-selection,
 ::selection {
   background-color: #ffff99;
@@ -843,6 +840,13 @@ button.button {
 body {
   *position: relative;
   *zoom: 1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url("/images/header-background.jpg");
+  background-position: 0 -107px;
+  background-repeat: no-repeat;
 }
 /* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 body:before, body:after {
@@ -854,14 +858,14 @@ body:after {
   clear: both;
 }
 
-/* line 12, ../sass/layout/_layout.scss */
+/* line 17, ../sass/layout/_layout.scss */
 .header-inner, .content, .footer {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 17, ../sass/layout/_layout.scss */
+/* line 23, ../sass/layout/_layout.scss */
 .header {
   float: left;
   width: 100%;
@@ -878,15 +882,15 @@ body:after {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  background: url("/images/header-colors.png") left bottom repeat-x;
+  background: rgba(255, 255, 255, 0.75) url("/images/header-colors.png") left bottom repeat-x;
 }
 
-/* line 23, ../sass/layout/_layout.scss */
+/* line 29, ../sass/layout/_layout.scss */
 .header-inner {
   min-height: 80px;
 }
 
-/* line 29, ../sass/layout/_layout.scss */
+/* line 35, ../sass/layout/_layout.scss */
 .logo {
   float: left;
   width: 50%;
@@ -905,9 +909,10 @@ body:after {
   _overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
+  margin-top: 15px;
 }
 
-/* line 34, ../sass/layout/_layout.scss */
+/* line 42, ../sass/layout/_layout.scss */
 .navigation {
   float: right;
   width: 50%;
@@ -926,30 +931,73 @@ body:after {
   _overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
+  margin-top: 25px;
+  font-family: "Source Sans Pro Light";
+  font-size: 120%;
   text-align: right;
+  /* Links in navigation */
+}
+/* line 53, ../sass/layout/_layout.scss */
+.navigation a {
+  margin-left: 50px;
+}
+/* line 57, ../sass/layout/_layout.scss */
+.navigation a:link {
+  color: gray;
+  text-decoration: none;
+}
+/* line 62, ../sass/layout/_layout.scss */
+.navigation a:visited {
+  color: #404040;
+}
+/* line 66, ../sass/layout/_layout.scss */
+.navigation a:hover {
+  color: #007aa3;
+}
+/* line 70, ../sass/layout/_layout.scss */
+.navigation a:focus {
+  color: #0099cc;
 }
 
-/* line 41, ../sass/layout/_layout.scss */
+/* line 75, ../sass/layout/_layout.scss */
 .content {
   clear: both;
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
-  padding-left: 15px;
-  padding-right: 15px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-  *behavior: url("/scripts/boxsizing.htc");
-  _display: inline;
-  _overflow: hidden;
-  _overflow-y: visible;
 }
 
-/* line 48, ../sass/layout/_layout.scss */
+/* line 81, ../sass/layout/_layout.scss */
+.section-contact--image {
+  float: left;
+  margin-top: 50px;
+}
+
+/* line 86, ../sass/layout/_layout.scss */
+.section-contact--content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 30px;
+  margin-top: 100px;
+  padding-left: 50px;
+}
+
+/* line 95, ../sass/layout/_layout.scss */
+.section-contact--header {
+  font-size: 300%;
+}
+
+/* line 99, ../sass/layout/_layout.scss */
+.section-contact--lead {
+  font-size: 160%;
+}
+
+/* line 103, ../sass/layout/_layout.scss */
+.section-contact--text {
+  font-family: "Source Sans Pro Light";
+  font-size: 130%;
+}
+
+/* line 108, ../sass/layout/_layout.scss */
 .footer {
   clear: both;
   float: left;
@@ -967,33 +1015,4 @@ body:after {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-}
-
-/**
- * Typography
- *
- * @author magnify
- */
-/* Extends
-   ========================================================================== */
-/* line 10, ../sass/layout/_typography.scss */
-.page-title {
-  font-size: 275%;
-}
-
-/* Header variants
-   ========================================================================== */
-/* line 23, ../sass/layout/_typography.scss */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Source Sans Pro Semi Bold", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
-}
-
-/* line 27, ../sass/layout/_typography.scss */
-.page-title {
-  margin-bottom: 20px;
 }

@@ -20,13 +20,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
-	/* This fixes huge spaces when a heading wraps onto two lines */
-	line-height: 1.2;
-
   margin-top: 0;
   margin-bottom: 15px;
 
+  font-family: "Source Sans Pro Semi Bold", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+  font-weight: normal;
+  /* This fixes huge spaces when a heading wraps onto two lines */
+  line-height: 1.2;
 	/* Voodoo to enable ligatures and kerning */
 	text-rendering: optimizeLegibility;
 
@@ -113,10 +113,6 @@ a {
   &:hover {
     color: $link-color-hover;
     text-decoration: underline;
-
-    i[class^="icon-"] {
-      text-decoration: none;
-    }
   }
 
   &:focus {

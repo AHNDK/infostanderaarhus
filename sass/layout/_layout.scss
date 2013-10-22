@@ -7,6 +7,11 @@
 
 body {
   @include zen-grid-container();
+  @include background-size(cover);
+
+  background-image: url('/images/header-background.jpg');
+  background-position: 0 -107px;
+  background-repeat: no-repeat;
 }
 
 %layout-wrapper {
@@ -14,10 +19,11 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
 .header {
   @include zen-grid-item(12, 1);
 
-  background: url('/images/header-colors.png') left bottom repeat-x;
+  background: transparentize(#fff, .25) url('/images/header-colors.png') left bottom repeat-x;
 }
 
 .header-inner {
@@ -29,20 +35,74 @@ body {
 .logo {
   @include zen-grid-item(6, 1);
   @include zen-nested-container();
+
+  margin-top: 15px;
 }
 
 .navigation {
   @include zen-grid-item(6, 1, right);
   @include zen-nested-container();
 
+  margin-top: 25px;
+
+  font-family: "Source Sans Pro Light";
+  font-size: 120%;
   text-align: right;
+
+  /* Links in navigation */
+  a {
+    margin-left: 50px;
+  }
+
+  a:link {
+    color: lighten($black, 50%);
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: lighten($black, 25%);
+  }
+
+  a:hover {
+    color: $link-color-hover;
+  }
+
+  a:focus {
+    color: $link-color;
+  }
 }
 
 .content {
   @include zen-clear(both);
-  @include zen-grid-item(12, 1);
 
   @extend %layout-wrapper;
+}
+
+.section-contact--image {
+  float: left;
+  margin-top: 50px;
+}
+
+.section-contact--content {
+  @include box-sizing(border-box);
+
+  float: left;
+  margin-left: 30px;
+  margin-top: 100px;
+  padding-left: 50px;
+}
+
+.section-contact--header {
+  font-size: $font-size-giga;
+}
+
+.section-contact--lead {
+  font-size: $font-size-larger;
+}
+
+.section-contact--text {
+  font-family: "Source Sans Pro Light";
+  font-size: $font-size-large;
 }
 
 .footer {
