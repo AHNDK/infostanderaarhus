@@ -23,7 +23,7 @@ body {
 .header {
   @include zen-grid-item(12, 1);
 
-  background: transparentize(#fff, .25) url('/images/header-colors.png') left bottom repeat-x;
+  background: transparentize($white, .25) url('/images/header-colors.png') left bottom repeat-x;
 }
 
 .header-inner {
@@ -78,18 +78,23 @@ body {
   @extend %layout-wrapper;
 }
 
+
+
 .section-contact--image {
-  float: left;
+  display: inline-block;
   margin-top: 50px;
 }
 
 .section-contact--content {
   @include box-sizing(border-box);
 
-  float: left;
+  display: inline-block;
   margin-left: 30px;
   margin-top: 100px;
+  max-width: 60%;
   padding-left: 50px;
+
+  vertical-align: top;
 }
 
 .section-contact--header {
@@ -97,12 +102,46 @@ body {
 }
 
 .section-contact--lead {
+  margin-bottom: 20px;
+
   font-size: $font-size-larger;
 }
 
 .section-contact--text {
+  margin-bottom: 30px;
+
   font-family: "Source Sans Pro Light";
   font-size: $font-size-large;
+}
+
+.section-contact--link {
+  @include border-radius(4px);
+
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+
+  background-color: $green;
+  font-size: $font-size-mega;
+  line-height: 1;
+
+  &:link,
+  &:visited
+  &:hover,
+  &:focus {
+    color: $white;
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: darken($green, 10%);
+  }
+
+  [class^="icon-"] {
+    color: transparentize($white, .5);
+  }
 }
 
 .footer {

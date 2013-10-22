@@ -84,7 +84,7 @@ audio:not([controls]) {
    Base
    ========================================================================== */
 /**
- * 1. Set default font family to sans-serif.
+ * 1. Set default fontello family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
@@ -130,7 +130,7 @@ a:hover {
    Typography
    ========================================================================== */
 /**
- * Address variable `h1` font-size and margin within `section` and `article`
+ * Address variable `h1` fontello-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 /* line 108, ../sass/framework/_normalize.scss */
@@ -184,7 +184,7 @@ mark {
 }
 
 /**
- * Correct font family set oddly in Safari 5 and Chrome.
+ * Correct fontello family set oddly in Safari 5 and Chrome.
  */
 /* line 164, ../sass/framework/_normalize.scss */
 code,
@@ -212,7 +212,7 @@ q {
 }
 
 /**
- * Address inconsistent and variable font size in all browsers.
+ * Address inconsistent and variable fontello size in all browsers.
  */
 /* line 189, ../sass/framework/_normalize.scss */
 small {
@@ -297,8 +297,8 @@ legend {
 }
 
 /**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
+ * 1. Correct fontello family not being inherited in all browsers.
+ * 2. Correct fontello size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
 /* line 278, ../sass/framework/_normalize.scss */
@@ -964,40 +964,75 @@ body:after {
   clear: both;
 }
 
-/* line 81, ../sass/layout/_layout.scss */
+/* line 83, ../sass/layout/_layout.scss */
 .section-contact--image {
-  float: left;
+  display: inline-block;
   margin-top: 50px;
 }
 
-/* line 86, ../sass/layout/_layout.scss */
+/* line 88, ../sass/layout/_layout.scss */
 .section-contact--content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  float: left;
+  display: inline-block;
   margin-left: 30px;
   margin-top: 100px;
+  max-width: 60%;
   padding-left: 50px;
+  vertical-align: top;
 }
 
-/* line 95, ../sass/layout/_layout.scss */
+/* line 100, ../sass/layout/_layout.scss */
 .section-contact--header {
   font-size: 300%;
 }
 
-/* line 99, ../sass/layout/_layout.scss */
+/* line 104, ../sass/layout/_layout.scss */
 .section-contact--lead {
+  margin-bottom: 20px;
   font-size: 160%;
 }
 
-/* line 103, ../sass/layout/_layout.scss */
+/* line 110, ../sass/layout/_layout.scss */
 .section-contact--text {
+  margin-bottom: 30px;
   font-family: "Source Sans Pro Light";
   font-size: 130%;
 }
 
-/* line 108, ../sass/layout/_layout.scss */
+/* line 117, ../sass/layout/_layout.scss */
+.section-contact--link {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+  background-color: #528c10;
+  font-size: 220%;
+  line-height: 1;
+}
+/* line 133, ../sass/layout/_layout.scss */
+.section-contact--link:link, .section-contact--link:visited
+.section-contact--link:hover, .section-contact--link:focus {
+  color: white;
+  text-decoration: none;
+}
+/* line 138, ../sass/layout/_layout.scss */
+.section-contact--link:hover {
+  background-color: #375e0b;
+}
+/* line 142, ../sass/layout/_layout.scss */
+.section-contact--link [class^="icon-"] {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* line 147, ../sass/layout/_layout.scss */
 .footer {
   clear: both;
   float: left;
