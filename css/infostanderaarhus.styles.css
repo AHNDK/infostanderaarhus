@@ -840,12 +840,11 @@ button.button {
 body {
   *position: relative;
   *zoom: 1;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: 100% 541px;
+  -moz-background-size: 100% 541px;
+  -o-background-size: 100% 541px;
+  background-size: 100% 541px;
   background-image: url("/images/header-background.jpg");
-  background-position: 0 -107px;
   background-repeat: no-repeat;
 }
 /* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
@@ -858,14 +857,14 @@ body:after {
   clear: both;
 }
 
-/* line 17, ../sass/layout/_layout.scss */
-.header-inner, .content, .footer {
+/* line 16, ../sass/layout/_layout.scss */
+.header-inner, .header-cta--inner, .other-content, .footer {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 23, ../sass/layout/_layout.scss */
+/* line 22, ../sass/layout/_layout.scss */
 .header {
   float: left;
   width: 100%;
@@ -885,12 +884,12 @@ body:after {
   background: rgba(255, 255, 255, 0.75) url("/images/header-colors.png") left bottom repeat-x;
 }
 
-/* line 29, ../sass/layout/_layout.scss */
+/* line 28, ../sass/layout/_layout.scss */
 .header-inner {
   min-height: 80px;
 }
 
-/* line 35, ../sass/layout/_layout.scss */
+/* line 34, ../sass/layout/_layout.scss */
 .logo {
   float: left;
   width: 50%;
@@ -912,7 +911,7 @@ body:after {
   margin-top: 15px;
 }
 
-/* line 42, ../sass/layout/_layout.scss */
+/* line 41, ../sass/layout/_layout.scss */
 .navigation {
   float: right;
   width: 50%;
@@ -937,41 +936,45 @@ body:after {
   text-align: right;
   /* Links in navigation */
 }
-/* line 53, ../sass/layout/_layout.scss */
+/* line 52, ../sass/layout/_layout.scss */
 .navigation a {
   margin-left: 50px;
 }
-/* line 57, ../sass/layout/_layout.scss */
+/* line 56, ../sass/layout/_layout.scss */
 .navigation a:link {
   color: gray;
   text-decoration: none;
 }
-/* line 62, ../sass/layout/_layout.scss */
+/* line 61, ../sass/layout/_layout.scss */
 .navigation a:visited {
   color: #404040;
 }
-/* line 66, ../sass/layout/_layout.scss */
+/* line 65, ../sass/layout/_layout.scss */
 .navigation a:hover {
   color: #007aa3;
 }
-/* line 70, ../sass/layout/_layout.scss */
+/* line 69, ../sass/layout/_layout.scss */
 .navigation a:focus {
   color: #0099cc;
 }
 
-/* line 75, ../sass/layout/_layout.scss */
-.content {
+/* Call to action header
+   ========================================================================== */
+/* line 78, ../sass/layout/_layout.scss */
+.header-cta {
   clear: both;
+  border-bottom: 6px solid #d5d5d5;
+  margin-bottom: 70px;
 }
 
-/* line 83, ../sass/layout/_layout.scss */
-.section-contact--image {
+/* line 89, ../sass/layout/_layout.scss */
+.header-cta--image {
   display: inline-block;
   margin-top: 50px;
 }
 
-/* line 88, ../sass/layout/_layout.scss */
-.section-contact--content {
+/* line 94, ../sass/layout/_layout.scss */
+.header-cta--content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -983,26 +986,26 @@ body:after {
   vertical-align: top;
 }
 
-/* line 100, ../sass/layout/_layout.scss */
-.section-contact--header {
+/* line 106, ../sass/layout/_layout.scss */
+.header-cta--header {
   font-size: 300%;
 }
 
-/* line 104, ../sass/layout/_layout.scss */
-.section-contact--lead {
+/* line 110, ../sass/layout/_layout.scss */
+.header-cta--lead {
   margin-bottom: 20px;
   font-size: 160%;
 }
 
-/* line 110, ../sass/layout/_layout.scss */
-.section-contact--text {
+/* line 116, ../sass/layout/_layout.scss */
+.header-cta--text {
   margin-bottom: 30px;
   font-family: "Source Sans Pro Light";
   font-size: 130%;
 }
 
-/* line 117, ../sass/layout/_layout.scss */
-.section-contact--link {
+/* line 123, ../sass/layout/_layout.scss */
+.header-cta--link {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -1017,22 +1020,109 @@ body:after {
   font-size: 220%;
   line-height: 1;
 }
-/* line 133, ../sass/layout/_layout.scss */
-.section-contact--link:link, .section-contact--link:visited
-.section-contact--link:hover, .section-contact--link:focus {
+/* line 139, ../sass/layout/_layout.scss */
+.header-cta--link:link, .header-cta--link:visited
+.header-cta--link:hover, .header-cta--link:focus {
   color: white;
   text-decoration: none;
 }
-/* line 138, ../sass/layout/_layout.scss */
-.section-contact--link:hover {
+/* line 144, ../sass/layout/_layout.scss */
+.header-cta--link:hover {
   background-color: #375e0b;
 }
-/* line 142, ../sass/layout/_layout.scss */
-.section-contact--link [class^="icon-"] {
+/* line 148, ../sass/layout/_layout.scss */
+.header-cta--link [class^="icon-"] {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 147, ../sass/layout/_layout.scss */
+/* Other content
+   ========================================================================== */
+/* line 157, ../sass/layout/_layout.scss */
+.other-content {
+  clear: both;
+  *position: relative;
+  *zoom: 1;
+  border-bottom: 8px dotted #efefef;
+  padding-bottom: 70px;
+}
+/* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.other-content:before, .other-content:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.other-content:after {
+  clear: both;
+}
+
+/* line 166, ../sass/layout/_layout.scss */
+.other-content--first {
+  float: left;
+  width: 33.33333%;
+  margin-left: 0%;
+  margin-right: -33.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 170, ../sass/layout/_layout.scss */
+.other-content--second {
+  float: left;
+  width: 33.33333%;
+  margin-left: 33.33333%;
+  margin-right: -66.66667%;
+  padding-left: 15px;
+  padding-right: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 174, ../sass/layout/_layout.scss */
+.other-content--third {
+  float: right;
+  width: 33.33333%;
+  margin-right: 0%;
+  margin-left: -33.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+}
+
+/* line 180, ../sass/layout/_layout.scss */
+.other-content--first,
+.other-content--second,
+.other-content--third {
+  padding-right: 60px;
+  padding-left: 0;
+}
+
+/* Footer
+   ========================================================================== */
+/* line 189, ../sass/layout/_layout.scss */
 .footer {
   clear: both;
   float: left;
