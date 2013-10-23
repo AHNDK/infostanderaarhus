@@ -26,18 +26,29 @@
   }
 }
 
-
-/* Action button */
-%action-button {
-  @extend %base-button;
-
+%button-large {
   padding-top: 15px;
   padding-right: 40px;
   padding-bottom: 15px;
   padding-left: 40px;
 
-  background-color: $green;
   font-size: $font-size-mega;
+}
+
+%button-small {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  font-size: $font-size-larger;
+}
+
+/* Action button */
+%action-button {
+  @extend %base-button;
+
+  background-color: $green;
 
   &:focus,
   &:hover {
@@ -54,13 +65,7 @@
 %link-button {
   @extend %base-button;
 
-  padding-top: 10px;
-  padding-right: 30px;
-  padding-bottom: 10px;
-  padding-left: 30px;
-
   background-color: $blue;
-  font-size: $font-size-largest;
 
   &:focus,
   &:hover {

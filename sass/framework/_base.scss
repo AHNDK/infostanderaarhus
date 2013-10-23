@@ -61,23 +61,19 @@ h1 {
 }
 
 h2 {
-  font-size: $font-size-largest;
+  font-size: $font-size-mega;
 }
 
 h3 {
-  font-size: $font-size-larger;
+  font-size: $font-size-largest;
 }
 
 h4 {
-  font-size: $font-size-large;
+  font-size: $font-size-larger;
 }
 
 h5 {
   font-size: $font-size-medium;
-}
-
-h6 {
-  font-size: $font-size-reset;
 }
 
 
@@ -93,7 +89,6 @@ em {
     font-weight: bold;
   }
 }
-
 
 
 /* Links
@@ -126,7 +121,7 @@ a {
 
 p {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 
@@ -154,7 +149,6 @@ ul {
     list-style: none;
   }
 }
-
 
 
 /* Selection color

@@ -9,11 +9,26 @@ body {
   @include zen-grid-container();
 }
 
+
+figure {
+  background: $border-dottet-small;
+}
+
+figcaption {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  color: $gray-darker;
+}
+
+
 %layout-wrapper {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
+
 
 .header {
   @include zen-grid-item(12, 1);
@@ -68,10 +83,10 @@ body {
 }
 
 
-/* Call to action header
+/* attention-area area
    ========================================================================== */
 
-.header-cta {
+.attention-area {
   @include zen-clear(both);
   @include background-size(cover);
 
@@ -82,16 +97,16 @@ body {
   background-repeat: no-repeat;
 }
 
-.header-cta--inner {
+.attention-area--inner {
   @extend %layout-wrapper;
 }
 
-.header-cta--image {
+.attention-area--image {
   display: inline-block;
   margin-top: 50px;
 }
 
-.header-cta--content {
+.attention-area--content {
   @include box-sizing(border-box);
 
   display: inline-block;
@@ -103,65 +118,146 @@ body {
   vertical-align: top;
 }
 
-.header-cta--header {
+.attention-area--header {
   font-size: $font-size-giga;
 }
 
-.header-cta--lead {
+.attention-area--lead {
   margin-bottom: 20px;
 
   font-size: $font-size-larger;
 }
 
-.header-cta--text {
+.attention-area--text {
   margin-bottom: 30px;
 
   font-family: "Source Sans Pro Light";
   font-size: $font-size-large;
 }
 
-.header-cta--link {
+.attention-area--link {
   @extend %action-button;
+  @extend %button-large;
 }
 
 
-/* Other content
+/* Interest
    ========================================================================== */
 
-.other-content {
+.interest-area {
   @include zen-clear(both);
   @include zen-grid-container();
   @extend %layout-wrapper;
 
-  border-bottom: 7px dotted $gray-light;
+  margin-bottom: 70px;
   padding-bottom: 70px;
+
+  background: $border-dottet-large;
 }
 
-.other-content--first {
+.interest-area--first {
   @include zen-grid-item(4, 1);
 }
 
-.other-content--second {
+.interest-area--second {
   @include zen-grid-item(4, 5);
 }
 
-.other-content--third {
+.interest-area--third {
   @include zen-grid-item(4, 1, right);
 }
 
-.other-content--first,
-.other-content--second,
-.other-content--third {
+.interest-area--first,
+.interest-area--second,
+.interest-area--third {
   padding-right: 60px;
   padding-left: 0;
 }
 
-.other-content--content {
+.interest-area--content {
   margin-bottom: 30px;
 }
 
-.other-content--link {
+.interest-area--link {
   @extend %link-button;
+  @extend %button-small;
+}
+
+
+/* Prices
+   ========================================================================== */
+
+.prices {
+  @extend %layout-wrapper;
+
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+
+  background: $border-dottet-large;
+}
+
+.prices--inner {
+  @include zen-grid-container();
+
+  background: url('/images/wrench.png') right top no-repeat;
+}
+
+.prices--header {
+  font-size: $font-size-mega;
+}
+
+.prices--content {
+  @include zen-grid-item(7, 1);
+  @include zen-nested-container();
+}
+
+
+/* Info
+   ========================================================================== */
+
+.info {
+  @include zen-grid-container();
+  @extend %layout-wrapper;
+
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+
+  background: $border-dottet-large;
+}
+
+.info--header {
+  font-size: $font-size-mega;
+}
+
+.info--content-primary {
+  @include zen-grid-item(6, 1);
+  @include zen-nested-container();
+
+  padding-right: 20px;
+
+  .info--list {
+    margin-bottom: 30px;
+  }
+
+  li {
+    list-style: disc;
+  }
+}
+
+.info--content-secondary {
+  @include zen-grid-item(6, 1, right);
+  @include zen-nested-container();
+}
+
+.info--emphasized {
+  @extend strong;
+
+  margin-bottom: 30px;
+}
+
+.info--link {
+  @extend %action-button;
+  @extend %button-small;
 }
 
 
