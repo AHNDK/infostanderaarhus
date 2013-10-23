@@ -9,6 +9,15 @@ body {
   @include zen-grid-container();
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Correct for font line height */
+  margin-top: -9px;
+}
 
 figure {
   background: $border-dottet-small;
@@ -241,7 +250,7 @@ figcaption {
   @include zen-grid-item(6, 1);
   @include zen-nested-container();
 
-  padding-right: 20px;
+  padding-right: 50px;
 
   .info--list {
     margin-bottom: 30px;
@@ -275,21 +284,40 @@ figcaption {
 .footer {
   @include zen-grid-container();
   @extend %layout-wrapper;
+
+  margin-bottom: 70px;
 }
 
 .footer--lead {
   background: $border-dottet-small;
 
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .footer--content-primary {
   @include zen-grid-item(6, 1);
   @include zen-nested-container();
+
+  padding-right: 50px;
 }
 
 .footer--content-secondary {
   @include zen-grid-item(6, 1, right);
   @include zen-nested-container();
+}
+
+.footer--map {
+  margin-bottom: 30px;
+}
+
+
+/* Contact form
+   ========================================================================== */
+
+.contact-form--button {
+  @extend %action-button;
+  @extend %button-small;
+
+  float: right;
 }

@@ -620,46 +620,15 @@ ul li {
  *
  * @author magnify
  */
-/* line 10, ../sass/framework/_forms.scss */
+/* line 9, ../sass/framework/_forms.scss */
 input,
-textarea,
-select {
+textarea {
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
   letter-spacing: 1px;
 }
 
-/* line 16, ../sass/framework/_forms.scss */
-select {
-  -webkit-transition: all 0.15s linear;
-  -moz-transition: all 0.15s linear;
-  -o-transition: all 0.15s linear;
-  transition: all 0.15s linear;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -o-border-radius: 8px;
-  border-radius: 8px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #efefef), color-stop(100%, #fbfbfb));
-  background-image: -webkit-linear-gradient(#efefef, #fbfbfb);
-  background-image: -moz-linear-gradient(#efefef, #fbfbfb);
-  background-image: -o-linear-gradient(#efefef, #fbfbfb);
-  background-image: linear-gradient(#efefef, #fbfbfb);
-  border: 1px solid #d5d5d5;
-  padding: 8px;
-}
-
-/* line 27, ../sass/framework/_forms.scss */
-select:not([multiple="multiple"]) {
-  height: 36px;
-  /* Required for setting height in webkit browsers on mac */
-  -webkit-appearance: menulist-button;
-}
-
-/* line 43, ../sass/framework/_forms.scss */
+/* line 25, ../sass/framework/_forms.scss */
 input[type="text"],
 input[type="password"],
 input[type="date"],
@@ -683,16 +652,17 @@ textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid #d5d5d5;
   display: block;
+  margin-bottom: 15px;
+  min-height: 15px;
+  min-width: 100%;
+  padding: 15px;
+  background-color: #efefef;
   font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
   font-size: 100%;
-  min-height: 15px;
-  margin-bottom: 15px;
-  padding: 15px;
 }
-/* line 58, ../sass/framework/_forms.scss */
+/* line 41, ../sass/framework/_forms.scss */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="date"]:focus,
@@ -704,11 +674,11 @@ input[type="tel"]:focus,
 input[type="time"]:focus,
 input[type="url"]:focus,
 textarea:focus {
-  background-color: #f7f7f7;
   border: 1px solid #5d1a09;
+  background-color: #f7f7f7;
   color: black;
 }
-/* line 64, ../sass/framework/_forms.scss */
+/* line 48, ../sass/framework/_forms.scss */
 input[type="text"][disabled],
 input[type="password"][disabled],
 input[type="date"][disabled],
@@ -723,8 +693,8 @@ textarea[disabled] {
   -webkit-box-shadow: 0 0 0;
   -moz-box-shadow: 0 0 0;
   box-shadow: 0 0 0;
-  background-color: #fbfbfb;
   border: 1px solid #efefef;
+  background-color: #fbfbfb;
 }
 
 /**
@@ -734,36 +704,45 @@ textarea[disabled] {
  */
 /* Base button */
 /* line 9, ../sass/framework/_buttons.scss */
-.contact-box--link, .info--link, .focus-box--link {
+.contact-box--link, .info--link, .contact-form--button, .focus-box--link {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
   border-radius: 4px;
+  border: 0;
   display: inline-block;
   line-height: 1;
+  color: white;
 }
-/* line 17, ../sass/framework/_buttons.scss */
-.contact-box--link:link, .info--link:link, .focus-box--link:link, .contact-box--link:visited
+/* line 20, ../sass/framework/_buttons.scss */
+.contact-box--link:link, .info--link:link, .contact-form--button:link, .focus-box--link:link, .contact-box--link:visited
 .contact-box--link:hover, .info--link:visited
+.contact-box--link:hover, .contact-form--button:visited
 .contact-box--link:hover, .focus-box--link:visited
 .contact-box--link:hover, .contact-box--link:visited
 .info--link:hover, .info--link:visited
+.info--link:hover, .contact-form--button:visited
 .info--link:hover, .focus-box--link:visited
 .info--link:hover, .contact-box--link:visited
+.contact-form--button:hover, .info--link:visited
+.contact-form--button:hover, .contact-form--button:visited
+.contact-form--button:hover, .focus-box--link:visited
+.contact-form--button:hover, .contact-box--link:visited
 .focus-box--link:hover, .info--link:visited
+.focus-box--link:hover, .contact-form--button:visited
 .focus-box--link:hover, .focus-box--link:visited
 .focus-box--link:hover {
   color: white;
   text-decoration: none;
 }
-/* line 22, ../sass/framework/_buttons.scss */
-.contact-box--link [class^="icon-"], .info--link [class^="icon-"], .focus-box--link [class^="icon-"] {
+/* line 25, ../sass/framework/_buttons.scss */
+.contact-box--link [class^="icon-"], .info--link [class^="icon-"], .contact-form--button [class^="icon-"], .focus-box--link [class^="icon-"] {
   margin-right: 5px;
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* line 29, ../sass/framework/_buttons.scss */
+/* line 32, ../sass/framework/_buttons.scss */
 .contact-box--link {
   padding-top: 15px;
   padding-right: 40px;
@@ -772,8 +751,8 @@ textarea[disabled] {
   font-size: 220%;
 }
 
-/* line 38, ../sass/framework/_buttons.scss */
-.focus-box--link, .info--link {
+/* line 41, ../sass/framework/_buttons.scss */
+.focus-box--link, .info--link, .contact-form--button {
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 10px;
@@ -782,35 +761,35 @@ textarea[disabled] {
 }
 
 /* Action button */
-/* line 48, ../sass/framework/_buttons.scss */
-.contact-box--link, .info--link {
+/* line 51, ../sass/framework/_buttons.scss */
+.contact-box--link, .info--link, .contact-form--button {
   background-color: #59a214;
 }
-/* line 54, ../sass/framework/_buttons.scss */
-.contact-box--link:focus, .info--link:focus, .contact-box--link:hover, .info--link:hover {
+/* line 57, ../sass/framework/_buttons.scss */
+.contact-box--link:focus, .info--link:focus, .contact-form--button:focus, .contact-box--link:hover, .info--link:hover, .contact-form--button:hover {
   background-color: #65b917;
 }
-/* line 58, ../sass/framework/_buttons.scss */
-.contact-box--link:active, .info--link:active {
+/* line 61, ../sass/framework/_buttons.scss */
+.contact-box--link:active, .info--link:active, .contact-form--button:active {
   background-color: #4d8b11;
 }
 
 /* Link button */
-/* line 65, ../sass/framework/_buttons.scss */
+/* line 68, ../sass/framework/_buttons.scss */
 .focus-box--link {
   background-color: #0099cc;
 }
-/* line 71, ../sass/framework/_buttons.scss */
+/* line 74, ../sass/framework/_buttons.scss */
 .focus-box--link:focus, .focus-box--link:hover {
   background-color: #00ace6;
 }
-/* line 75, ../sass/framework/_buttons.scss */
+/* line 78, ../sass/framework/_buttons.scss */
 .focus-box--link:active {
   background-color: #0086b3;
 }
 
 /* Don't use native buttons on iOS */
-/* line 83, ../sass/framework/_buttons.scss */
+/* line 86, ../sass/framework/_buttons.scss */
 input[type=submit].button,
 button.button {
   -webkit-appearance: none;
@@ -818,7 +797,7 @@ button.button {
 
 /* Correct FF button padding */
 @-moz-document url-prefix() {
-  /* line 94, ../sass/framework/_buttons.scss */
+  /* line 97, ../sass/framework/_buttons.scss */
   button::-moz-focus-inner,
   input[type="reset"]::-moz-focus-inner,
   input[type="button"]::-moz-focus-inner,
@@ -849,12 +828,23 @@ body:after {
   clear: both;
 }
 
-/* line 13, ../sass/layout/_layout.scss */
+/* line 17, ../sass/layout/_layout.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* Correct for font line height */
+  margin-top: -9px;
+}
+
+/* line 22, ../sass/layout/_layout.scss */
 figure {
   background: url("/images/dot-small.png") 0 bottom repeat-x;
 }
 
-/* line 17, ../sass/layout/_layout.scss */
+/* line 26, ../sass/layout/_layout.scss */
 figcaption {
   margin-bottom: 30px;
   padding-top: 20px;
@@ -862,14 +852,14 @@ figcaption {
   color: #959595;
 }
 
-/* line 26, ../sass/layout/_layout.scss */
+/* line 35, ../sass/layout/_layout.scss */
 .header--inner, .primary-content--inner, .secondary-content, .prices, .info, .footer {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 33, ../sass/layout/_layout.scss */
+/* line 42, ../sass/layout/_layout.scss */
 .header {
   float: left;
   width: 100%;
@@ -889,12 +879,12 @@ figcaption {
   background: rgba(255, 255, 255, 0.75) url("/images/header-colors.png") left bottom repeat-x;
 }
 
-/* line 39, ../sass/layout/_layout.scss */
+/* line 48, ../sass/layout/_layout.scss */
 .header--inner {
   min-height: 80px;
 }
 
-/* line 45, ../sass/layout/_layout.scss */
+/* line 54, ../sass/layout/_layout.scss */
 .logo {
   float: left;
   width: 50%;
@@ -916,7 +906,7 @@ figcaption {
   margin-top: 15px;
 }
 
-/* line 52, ../sass/layout/_layout.scss */
+/* line 61, ../sass/layout/_layout.scss */
 .navigation {
   float: right;
   width: 50%;
@@ -941,31 +931,31 @@ figcaption {
   text-align: right;
   /* Links in navigation */
 }
-/* line 63, ../sass/layout/_layout.scss */
+/* line 72, ../sass/layout/_layout.scss */
 .navigation a {
   margin-left: 50px;
 }
-/* line 67, ../sass/layout/_layout.scss */
+/* line 76, ../sass/layout/_layout.scss */
 .navigation a:link {
   color: gray;
   text-decoration: none;
 }
-/* line 72, ../sass/layout/_layout.scss */
+/* line 81, ../sass/layout/_layout.scss */
 .navigation a:visited {
   color: #404040;
 }
-/* line 76, ../sass/layout/_layout.scss */
+/* line 85, ../sass/layout/_layout.scss */
 .navigation a:hover {
   color: #007aa3;
 }
-/* line 80, ../sass/layout/_layout.scss */
+/* line 89, ../sass/layout/_layout.scss */
 .navigation a:focus {
   color: #0099cc;
 }
 
 /* Primary content
    ========================================================================== */
-/* line 89, ../sass/layout/_layout.scss */
+/* line 98, ../sass/layout/_layout.scss */
 .primary-content {
   clear: both;
   -webkit-background-size: cover;
@@ -978,7 +968,7 @@ figcaption {
   background-repeat: no-repeat;
 }
 
-/* line 104, ../sass/layout/_layout.scss */
+/* line 113, ../sass/layout/_layout.scss */
 .primary-content--image {
   display: inline-block;
   margin-top: 50px;
@@ -986,7 +976,7 @@ figcaption {
 
 /* Contact box
    ========================================================================== */
-/* line 113, ../sass/layout/_layout.scss */
+/* line 122, ../sass/layout/_layout.scss */
 .contact-box--content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -999,18 +989,18 @@ figcaption {
   vertical-align: top;
 }
 
-/* line 125, ../sass/layout/_layout.scss */
+/* line 134, ../sass/layout/_layout.scss */
 .contact-box--heading {
   font-size: 300%;
 }
 
-/* line 129, ../sass/layout/_layout.scss */
+/* line 138, ../sass/layout/_layout.scss */
 .contact-box--lead {
   margin-bottom: 20px;
   font-size: 160%;
 }
 
-/* line 135, ../sass/layout/_layout.scss */
+/* line 144, ../sass/layout/_layout.scss */
 .contact-box--text {
   margin-bottom: 30px;
   font-family: "Source Sans Pro Light";
@@ -1019,7 +1009,7 @@ figcaption {
 
 /* Secondary content
    ========================================================================== */
-/* line 151, ../sass/layout/_layout.scss */
+/* line 160, ../sass/layout/_layout.scss */
 .secondary-content {
   clear: both;
   *position: relative;
@@ -1040,7 +1030,7 @@ figcaption {
 
 /* Focus boxes
    ========================================================================== */
-/* line 166, ../sass/layout/_layout.scss */
+/* line 175, ../sass/layout/_layout.scss */
 .focus-box--first {
   float: left;
   width: 33.33333%;
@@ -1059,7 +1049,7 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 170, ../sass/layout/_layout.scss */
+/* line 179, ../sass/layout/_layout.scss */
 .focus-box--second {
   float: left;
   width: 33.33333%;
@@ -1078,7 +1068,7 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 174, ../sass/layout/_layout.scss */
+/* line 183, ../sass/layout/_layout.scss */
 .focus-box--third {
   float: right;
   width: 33.33333%;
@@ -1097,7 +1087,7 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 180, ../sass/layout/_layout.scss */
+/* line 189, ../sass/layout/_layout.scss */
 .focus-box--first,
 .focus-box--second,
 .focus-box--third {
@@ -1105,21 +1095,21 @@ figcaption {
   padding-left: 0;
 }
 
-/* line 185, ../sass/layout/_layout.scss */
+/* line 194, ../sass/layout/_layout.scss */
 .focus-box--content {
   margin-bottom: 30px;
 }
 
 /* Prices
    ========================================================================== */
-/* line 198, ../sass/layout/_layout.scss */
+/* line 207, ../sass/layout/_layout.scss */
 .prices {
   margin-bottom: 70px;
   padding-bottom: 70px;
   background: url("/images/dot-large.png") 0 bottom repeat-x;
 }
 
-/* line 207, ../sass/layout/_layout.scss */
+/* line 216, ../sass/layout/_layout.scss */
 .prices--inner {
   *position: relative;
   *zoom: 1;
@@ -1135,12 +1125,12 @@ figcaption {
   clear: both;
 }
 
-/* line 213, ../sass/layout/_layout.scss */
+/* line 222, ../sass/layout/_layout.scss */
 .prices--heading {
   font-size: 220%;
 }
 
-/* line 217, ../sass/layout/_layout.scss */
+/* line 226, ../sass/layout/_layout.scss */
 .prices--content {
   float: left;
   width: 58.33333%;
@@ -1163,7 +1153,7 @@ figcaption {
 
 /* Info
    ========================================================================== */
-/* line 226, ../sass/layout/_layout.scss */
+/* line 235, ../sass/layout/_layout.scss */
 .info {
   *position: relative;
   *zoom: 1;
@@ -1181,12 +1171,12 @@ figcaption {
   clear: both;
 }
 
-/* line 236, ../sass/layout/_layout.scss */
+/* line 245, ../sass/layout/_layout.scss */
 .info--heading {
   font-size: 220%;
 }
 
-/* line 240, ../sass/layout/_layout.scss */
+/* line 249, ../sass/layout/_layout.scss */
 .info--content-primary {
   float: left;
   width: 50%;
@@ -1205,18 +1195,18 @@ figcaption {
   _overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
-  padding-right: 20px;
+  padding-right: 50px;
 }
-/* line 246, ../sass/layout/_layout.scss */
+/* line 255, ../sass/layout/_layout.scss */
 .info--content-primary .info--list {
   margin-bottom: 30px;
 }
-/* line 250, ../sass/layout/_layout.scss */
+/* line 259, ../sass/layout/_layout.scss */
 .info--content-primary li {
   list-style: disc;
 }
 
-/* line 255, ../sass/layout/_layout.scss */
+/* line 264, ../sass/layout/_layout.scss */
 .info--content-secondary {
   float: right;
   width: 50%;
@@ -1237,17 +1227,18 @@ figcaption {
   padding-right: 0;
 }
 
-/* line 260, ../sass/layout/_layout.scss */
+/* line 269, ../sass/layout/_layout.scss */
 .info--emphasized {
   margin-bottom: 30px;
 }
 
 /* Footer
    ========================================================================== */
-/* line 275, ../sass/layout/_layout.scss */
+/* line 284, ../sass/layout/_layout.scss */
 .footer {
   *position: relative;
   *zoom: 1;
+  margin-bottom: 70px;
 }
 /* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .footer:before, .footer:after {
@@ -1259,14 +1250,14 @@ figcaption {
   clear: both;
 }
 
-/* line 280, ../sass/layout/_layout.scss */
+/* line 291, ../sass/layout/_layout.scss */
 .footer--lead {
   background: url("/images/dot-small.png") 0 bottom repeat-x;
   margin-bottom: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
-/* line 287, ../sass/layout/_layout.scss */
+/* line 298, ../sass/layout/_layout.scss */
 .footer--content-primary {
   float: left;
   width: 50%;
@@ -1285,9 +1276,10 @@ figcaption {
   _overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
+  padding-right: 50px;
 }
 
-/* line 292, ../sass/layout/_layout.scss */
+/* line 305, ../sass/layout/_layout.scss */
 .footer--content-secondary {
   float: right;
   width: 50%;
@@ -1306,6 +1298,18 @@ figcaption {
   _overflow-y: visible;
   padding-left: 0;
   padding-right: 0;
+}
+
+/* line 310, ../sass/layout/_layout.scss */
+.footer--map {
+  margin-bottom: 30px;
+}
+
+/* Contact form
+   ========================================================================== */
+/* line 318, ../sass/layout/_layout.scss */
+.contact-form--button {
+  float: right;
 }
 
 /**
