@@ -734,7 +734,7 @@ textarea[disabled] {
  */
 /* Base button */
 /* line 9, ../sass/framework/_buttons.scss */
-.attention-area--link, .info--link, .interest-area--link {
+.contact-box--link, .info--link, .focus-box--link {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -744,27 +744,27 @@ textarea[disabled] {
   line-height: 1;
 }
 /* line 17, ../sass/framework/_buttons.scss */
-.attention-area--link:link, .info--link:link, .interest-area--link:link, .attention-area--link:visited
-.attention-area--link:hover, .info--link:visited
-.attention-area--link:hover, .interest-area--link:visited
-.attention-area--link:hover, .attention-area--link:visited
+.contact-box--link:link, .info--link:link, .focus-box--link:link, .contact-box--link:visited
+.contact-box--link:hover, .info--link:visited
+.contact-box--link:hover, .focus-box--link:visited
+.contact-box--link:hover, .contact-box--link:visited
 .info--link:hover, .info--link:visited
-.info--link:hover, .interest-area--link:visited
-.info--link:hover, .attention-area--link:visited
-.interest-area--link:hover, .info--link:visited
-.interest-area--link:hover, .interest-area--link:visited
-.interest-area--link:hover {
+.info--link:hover, .focus-box--link:visited
+.info--link:hover, .contact-box--link:visited
+.focus-box--link:hover, .info--link:visited
+.focus-box--link:hover, .focus-box--link:visited
+.focus-box--link:hover {
   color: white;
   text-decoration: none;
 }
 /* line 22, ../sass/framework/_buttons.scss */
-.attention-area--link [class^="icon-"], .info--link [class^="icon-"], .interest-area--link [class^="icon-"] {
+.contact-box--link [class^="icon-"], .info--link [class^="icon-"], .focus-box--link [class^="icon-"] {
   margin-right: 5px;
   color: rgba(255, 255, 255, 0.5);
 }
 
 /* line 29, ../sass/framework/_buttons.scss */
-.attention-area--link {
+.contact-box--link {
   padding-top: 15px;
   padding-right: 40px;
   padding-bottom: 15px;
@@ -773,7 +773,7 @@ textarea[disabled] {
 }
 
 /* line 38, ../sass/framework/_buttons.scss */
-.interest-area--link, .info--link {
+.focus-box--link, .info--link {
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 10px;
@@ -783,29 +783,29 @@ textarea[disabled] {
 
 /* Action button */
 /* line 48, ../sass/framework/_buttons.scss */
-.attention-area--link, .info--link {
+.contact-box--link, .info--link {
   background-color: #59a214;
 }
 /* line 54, ../sass/framework/_buttons.scss */
-.attention-area--link:focus, .info--link:focus, .attention-area--link:hover, .info--link:hover {
+.contact-box--link:focus, .info--link:focus, .contact-box--link:hover, .info--link:hover {
   background-color: #65b917;
 }
 /* line 58, ../sass/framework/_buttons.scss */
-.attention-area--link:active, .info--link:active {
+.contact-box--link:active, .info--link:active {
   background-color: #4d8b11;
 }
 
 /* Link button */
 /* line 65, ../sass/framework/_buttons.scss */
-.interest-area--link {
+.focus-box--link {
   background-color: #0099cc;
 }
 /* line 71, ../sass/framework/_buttons.scss */
-.interest-area--link:focus, .interest-area--link:hover {
+.focus-box--link:focus, .focus-box--link:hover {
   background-color: #00ace6;
 }
 /* line 75, ../sass/framework/_buttons.scss */
-.interest-area--link:active {
+.focus-box--link:active {
   background-color: #0086b3;
 }
 
@@ -863,7 +863,7 @@ figcaption {
 }
 
 /* line 26, ../sass/layout/_layout.scss */
-.header-inner, .attention-area--inner, .interest-area, .prices, .info, .footer {
+.header--inner, .primary-content--inner, .secondary-content, .prices, .info, .footer {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
@@ -890,7 +890,7 @@ figcaption {
 }
 
 /* line 39, ../sass/layout/_layout.scss */
-.header-inner {
+.header--inner {
   min-height: 80px;
 }
 
@@ -963,10 +963,10 @@ figcaption {
   color: #0099cc;
 }
 
-/* attention-area area
+/* Primary content
    ========================================================================== */
 /* line 89, ../sass/layout/_layout.scss */
-.attention-area {
+.primary-content {
   clear: both;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -979,13 +979,15 @@ figcaption {
 }
 
 /* line 104, ../sass/layout/_layout.scss */
-.attention-area--image {
+.primary-content--image {
   display: inline-block;
   margin-top: 50px;
 }
 
-/* line 109, ../sass/layout/_layout.scss */
-.attention-area--content {
+/* Contact box
+   ========================================================================== */
+/* line 113, ../sass/layout/_layout.scss */
+.contact-box--content {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -997,28 +999,28 @@ figcaption {
   vertical-align: top;
 }
 
-/* line 121, ../sass/layout/_layout.scss */
-.attention-area--header {
+/* line 125, ../sass/layout/_layout.scss */
+.contact-box--heading {
   font-size: 300%;
 }
 
-/* line 125, ../sass/layout/_layout.scss */
-.attention-area--lead {
+/* line 129, ../sass/layout/_layout.scss */
+.contact-box--lead {
   margin-bottom: 20px;
   font-size: 160%;
 }
 
-/* line 131, ../sass/layout/_layout.scss */
-.attention-area--text {
+/* line 135, ../sass/layout/_layout.scss */
+.contact-box--text {
   margin-bottom: 30px;
   font-family: "Source Sans Pro Light";
   font-size: 130%;
 }
 
-/* Interest
+/* Secondary content
    ========================================================================== */
-/* line 147, ../sass/layout/_layout.scss */
-.interest-area {
+/* line 151, ../sass/layout/_layout.scss */
+.secondary-content {
   clear: both;
   *position: relative;
   *zoom: 1;
@@ -1027,17 +1029,19 @@ figcaption {
   background: url("/images/dot-large.png") 0 bottom repeat-x;
 }
 /* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
-.interest-area:before, .interest-area:after {
+.secondary-content:before, .secondary-content:after {
   content: "";
   display: table;
 }
 /* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
-.interest-area:after {
+.secondary-content:after {
   clear: both;
 }
 
-/* line 158, ../sass/layout/_layout.scss */
-.interest-area--first {
+/* Focus boxes
+   ========================================================================== */
+/* line 166, ../sass/layout/_layout.scss */
+.focus-box--first {
   float: left;
   width: 33.33333%;
   margin-left: 0%;
@@ -1055,8 +1059,8 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 162, ../sass/layout/_layout.scss */
-.interest-area--second {
+/* line 170, ../sass/layout/_layout.scss */
+.focus-box--second {
   float: left;
   width: 33.33333%;
   margin-left: 33.33333%;
@@ -1074,8 +1078,8 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 166, ../sass/layout/_layout.scss */
-.interest-area--third {
+/* line 174, ../sass/layout/_layout.scss */
+.focus-box--third {
   float: right;
   width: 33.33333%;
   margin-right: 0%;
@@ -1093,29 +1097,29 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 172, ../sass/layout/_layout.scss */
-.interest-area--first,
-.interest-area--second,
-.interest-area--third {
+/* line 180, ../sass/layout/_layout.scss */
+.focus-box--first,
+.focus-box--second,
+.focus-box--third {
   padding-right: 60px;
   padding-left: 0;
 }
 
-/* line 177, ../sass/layout/_layout.scss */
-.interest-area--content {
+/* line 185, ../sass/layout/_layout.scss */
+.focus-box--content {
   margin-bottom: 30px;
 }
 
 /* Prices
    ========================================================================== */
-/* line 190, ../sass/layout/_layout.scss */
+/* line 198, ../sass/layout/_layout.scss */
 .prices {
   margin-bottom: 70px;
   padding-bottom: 70px;
   background: url("/images/dot-large.png") 0 bottom repeat-x;
 }
 
-/* line 199, ../sass/layout/_layout.scss */
+/* line 207, ../sass/layout/_layout.scss */
 .prices--inner {
   *position: relative;
   *zoom: 1;
@@ -1131,12 +1135,12 @@ figcaption {
   clear: both;
 }
 
-/* line 205, ../sass/layout/_layout.scss */
-.prices--header {
+/* line 213, ../sass/layout/_layout.scss */
+.prices--heading {
   font-size: 220%;
 }
 
-/* line 209, ../sass/layout/_layout.scss */
+/* line 217, ../sass/layout/_layout.scss */
 .prices--content {
   float: left;
   width: 58.33333%;
@@ -1159,7 +1163,7 @@ figcaption {
 
 /* Info
    ========================================================================== */
-/* line 218, ../sass/layout/_layout.scss */
+/* line 226, ../sass/layout/_layout.scss */
 .info {
   *position: relative;
   *zoom: 1;
@@ -1177,12 +1181,12 @@ figcaption {
   clear: both;
 }
 
-/* line 228, ../sass/layout/_layout.scss */
-.info--header {
+/* line 236, ../sass/layout/_layout.scss */
+.info--heading {
   font-size: 220%;
 }
 
-/* line 232, ../sass/layout/_layout.scss */
+/* line 240, ../sass/layout/_layout.scss */
 .info--content-primary {
   float: left;
   width: 50%;
@@ -1203,16 +1207,16 @@ figcaption {
   padding-right: 0;
   padding-right: 20px;
 }
-/* line 238, ../sass/layout/_layout.scss */
+/* line 246, ../sass/layout/_layout.scss */
 .info--content-primary .info--list {
   margin-bottom: 30px;
 }
-/* line 242, ../sass/layout/_layout.scss */
+/* line 250, ../sass/layout/_layout.scss */
 .info--content-primary li {
   list-style: disc;
 }
 
-/* line 247, ../sass/layout/_layout.scss */
+/* line 255, ../sass/layout/_layout.scss */
 .info--content-secondary {
   float: right;
   width: 50%;
@@ -1233,20 +1237,41 @@ figcaption {
   padding-right: 0;
 }
 
-/* line 252, ../sass/layout/_layout.scss */
+/* line 260, ../sass/layout/_layout.scss */
 .info--emphasized {
   margin-bottom: 30px;
 }
 
 /* Footer
    ========================================================================== */
-/* line 267, ../sass/layout/_layout.scss */
+/* line 275, ../sass/layout/_layout.scss */
 .footer {
+  *position: relative;
+  *zoom: 1;
+}
+/* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.footer:before, .footer:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.footer:after {
   clear: both;
+}
+
+/* line 280, ../sass/layout/_layout.scss */
+.footer--lead {
+  background: url("/images/dot-small.png") 0 bottom repeat-x;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 287, ../sass/layout/_layout.scss */
+.footer--content-primary {
   float: left;
-  width: 100%;
+  width: 50%;
   margin-left: 0%;
-  margin-right: -100%;
+  margin-right: -50%;
   padding-left: 15px;
   padding-right: 15px;
   -moz-box-sizing: border-box;
@@ -1258,6 +1283,29 @@ figcaption {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 292, ../sass/layout/_layout.scss */
+.footer--content-secondary {
+  float: right;
+  width: 50%;
+  margin-right: 0%;
+  margin-left: -50%;
+  padding-left: 15px;
+  padding-right: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 /**

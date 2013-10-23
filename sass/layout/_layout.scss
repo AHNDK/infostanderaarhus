@@ -36,7 +36,7 @@ figcaption {
   background: transparentize($white, .25) url('/images/header-colors.png') left bottom repeat-x;
 }
 
-.header-inner {
+.header--inner {
   @extend %layout-wrapper;
 
   min-height: 80px;
@@ -83,10 +83,10 @@ figcaption {
 }
 
 
-/* attention-area area
+/* Primary content
    ========================================================================== */
 
-.attention-area {
+.primary-content {
   @include zen-clear(both);
   @include background-size(cover);
 
@@ -97,16 +97,20 @@ figcaption {
   background-repeat: no-repeat;
 }
 
-.attention-area--inner {
+.primary-content--inner {
   @extend %layout-wrapper;
 }
 
-.attention-area--image {
+.primary-content--image {
   display: inline-block;
   margin-top: 50px;
 }
 
-.attention-area--content {
+
+/* Contact box
+   ========================================================================== */
+
+.contact-box--content {
   @include box-sizing(border-box);
 
   display: inline-block;
@@ -118,33 +122,33 @@ figcaption {
   vertical-align: top;
 }
 
-.attention-area--header {
+.contact-box--heading {
   font-size: $font-size-giga;
 }
 
-.attention-area--lead {
+.contact-box--lead {
   margin-bottom: 20px;
 
   font-size: $font-size-larger;
 }
 
-.attention-area--text {
+.contact-box--text {
   margin-bottom: 30px;
 
   font-family: "Source Sans Pro Light";
   font-size: $font-size-large;
 }
 
-.attention-area--link {
+.contact-box--link {
   @extend %action-button;
   @extend %button-large;
 }
 
 
-/* Interest
+/* Secondary content
    ========================================================================== */
 
-.interest-area {
+.secondary-content {
   @include zen-clear(both);
   @include zen-grid-container();
   @extend %layout-wrapper;
@@ -155,30 +159,34 @@ figcaption {
   background: $border-dottet-large;
 }
 
-.interest-area--first {
+
+/* Focus boxes
+   ========================================================================== */
+
+.focus-box--first {
   @include zen-grid-item(4, 1);
 }
 
-.interest-area--second {
+.focus-box--second {
   @include zen-grid-item(4, 5);
 }
 
-.interest-area--third {
+.focus-box--third {
   @include zen-grid-item(4, 1, right);
 }
 
-.interest-area--first,
-.interest-area--second,
-.interest-area--third {
+.focus-box--first,
+.focus-box--second,
+.focus-box--third {
   padding-right: 60px;
   padding-left: 0;
 }
 
-.interest-area--content {
+.focus-box--content {
   margin-bottom: 30px;
 }
 
-.interest-area--link {
+.focus-box--link {
   @extend %link-button;
   @extend %button-small;
 }
@@ -202,7 +210,7 @@ figcaption {
   background: url('/images/wrench.png') right top no-repeat;
 }
 
-.prices--header {
+.prices--heading {
   font-size: $font-size-mega;
 }
 
@@ -225,7 +233,7 @@ figcaption {
   background: $border-dottet-large;
 }
 
-.info--header {
+.info--heading {
   font-size: $font-size-mega;
 }
 
@@ -265,8 +273,23 @@ figcaption {
    ========================================================================== */
 
 .footer {
-  @include zen-clear(both);
-  @include zen-grid-item(12, 1);
-
+  @include zen-grid-container();
   @extend %layout-wrapper;
+}
+
+.footer--lead {
+  background: $border-dottet-small;
+
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+}
+
+.footer--content-primary {
+  @include zen-grid-item(6, 1);
+  @include zen-nested-container();
+}
+
+.footer--content-secondary {
+  @include zen-grid-item(6, 1, right);
+  @include zen-nested-container();
 }
