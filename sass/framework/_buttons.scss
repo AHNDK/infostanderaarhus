@@ -5,117 +5,71 @@
  */
 
 
-/* Variables
-   ========================================================================== */
-
-$button-border:                   0;
-$button-border-radius:            4px;
-$button-box-shadow:               0 0 1px lighten($black, 35%) inset;
-$button-padding:                  10px 14px;
-
-$button-default-bg:               #444;
-$button-default-color:            #fff;
-$button-theme-bg:                 #00b7e7;
-$button-theme-color:              #fff;
-$button-action-bg:                #60a500;
-$button-action-color:             #fff;
-$button-warning-bg:               #f6d346;
-$button-warning-color:            #000;
-$button-danger-bg:                #bf3600;
-$button-danger-color:             #fff;
-
-
-
-/* Extends
-   ========================================================================== */
-
-%button {
-  @include border-radius($button-border-radius);
+/* Base button */
+%base-button {
+  @include border-radius(4px);
 
   display: inline-block;
-  font-size: 100%;
-  font-weight: bold;
-  padding: $button-padding;
-  position: relative;
+  line-height: 1;
 
-  box-shadow: $button-box-shadow;
-  cursor: pointer;
-  text-align: center;
-  vertical-align: middle;
-
-  &:focus,
-  &:hover,
-  &:active {
+  &:link,
+  &:visited
+  &:hover {
+    color: $white;
     text-decoration: none;
   }
 
-  // Disabled state
-  &.disabled,
-  &[disabled] {
-    @include opacity(0.65);
-    @include box-shadow(none);
+  [class^="icon-"] {
+    margin-right: 5px;
 
-    cursor: default;
+    color: transparentize($white, .5);
   }
 }
 
-
-
-/* Mixins
-   ========================================================================== */
-
-@mixin create-gradient-button($text-color, $bg-start-color, $bg-end-color, $border: 0) {
-  @include background-image(linear-gradient($bg-start-color, $bg-end-color));
-  @extend %button;
-
-  /* Make sure buttons get a background color in IE */
-  background-color: $bg-start-color;
-  border: $border;
-
-  @if $text-color != "" {
-    color: $text-color;
-
-    &:link,
-    &:visited {
-      color: $text-color;
-    }
-  }
-
-  &:focus,
-  &:hover,
-  &:active {
-    @include background-image(linear-gradient(darken($bg-start-color, 5%), darken($bg-end-color, 5%)));
-
-    background-color: $bg-end-color;
-  }
-}
-
-
-/* Default button */
-.button,
-a.button,
-%button-default {
-  @include create-gradient-button($button-default-color, $button-default-bg, darken($button-default-bg, 15%));
-}
-
-/* Theme button */
-%button-theme {
-  @include create-gradient-button($button-theme-color, $button-theme-bg, darken($button-theme-bg, 15%));
-}
 
 /* Action button */
-%button-action {
-  @include create-gradient-button($button-action-color, $button-action-bg, darken($button-action-bg, 15%));
+%action-button {
+  @extend %base-button;
+
+  padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-left: 40px;
+
+  background-color: $green;
+  font-size: $font-size-mega;
+
+  &:focus,
+  &:hover {
+    background-color: lighten($green, 5%);
+  }
+
+  &:active {
+    background-color: darken($green, 5%);
+  }
 }
 
-/* Warning button */
-%button-warning {
-  @include create-gradient-button($button-warning-color, $button-warning-bg, darken($button-warning-bg, 15%));
-}
 
-/* Danger button */
-%button-danger {
-  @include create-gradient-button($button-danger-color, $button-danger-bg, darken($button-danger-bg, 15%));
+/* Link button */
+%link-button {
+  @extend %base-button;
+
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+
+  background-color: $blue;
+  font-size: $font-size-largest;
+
+  &:focus,
+  &:hover {
+    background-color: lighten($blue, 5%);
+  }
+
+  &:active {
+    background-color: darken($blue, 5%);
+  }
 }
 
 

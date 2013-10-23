@@ -7,10 +7,6 @@
 
 body {
   @include zen-grid-container();
-  @include background-size(100% 541px);
-
-  background-image: url('/images/header-background.jpg');
-  background-repeat: no-repeat;
 }
 
 %layout-wrapper {
@@ -77,9 +73,13 @@ body {
 
 .header-cta {
   @include zen-clear(both);
+  @include background-size(cover);
 
   border-bottom: 6px solid $gray;
   margin-bottom: 70px;
+
+  background-image: url('/images/header-background.jpg');
+  background-repeat: no-repeat;
 }
 
 .header-cta--inner {
@@ -121,33 +121,7 @@ body {
 }
 
 .header-cta--link {
-  @include border-radius(4px);
-
-  display: inline-block;
-  padding-top: 15px;
-  padding-right: 40px;
-  padding-bottom: 15px;
-  padding-left: 40px;
-
-  background-color: $green;
-  font-size: $font-size-mega;
-  line-height: 1;
-
-  &:link,
-  &:visited
-  &:hover,
-  &:focus {
-    color: $white;
-    text-decoration: none;
-  }
-
-  &:hover {
-    background-color: darken($green, 10%);
-  }
-
-  [class^="icon-"] {
-    color: transparentize($white, .5);
-  }
+  @extend %action-button;
 }
 
 
@@ -159,7 +133,7 @@ body {
   @include zen-grid-container();
   @extend %layout-wrapper;
 
-  border-bottom: 8px dotted $gray-light;
+  border-bottom: 7px dotted $gray-light;
   padding-bottom: 70px;
 }
 
@@ -180,6 +154,14 @@ body {
 .other-content--third {
   padding-right: 60px;
   padding-left: 0;
+}
+
+.other-content--content {
+  margin-bottom: 30px;
+}
+
+.other-content--link {
+  @extend %link-button;
 }
 
 
