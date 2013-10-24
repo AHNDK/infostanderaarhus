@@ -130,6 +130,10 @@ figcaption {
 
   background-image: url('/images/header-background.jpg');
   background-repeat: no-repeat;
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+  }
 }
 
 .primary-content--inner {
@@ -172,13 +176,21 @@ figcaption {
 
   @include third-breakpoint() {
     padding-top: 55px;
-    padding-bottom: 55px;
+    padding-left: 35px;
   }
 
   @include fourth-breakpoint() {
     @include zen-grid-item(12, 1);
 
     background-color: transparentize($white, .5);
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  @include last-breakpoint() {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 
@@ -187,6 +199,10 @@ figcaption {
 
   @include second-breakpoint() {
     font-size: $font-size-mega;
+  }
+
+  @include fourth-breakpoint() {
+    display: none;
   }
 }
 
@@ -243,6 +259,11 @@ figcaption {
     margin-right: 20px;
     margin-left: 20px;
   }
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 
@@ -274,6 +295,7 @@ figcaption {
   @include last-breakpoint() {
     @include zen-clear();
     @include zen-grid-item(12, 1);
+    @include zen-nested-container();
   }
 }
 
@@ -281,6 +303,7 @@ figcaption {
 .focus-box--second {
   @include last-breakpoint() {
     background: $border-dottet-small;
+
     margin-bottom: 50px;
     padding-bottom: 50px;
   }
@@ -320,6 +343,11 @@ figcaption {
     margin-right: 20px;
     margin-left: 20px;
   }
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
 }
 
 .prices--inner {
@@ -343,6 +371,7 @@ figcaption {
   @include last-breakpoint() {
     @include zen-clear();
     @include zen-grid-item(12, 1);
+    @include zen-nested-container();
   }
 }
 
@@ -362,6 +391,11 @@ figcaption {
   @include third-breakpoint() {
     margin-right: 20px;
     margin-left: 20px;
+  }
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
   }
 }
 
@@ -386,6 +420,7 @@ figcaption {
   @include last-breakpoint() {
     @include zen-clear();
     @include zen-grid-item(12, 1);
+    @include zen-nested-container();
 
     margin-bottom: 30px;
   }
@@ -398,6 +433,7 @@ figcaption {
   @include last-breakpoint() {
     @include zen-clear();
     @include zen-grid-item(12, 1);
+    @include zen-nested-container();
   }
 }
 
@@ -439,6 +475,7 @@ figcaption {
   @include last-breakpoint() {
     @include zen-clear();
     @include zen-grid-item(12, 1);
+    @include zen-nested-container();
 
     background: $border-dottet-small;
     margin-bottom: 30px;
@@ -453,6 +490,7 @@ figcaption {
   @include last-breakpoint() {
     @include zen-clear();
     @include zen-grid-item(12, 1);
+    @include zen-nested-container();
   }
 }
 
