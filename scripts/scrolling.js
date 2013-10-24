@@ -15,13 +15,21 @@ $(document).ready(function() {
     }
   });
 
-  var topLink = $('.top-link').hide();
+  var topLink = $('.top-link');
 
   // Show or hide top link when scrolling
   $(window).scroll(function() {
     if ($(document).scrollTop() > 250) {
+      // Add class to body
+      $('body').addClass('js-scrolling');
+
+      // Show arrow link
       $(topLink).show('fast');
     } else {
+      // Remove class to body
+      $('body').removeClass('js-scrolling');
+
+      // Hide arrow link
       $(topLink).hide('fast');
     }
   });

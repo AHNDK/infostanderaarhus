@@ -40,6 +40,8 @@ figcaption {
   right: 100px;
   z-index: 99;
 
+  display: none;
+
   font-size: 500%;
 }
 
@@ -51,7 +53,10 @@ figcaption {
 
 
 .header {
-  background: transparentize($white, .25) url('/images/header-colors.png') left bottom repeat-x;
+  background-color: transparentize($white, .05);
+  background-image: url('/images/header-colors.png');
+  background-position: left bottom ;
+  background-repeat: repeat-x;
 
   @include zen-grid-item(12, 1);
   @include background-size(100% auto);
@@ -128,6 +133,16 @@ figcaption {
   @include third-breakpoint() {
     display: none;
   }
+}
+
+.js-scrolling {
+  .navigation--top {
+    display: inline-block;
+  }
+}
+
+.navigation--top {
+  display: none;
 }
 
 
