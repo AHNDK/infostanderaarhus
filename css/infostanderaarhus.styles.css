@@ -6,8 +6,6 @@
  */
 /* Zen Grid variables
    ========================================================================== */
-/* Breakpoints
-   ========================================================================== */
 /* Standard color definitions
    ========================================================================== */
 /* Typography
@@ -25,6 +23,8 @@
  *
  * @author magnify
  */
+/* Breakpoints
+   ========================================================================== */
 /* Media query
    ========================================================================== */
 /* Breakpoints
@@ -704,7 +704,7 @@ textarea[disabled] {
  */
 /* Base button */
 /* line 9, ../sass/framework/_buttons.scss */
-.contact-box--link, .info--link, .contact-form--button, .focus-box--link {
+.contact-box--link, .contact-form--button, .focus-box--link {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
@@ -716,20 +716,13 @@ textarea[disabled] {
   color: white;
 }
 /* line 20, ../sass/framework/_buttons.scss */
-.contact-box--link:link, .info--link:link, .contact-form--button:link, .focus-box--link:link, .contact-box--link:visited
-.contact-box--link:hover, .info--link:visited
+.contact-box--link:link, .contact-form--button:link, .focus-box--link:link, .contact-box--link:visited
 .contact-box--link:hover, .contact-form--button:visited
 .contact-box--link:hover, .focus-box--link:visited
 .contact-box--link:hover, .contact-box--link:visited
-.info--link:hover, .info--link:visited
-.info--link:hover, .contact-form--button:visited
-.info--link:hover, .focus-box--link:visited
-.info--link:hover, .contact-box--link:visited
-.contact-form--button:hover, .info--link:visited
 .contact-form--button:hover, .contact-form--button:visited
 .contact-form--button:hover, .focus-box--link:visited
 .contact-form--button:hover, .contact-box--link:visited
-.focus-box--link:hover, .info--link:visited
 .focus-box--link:hover, .contact-form--button:visited
 .focus-box--link:hover, .focus-box--link:visited
 .focus-box--link:hover {
@@ -737,12 +730,19 @@ textarea[disabled] {
   text-decoration: none;
 }
 /* line 25, ../sass/framework/_buttons.scss */
-.contact-box--link [class^="icon-"], .info--link [class^="icon-"], .contact-form--button [class^="icon-"], .focus-box--link [class^="icon-"] {
+.contact-box--link [class^="icon-"], .contact-form--button [class^="icon-"], .focus-box--link [class^="icon-"] {
   margin-right: 5px;
   color: rgba(255, 255, 255, 0.5);
 }
+@media only screen and (max-width: 480px) {
+  /* line 9, ../sass/framework/_buttons.scss */
+  .contact-box--link, .contact-form--button, .focus-box--link {
+    display: block;
+    text-align: center;
+  }
+}
 
-/* line 32, ../sass/framework/_buttons.scss */
+/* line 37, ../sass/framework/_buttons.scss */
 .contact-box--link {
   padding-top: 15px;
   padding-right: 40px;
@@ -751,8 +751,8 @@ textarea[disabled] {
   font-size: 220%;
 }
 
-/* line 41, ../sass/framework/_buttons.scss */
-.focus-box--link, .info--link, .contact-form--button {
+/* line 46, ../sass/framework/_buttons.scss */
+.focus-box--link, .contact-form--button {
   padding-top: 10px;
   padding-right: 30px;
   padding-bottom: 10px;
@@ -761,35 +761,35 @@ textarea[disabled] {
 }
 
 /* Action button */
-/* line 51, ../sass/framework/_buttons.scss */
-.contact-box--link, .info--link, .contact-form--button {
+/* line 56, ../sass/framework/_buttons.scss */
+.contact-box--link, .contact-form--button {
   background-color: #59a214;
 }
-/* line 57, ../sass/framework/_buttons.scss */
-.contact-box--link:focus, .info--link:focus, .contact-form--button:focus, .contact-box--link:hover, .info--link:hover, .contact-form--button:hover {
+/* line 62, ../sass/framework/_buttons.scss */
+.contact-box--link:focus, .contact-form--button:focus, .contact-box--link:hover, .contact-form--button:hover {
   background-color: #65b917;
 }
-/* line 61, ../sass/framework/_buttons.scss */
-.contact-box--link:active, .info--link:active, .contact-form--button:active {
+/* line 66, ../sass/framework/_buttons.scss */
+.contact-box--link:active, .contact-form--button:active {
   background-color: #4d8b11;
 }
 
 /* Link button */
-/* line 68, ../sass/framework/_buttons.scss */
+/* line 73, ../sass/framework/_buttons.scss */
 .focus-box--link {
   background-color: #0099cc;
 }
-/* line 74, ../sass/framework/_buttons.scss */
+/* line 79, ../sass/framework/_buttons.scss */
 .focus-box--link:focus, .focus-box--link:hover {
   background-color: #00ace6;
 }
-/* line 78, ../sass/framework/_buttons.scss */
+/* line 83, ../sass/framework/_buttons.scss */
 .focus-box--link:active {
   background-color: #0086b3;
 }
 
 /* Don't use native buttons on iOS */
-/* line 86, ../sass/framework/_buttons.scss */
+/* line 91, ../sass/framework/_buttons.scss */
 input[type=submit].button,
 button.button {
   -webkit-appearance: none;
@@ -797,7 +797,7 @@ button.button {
 
 /* Correct FF button padding */
 @-moz-document url-prefix() {
-  /* line 97, ../sass/framework/_buttons.scss */
+  /* line 102, ../sass/framework/_buttons.scss */
   button::-moz-focus-inner,
   input[type="reset"]::-moz-focus-inner,
   input[type="button"]::-moz-focus-inner,
@@ -861,6 +861,7 @@ figcaption {
 
 /* line 42, ../sass/layout/_layout.scss */
 .header {
+  background: rgba(255, 255, 255, 0.75) url("/images/header-colors.png") left bottom repeat-x;
   float: left;
   width: 100%;
   margin-left: 0%;
@@ -876,16 +877,19 @@ figcaption {
   _display: inline;
   _overflow: hidden;
   _overflow-y: visible;
-  background: rgba(255, 255, 255, 0.75) url("/images/header-colors.png") left bottom repeat-x;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
 }
 
-/* line 48, ../sass/layout/_layout.scss */
+/* line 49, ../sass/layout/_layout.scss */
 .header--inner {
   min-height: 80px;
 }
 
-/* line 54, ../sass/layout/_layout.scss */
-.logo {
+/* line 55, ../sass/layout/_layout.scss */
+.logo--link {
   float: left;
   width: 50%;
   margin-left: 0%;
@@ -905,8 +909,62 @@ figcaption {
   padding-right: 0;
   margin-top: 15px;
 }
+@media only screen and (max-width: 865px) {
+  /* line 55, ../sass/layout/_layout.scss */
+  .logo--link {
+    float: left;
+    width: 83.33333%;
+    margin-left: 0%;
+    margin-right: -83.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 55, ../sass/layout/_layout.scss */
+  .logo--link {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    margin-top: 22px;
+  }
+}
 
-/* line 61, ../sass/layout/_layout.scss */
+/* line 73, ../sass/layout/_layout.scss */
+.logo {
+  max-width: 325px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 73, ../sass/layout/_layout.scss */
+  .logo {
+    max-width: 100%;
+  }
+}
+
+/* line 81, ../sass/layout/_layout.scss */
 .navigation {
   float: right;
   width: 50%;
@@ -931,85 +989,205 @@ figcaption {
   text-align: right;
   /* Links in navigation */
 }
-/* line 72, ../sass/layout/_layout.scss */
+/* line 92, ../sass/layout/_layout.scss */
 .navigation a {
   margin-left: 50px;
 }
-/* line 76, ../sass/layout/_layout.scss */
+/* line 96, ../sass/layout/_layout.scss */
 .navigation a:link {
   color: gray;
   text-decoration: none;
 }
-/* line 81, ../sass/layout/_layout.scss */
+/* line 101, ../sass/layout/_layout.scss */
 .navigation a:visited {
   color: #404040;
 }
-/* line 85, ../sass/layout/_layout.scss */
+/* line 105, ../sass/layout/_layout.scss */
 .navigation a:hover {
   color: #007aa3;
 }
-/* line 89, ../sass/layout/_layout.scss */
+/* line 109, ../sass/layout/_layout.scss */
 .navigation a:focus {
   color: #0099cc;
+}
+@media only screen and (max-width: 865px) {
+  /* line 81, ../sass/layout/_layout.scss */
+  .navigation {
+    display: none;
+  }
 }
 
 /* Primary content
    ========================================================================== */
-/* line 98, ../sass/layout/_layout.scss */
+/* line 122, ../sass/layout/_layout.scss */
 .primary-content {
   clear: both;
+  *position: relative;
+  *zoom: 1;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   border-bottom: 6px solid #d5d5d5;
   margin-bottom: 70px;
+  position: relative;
   background-image: url("/images/header-background.jpg");
   background-repeat: no-repeat;
 }
+/* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.primary-content:before, .primary-content:after {
+  content: "";
+  display: table;
+}
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+.primary-content:after {
+  clear: both;
+}
 
-/* line 113, ../sass/layout/_layout.scss */
+/* line 139, ../sass/layout/_layout.scss */
 .primary-content--image {
+  float: left;
+  width: 41.66667%;
+  margin-left: 0%;
+  margin-right: -41.66667%;
+  padding-left: 15px;
+  padding-right: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
+  bottom: 0;
   display: inline-block;
   margin-top: 50px;
+  max-width: 450px;
+  padding-right: 50px;
+  position: absolute;
+}
+@media only screen and (max-width: 710px) {
+  /* line 139, ../sass/layout/_layout.scss */
+  .primary-content--image {
+    display: none;
+  }
 }
 
 /* Contact box
    ========================================================================== */
-/* line 122, ../sass/layout/_layout.scss */
+/* line 158, ../sass/layout/_layout.scss */
 .contact-box--content {
+  float: right;
+  width: 58.33333%;
+  margin-right: 0%;
+  margin-left: -58.33333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  *behavior: url("/scripts/boxsizing.htc");
+  _display: inline;
+  _overflow: hidden;
+  _overflow-y: visible;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
-  margin-left: 30px;
-  margin-top: 100px;
-  max-width: 60%;
-  padding-left: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   vertical-align: top;
 }
+@media only screen and (max-width: 1042px) {
+  /* line 158, ../sass/layout/_layout.scss */
+  .contact-box--content {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media only screen and (max-width: 865px) {
+  /* line 158, ../sass/layout/_layout.scss */
+  .contact-box--content {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+}
+@media only screen and (max-width: 710px) {
+  /* line 158, ../sass/layout/_layout.scss */
+  .contact-box--content {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+}
 
-/* line 134, ../sass/layout/_layout.scss */
+/* line 185, ../sass/layout/_layout.scss */
 .contact-box--heading {
   font-size: 300%;
 }
+@media only screen and (max-width: 945px) {
+  /* line 185, ../sass/layout/_layout.scss */
+  .contact-box--heading {
+    font-size: 220%;
+  }
+}
 
-/* line 138, ../sass/layout/_layout.scss */
+/* line 193, ../sass/layout/_layout.scss */
 .contact-box--lead {
   margin-bottom: 20px;
   font-size: 160%;
 }
+@media only screen and (max-width: 945px) {
+  /* line 193, ../sass/layout/_layout.scss */
+  .contact-box--lead {
+    font-size: 130%;
+  }
+}
 
-/* line 144, ../sass/layout/_layout.scss */
+/* line 203, ../sass/layout/_layout.scss */
 .contact-box--text {
   margin-bottom: 30px;
   font-family: "Source Sans Pro Light";
   font-size: 130%;
 }
+@media only screen and (max-width: 945px) {
+  /* line 203, ../sass/layout/_layout.scss */
+  .contact-box--text {
+    font-size: 110%;
+  }
+}
+
+@media only screen and (max-width: 945px) {
+  /* line 214, ../sass/layout/_layout.scss */
+  .contact-box--link {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    font-size: 160%;
+  }
+}
 
 /* Secondary content
    ========================================================================== */
-/* line 160, ../sass/layout/_layout.scss */
+/* line 232, ../sass/layout/_layout.scss */
 .secondary-content {
   clear: both;
   *position: relative;
@@ -1027,10 +1205,17 @@ figcaption {
 .secondary-content:after {
   clear: both;
 }
+@media only screen and (max-width: 865px) {
+  /* line 232, ../sass/layout/_layout.scss */
+  .secondary-content {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
 
 /* Focus boxes
    ========================================================================== */
-/* line 175, ../sass/layout/_layout.scss */
+/* line 252, ../sass/layout/_layout.scss */
 .focus-box--first {
   float: left;
   width: 33.33333%;
@@ -1049,7 +1234,7 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 179, ../sass/layout/_layout.scss */
+/* line 256, ../sass/layout/_layout.scss */
 .focus-box--second {
   float: left;
   width: 33.33333%;
@@ -1068,7 +1253,7 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 183, ../sass/layout/_layout.scss */
+/* line 260, ../sass/layout/_layout.scss */
 .focus-box--third {
   float: right;
   width: 33.33333%;
@@ -1087,29 +1272,88 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 189, ../sass/layout/_layout.scss */
+/* line 266, ../sass/layout/_layout.scss */
 .focus-box--first,
 .focus-box--second,
 .focus-box--third {
   padding-right: 60px;
   padding-left: 0;
 }
+@media only screen and (max-width: 865px) {
+  /* line 266, ../sass/layout/_layout.scss */
+  .focus-box--first,
+  .focus-box--second,
+  .focus-box--third {
+    padding-right: 20px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 266, ../sass/layout/_layout.scss */
+  .focus-box--first,
+  .focus-box--second,
+  .focus-box--third {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
 
-/* line 194, ../sass/layout/_layout.scss */
+@media only screen and (max-width: 480px) {
+  /* line 281, ../sass/layout/_layout.scss */
+  .focus-box--first,
+  .focus-box--second {
+    background: url("/images/dot-small.png") 0 bottom repeat-x;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 289, ../sass/layout/_layout.scss */
 .focus-box--content {
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 945px) {
+  /* line 293, ../sass/layout/_layout.scss */
+  .focus-box--link {
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    font-size: 110%;
+  }
+}
+
 /* Prices
    ========================================================================== */
-/* line 207, ../sass/layout/_layout.scss */
+/* line 311, ../sass/layout/_layout.scss */
 .prices {
   margin-bottom: 70px;
   padding-bottom: 70px;
   background: url("/images/dot-large.png") 0 bottom repeat-x;
 }
+@media only screen and (max-width: 865px) {
+  /* line 311, ../sass/layout/_layout.scss */
+  .prices {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
 
-/* line 216, ../sass/layout/_layout.scss */
+/* line 325, ../sass/layout/_layout.scss */
 .prices--inner {
   *position: relative;
   *zoom: 1;
@@ -1124,13 +1368,19 @@ figcaption {
 .prices--inner:after {
   clear: both;
 }
+@media only screen and (max-width: 480px) {
+  /* line 325, ../sass/layout/_layout.scss */
+  .prices--inner {
+    background: none;
+  }
+}
 
-/* line 222, ../sass/layout/_layout.scss */
+/* line 335, ../sass/layout/_layout.scss */
 .prices--heading {
   font-size: 220%;
 }
 
-/* line 226, ../sass/layout/_layout.scss */
+/* line 339, ../sass/layout/_layout.scss */
 .prices--content {
   float: left;
   width: 58.33333%;
@@ -1150,10 +1400,31 @@ figcaption {
   padding-left: 0;
   padding-right: 0;
 }
+@media only screen and (max-width: 480px) {
+  /* line 339, ../sass/layout/_layout.scss */
+  .prices--content {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
 
 /* Info
    ========================================================================== */
-/* line 235, ../sass/layout/_layout.scss */
+/* line 353, ../sass/layout/_layout.scss */
 .info {
   *position: relative;
   *zoom: 1;
@@ -1170,13 +1441,20 @@ figcaption {
 .info:after {
   clear: both;
 }
+@media only screen and (max-width: 865px) {
+  /* line 353, ../sass/layout/_layout.scss */
+  .info {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
 
-/* line 245, ../sass/layout/_layout.scss */
+/* line 368, ../sass/layout/_layout.scss */
 .info--heading {
   font-size: 220%;
 }
 
-/* line 249, ../sass/layout/_layout.scss */
+/* line 372, ../sass/layout/_layout.scss */
 .info--content-primary {
   float: left;
   width: 50%;
@@ -1197,16 +1475,38 @@ figcaption {
   padding-right: 0;
   padding-right: 50px;
 }
-/* line 255, ../sass/layout/_layout.scss */
+/* line 378, ../sass/layout/_layout.scss */
 .info--content-primary .info--list {
   margin-bottom: 30px;
 }
-/* line 259, ../sass/layout/_layout.scss */
+/* line 382, ../sass/layout/_layout.scss */
 .info--content-primary li {
   list-style: disc;
 }
+@media only screen and (max-width: 480px) {
+  /* line 372, ../sass/layout/_layout.scss */
+  .info--content-primary {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    margin-bottom: 30px;
+  }
+}
 
-/* line 264, ../sass/layout/_layout.scss */
+/* line 394, ../sass/layout/_layout.scss */
 .info--content-secondary {
   float: right;
   width: 50%;
@@ -1226,15 +1526,36 @@ figcaption {
   padding-left: 0;
   padding-right: 0;
 }
+@media only screen and (max-width: 480px) {
+  /* line 394, ../sass/layout/_layout.scss */
+  .info--content-secondary {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
 
-/* line 269, ../sass/layout/_layout.scss */
+/* line 404, ../sass/layout/_layout.scss */
 .info--emphasized {
   margin-bottom: 30px;
 }
 
 /* Footer
    ========================================================================== */
-/* line 284, ../sass/layout/_layout.scss */
+/* line 414, ../sass/layout/_layout.scss */
 .footer {
   *position: relative;
   *zoom: 1;
@@ -1249,15 +1570,22 @@ figcaption {
 .footer:after {
   clear: both;
 }
+@media only screen and (max-width: 865px) {
+  /* line 414, ../sass/layout/_layout.scss */
+  .footer {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
 
-/* line 291, ../sass/layout/_layout.scss */
+/* line 426, ../sass/layout/_layout.scss */
 .footer--lead {
   background: url("/images/dot-small.png") 0 bottom repeat-x;
   margin-bottom: 30px;
   padding-bottom: 10px;
 }
 
-/* line 298, ../sass/layout/_layout.scss */
+/* line 433, ../sass/layout/_layout.scss */
 .footer--content-primary {
   float: left;
   width: 50%;
@@ -1278,8 +1606,32 @@ figcaption {
   padding-right: 0;
   padding-right: 50px;
 }
+@media only screen and (max-width: 480px) {
+  /* line 433, ../sass/layout/_layout.scss */
+  .footer--content-primary {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+    background: url("/images/dot-small.png") 0 bottom repeat-x;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+}
 
-/* line 305, ../sass/layout/_layout.scss */
+/* line 449, ../sass/layout/_layout.scss */
 .footer--content-secondary {
   float: right;
   width: 50%;
@@ -1299,17 +1651,45 @@ figcaption {
   padding-left: 0;
   padding-right: 0;
 }
+@media only screen and (max-width: 480px) {
+  /* line 449, ../sass/layout/_layout.scss */
+  .footer--content-secondary {
+    clear: left;
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    *behavior: url("/scripts/boxsizing.htc");
+    _display: inline;
+    _overflow: hidden;
+    _overflow-y: visible;
+  }
+}
 
-/* line 310, ../sass/layout/_layout.scss */
+/* line 459, ../sass/layout/_layout.scss */
 .footer--map {
   margin-bottom: 30px;
 }
 
 /* Contact form
    ========================================================================== */
-/* line 318, ../sass/layout/_layout.scss */
+/* line 467, ../sass/layout/_layout.scss */
 .contact-form--button {
   float: right;
+}
+@media only screen and (max-width: 480px) {
+  /* line 467, ../sass/layout/_layout.scss */
+  .contact-form--button {
+    float: none;
+    width: 100%;
+  }
 }
 
 /**

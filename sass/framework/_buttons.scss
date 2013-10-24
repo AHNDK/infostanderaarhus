@@ -27,6 +27,11 @@
 
     color: transparentize($white, .5);
   }
+
+  @include last-breakpoint() {
+    display: block;
+    text-align: center;
+  }
 }
 
 %button-large {

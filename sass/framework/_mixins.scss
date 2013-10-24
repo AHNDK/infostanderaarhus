@@ -5,46 +5,37 @@
  */
 
 
+/* Breakpoints
+   ========================================================================== */
+
+$first-breakpoint:                1042px;
+$second-breakpoint:               945px;
+$third-breakpoint:                865px;
+$fourth-breakpoint:               710px;
+$last-breakpoint:                 480px;
 
 /* Media query
    ========================================================================== */
 
 @mixin respond-to($media) {
-	// Sizes
-	@if $media == small {
-		@media only screen and (max-width: $breakpoint-small) { @content; }
-	}
-
-	@else if $media == small-medium {
-		@media only screen and (max-width: $breakpoint-medium) { @content; }
-	}
-
-  @if $media == small-medium-low {
-    @media only screen and (max-height: $breakpoint-low) and (max-width: $breakpoint-medium) { @content; }
+  @if $media == first-breakpoint {
+    @media only screen and (max-width: $first-breakpoint) { @content; }
   }
 
-	@else if $media == medium {
-		@media only screen and (min-width: $breakpoint-small + 1) and (max-width: $breakpoint-medium) { @content; }
-	}
-
-	@else if $media == medium-large {
-		@media only screen and (min-width: $breakpoint-small + 1) and (max-width: $breakpoint-large) { @content; }
-	}
-
-	@else if $media == large {
-		@media only screen and (min-width: $breakpoint-medium + 1) and (max-width: $breakpoint-large) { @content; }
-	}
-
-  @else if $media == max-x-large {
-    @media only screen and (max-width: $breakpoint-x-large + 1) { @content; }
+  @else if $media == second-breakpoint {
+    @media only screen and (max-width: $second-breakpoint) { @content; }
   }
 
-	@else if $media == x-large {
-		@media only screen and (min-width: $breakpoint-x-large + 1) { @content; }
-	}
+  @else if $media == third-breakpoint {
+    @media only screen and (max-width: $third-breakpoint) { @content; }
+  }
 
-  @else if $media == large-x-large {
-    @media only screen and (min-width: $breakpoint-medium + 1) { @content; }
+  @else if $media == fourth-breakpoint {
+    @media only screen and (max-width: $fourth-breakpoint) { @content; }
+  }
+
+  @else if $media == last-breakpoint {
+    @media only screen and (max-width: $last-breakpoint) { @content; }
   }
 }
 
@@ -52,38 +43,22 @@
 /* Breakpoints
    ========================================================================== */
 
-@mixin small {
-  @include respond-to(small) { @content; }
+@mixin first-breakpoint {
+  @include respond-to(first-breakpoint) { @content; }
 }
 
-@mixin small-medium {
-  @include respond-to(small-medium) { @content; }
+@mixin second-breakpoint {
+  @include respond-to(second-breakpoint) { @content; }
 }
 
-@mixin small-medium-low {
-  @include respond-to(small-medium-low) { @content; }
+@mixin third-breakpoint {
+  @include respond-to(third-breakpoint) { @content; }
 }
 
-@mixin medium {
-  @include respond-to(medium) { @content; }
+@mixin fourth-breakpoint {
+  @include respond-to(fourth-breakpoint) { @content; }
 }
 
-@mixin medium-large {
-  @include respond-to(medium-large) { @content; }
-}
-
-@mixin large {
-  @include respond-to(large) { @content; }
-}
-
-@mixin max-x-large {
-  @include respond-to(max-x-large) { @content; }
-}
-
-@mixin x-large {
-  @include respond-to(x-large) { @content; }
-}
-
-@mixin large-x-large {
-  @include respond-to(large-x-large) { @content; }
+@mixin last-breakpoint {
+  @include respond-to(last-breakpoint) { @content; }
 }

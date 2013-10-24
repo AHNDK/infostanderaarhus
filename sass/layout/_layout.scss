@@ -40,9 +40,10 @@ figcaption {
 
 
 .header {
-  @include zen-grid-item(12, 1);
-
   background: transparentize($white, .25) url('/images/header-colors.png') left bottom repeat-x;
+
+  @include zen-grid-item(12, 1);
+  @include background-size(100% auto);
 }
 
 .header--inner {
@@ -51,11 +52,30 @@ figcaption {
   min-height: 80px;
 }
 
-.logo {
+.logo--link {
   @include zen-grid-item(6, 1);
   @include zen-nested-container();
 
   margin-top: 15px;
+
+  @include third-breakpoint() {
+    @include zen-grid-item(10, 1);
+    @include zen-nested-container();
+  }
+
+  @include last-breakpoint() {
+    @include zen-grid-item(12, 1);
+
+    margin-top: 22px;
+  }
+}
+
+.logo {
+  max-width: 325px;
+
+  @include last-breakpoint() {
+    max-width: 100%;
+  }
 }
 
 .navigation {
@@ -89,6 +109,10 @@ figcaption {
   a:focus {
     color: $link-color;
   }
+
+  @include third-breakpoint() {
+    display: none;
+  }
 }
 
 
@@ -97,10 +121,12 @@ figcaption {
 
 .primary-content {
   @include zen-clear(both);
+  @include zen-grid-container();
   @include background-size(cover);
 
   border-bottom: 6px solid $gray;
   margin-bottom: 70px;
+  position: relative;
 
   background-image: url('/images/header-background.jpg');
   background-repeat: no-repeat;
@@ -111,8 +137,18 @@ figcaption {
 }
 
 .primary-content--image {
+  @include zen-grid-item(5, 1);
+
+  bottom: 0;
   display: inline-block;
   margin-top: 50px;
+  max-width: 450px;
+  padding-right: 50px;
+  position: absolute;
+
+  @include fourth-breakpoint() {
+    display: none;
+  }
 }
 
 
@@ -120,25 +156,48 @@ figcaption {
    ========================================================================== */
 
 .contact-box--content {
+  @include zen-grid-item(7, 1, right);
   @include box-sizing(border-box);
 
   display: inline-block;
-  margin-left: 30px;
-  margin-top: 100px;
-  max-width: 60%;
-  padding-left: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 
   vertical-align: top;
+
+  @include first-breakpoint() {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  @include third-breakpoint() {
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  @include fourth-breakpoint() {
+    @include zen-grid-item(12, 1);
+
+    background-color: transparentize($white, .5);
+  }
 }
 
 .contact-box--heading {
   font-size: $font-size-giga;
+
+  @include second-breakpoint() {
+    font-size: $font-size-mega;
+  }
 }
 
 .contact-box--lead {
   margin-bottom: 20px;
 
   font-size: $font-size-larger;
+
+  @include second-breakpoint() {
+    font-size: $font-size-large;
+  }
 }
 
 .contact-box--text {
@@ -146,11 +205,24 @@ figcaption {
 
   font-family: "Source Sans Pro Light";
   font-size: $font-size-large;
+
+  @include second-breakpoint() {
+    font-size: $font-size-medium;
+  }
 }
 
 .contact-box--link {
   @extend %action-button;
   @extend %button-large;
+
+  @include second-breakpoint() {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+
+    font-size: $font-size-larger;
+  }
 }
 
 
@@ -166,6 +238,11 @@ figcaption {
   padding-bottom: 70px;
 
   background: $border-dottet-large;
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 
@@ -189,6 +266,24 @@ figcaption {
 .focus-box--third {
   padding-right: 60px;
   padding-left: 0;
+
+  @include third-breakpoint() {
+    padding-right: 20px;
+  }
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
+}
+
+.focus-box--first,
+.focus-box--second {
+  @include last-breakpoint() {
+    background: $border-dottet-small;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 .focus-box--content {
@@ -198,6 +293,15 @@ figcaption {
 .focus-box--link {
   @extend %link-button;
   @extend %button-small;
+
+  @include second-breakpoint() {
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+
+    font-size: $font-size-medium;
+  }
 }
 
 
@@ -211,12 +315,21 @@ figcaption {
   padding-bottom: 70px;
 
   background: $border-dottet-large;
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 .prices--inner {
   @include zen-grid-container();
 
   background: url('/images/wrench.png') right top no-repeat;
+
+  @include last-breakpoint() {
+    background: none;
+  }
 }
 
 .prices--heading {
@@ -226,6 +339,11 @@ figcaption {
 .prices--content {
   @include zen-grid-item(7, 1);
   @include zen-nested-container();
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
 }
 
 
@@ -240,6 +358,11 @@ figcaption {
   padding-bottom: 70px;
 
   background: $border-dottet-large;
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 .info--heading {
@@ -259,22 +382,29 @@ figcaption {
   li {
     list-style: disc;
   }
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+
+    margin-bottom: 30px;
+  }
 }
 
 .info--content-secondary {
   @include zen-grid-item(6, 1, right);
   @include zen-nested-container();
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
 }
 
 .info--emphasized {
   @extend strong;
 
   margin-bottom: 30px;
-}
-
-.info--link {
-  @extend %action-button;
-  @extend %button-small;
 }
 
 
@@ -286,6 +416,11 @@ figcaption {
   @extend %layout-wrapper;
 
   margin-bottom: 70px;
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
 }
 
 .footer--lead {
@@ -300,11 +435,25 @@ figcaption {
   @include zen-nested-container();
 
   padding-right: 50px;
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+
+    background: $border-dottet-small;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .footer--content-secondary {
   @include zen-grid-item(6, 1, right);
   @include zen-nested-container();
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
 }
 
 .footer--map {
@@ -320,4 +469,9 @@ figcaption {
   @extend %button-small;
 
   float: right;
+
+  @include last-breakpoint() {
+    float: none;
+    width: 100%;
+  }
 }
