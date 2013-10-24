@@ -7,6 +7,8 @@
 
 body {
   @include zen-grid-container();
+
+  padding-top: 75px;
 }
 
 h1,
@@ -32,6 +34,15 @@ figcaption {
 }
 
 
+.top-link {
+  bottom: 100px;
+  position: fixed;
+  right: 100px;
+  z-index: 99;
+
+  font-size: 500%;
+}
+
 %layout-wrapper {
   max-width: 1200px;
   margin-right: auto;
@@ -44,6 +55,10 @@ figcaption {
 
   @include zen-grid-item(12, 1);
   @include background-size(100% auto);
+
+  position: fixed;
+  z-index: 99;
+  top: 0;
 }
 
 .header--inner {
@@ -451,7 +466,7 @@ figcaption {
   @include zen-grid-container();
   @extend %layout-wrapper;
 
-  margin-bottom: 70px;
+  margin-bottom: 350px;
 
   @include third-breakpoint() {
     margin-right: 20px;

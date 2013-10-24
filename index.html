@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/infostanderaarhus.styles.css">
   <link rel="stylesheet" href="/css/infostander-icons.css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="/scripts/scrolling.min.js"></script>
 </head>
-<body>
+<body id="top">
 <header class="header" role="banner">
+  <a href="#top" class="top-link"><i class="icon-arrow-up"></i></a>
   <div class="header--inner">
     <a href="/" class="logo--link"><img src="../images/logo.png" alt="Infostander Aarhus logo" class="logo"></a>
     <nav class="navigation">
-      <a href="/" title="Forsiden">Forsiden</a>
-      <a href="#galleri" title="Galleri">Galleri</a>
       <a href="#info" title="Info">Info</a>
       <a href="#priser" title="Priser">Priser</a>
       <a href="#kontakt" title="Kontakt">Kontakt</a>
@@ -60,7 +61,7 @@
 <div class="prices">
   <div class="prices--inner">
     <div class="prices--content">
-      <h3 class="prices--heading">Priser og tekniske informationer</h3>
+      <h3  id="priser" class="prices--heading">Priser og tekniske informationer</h3>
       <p>
         Det er muligt at købe visning af et spot døgnet rundt i enten 7 eller 14 dage.<br>
         <strong>7 dage:</strong> 8.000,-<br>
@@ -80,7 +81,7 @@
 </div>
 <div class="info">
   <div class="info--content-primary">
-    <h3 class="info--heading">Info om annoncering</h3>
+    <h3 id="info" class="info--heading">Info om annoncering</h3>
     <p>
       Med annoncer på Aarhus Kommunes digitale infostandere kommer du i kontakt med titusindvis af potentielle
       besøgende. Vi tager os af opsætning af grafik, vejleder dig i processen og sørger for eksponeringen.
@@ -138,7 +139,7 @@
     <strong>Telefon:</strong> +45 8940 5000
   </section>
   <section class="footer--content-secondary">
-    <h2 class="footer--heading">Kontakt</h2>
+    <h2 id="kontakt" class="footer--heading">Kontakt</h2>
     <div class="footer--lead">
       <p>
         Ring eller skriv og book en tid til annoncering – så er du sikker på at få den bedste eksponering af dit
