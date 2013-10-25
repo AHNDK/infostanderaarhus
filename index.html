@@ -153,9 +153,9 @@
     </div>
     <form action="contact_form.php" method="post" id="kontakt">
       <label for="name">Navn:</label>
-      <input type="text" id="name" name="name" class="contact-form--name" placeholder="Indtast dit navn">
+      <input type="text" id="name" name="name" class="contact-form--name" placeholder="Indtast dit navn" required>
       <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" class="contact-form--email" placeholder="Indtast din e-mail-adresse">
+      <input type="email" id="email" name="email" class="contact-form--email" placeholder="Indtast din e-mail-adresse" required>
       <button class="contact-form--button" type="submit">
         <i class="icon-arrow-right"></i>
         Kontakt mig
@@ -170,8 +170,8 @@
 $(document).ready(function() { 
     var options = { 
         target:        '.footer--content-secondary',   // target element(s) to be updated with server response 
-        beforeSubmit:  showRequest,  // pre-submit callback
-        success:       showResponse  // post-submit callback
+        //beforeSubmit:  showRequest,  // pre-submit callback
+        //success:       showResponse  // post-submit callback
  
         // other available options: 
         //url:       url         // override for form's 'action' attribute 
