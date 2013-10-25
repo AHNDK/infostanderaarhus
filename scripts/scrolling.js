@@ -24,13 +24,13 @@ $(document).ready(function() {
       $('body').addClass('js-scrolling');
 
       // Show arrow link
-      $(topLink).show('fast');
+      $(topLink).show();
     } else {
       // Remove class to body
       $('body').removeClass('js-scrolling');
 
       // Hide arrow link
-      $(topLink).hide('fast');
+      $(topLink).hide();
     }
   });
 });

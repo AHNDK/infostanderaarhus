@@ -45,12 +45,8 @@ figcaption {
   font-size: 500%;
 
   @include last-breakpoint() {
-    @include border-radius(100%);
-
     bottom: -20px;
     right: -25px;
-
-    background-color: $white;
   }
 }
 
