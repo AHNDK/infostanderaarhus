@@ -4,7 +4,7 @@ $name = strip_tags($_POST["name"]);
 $email = strip_tags($_POST["email"]);
 $spam_check = $_POST["message"];
 
-$recipient = "rfrey@aarhus.dk"; //Hvem skal have mailen?
+$recipient = "infostander@aarhus.dk"; //Hvem skal have mailen?
 
 if ( (!empty($name) && !empty($email)) && empty($spam_check) )  {
   $subject = "Jeg vil gerne kontaktes vedr. Infostander Aarhus"; //Emnefeltet til emailen.
