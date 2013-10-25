@@ -1,6 +1,6 @@
 <?php
 
-$name = strip_tags($_POST["name"];
+$name = strip_tags($_POST["name"]);
 $email = strip_tags($_POST["email"]);
 
 $recipient = "rfrey@aarhus.dk"; //Hvem skal have mailen?
