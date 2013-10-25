@@ -1,11 +1,11 @@
 <?php
 
-$name = $_POST["name"];
-$email = $_POST["email"];
+$name = strip_tags($_POST["name"]);
+$email = strip_tags($_POST["email"]);
 
 $recipient = "rfrey@aarhus.dk"; //Hvem skal have mailen?
 
-if (isset($name) && isset($email)) {
+if (!empty($name) && !empty($email)) {
   $subject = "Jeg vil gerne kontaktes vedr. Infostander Aarhus"; //Emnefeltet til emailen.
 
   $message = "<h1>Jeg vil gerne kontaktes</h1>";

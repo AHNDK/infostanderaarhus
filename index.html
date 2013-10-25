@@ -159,9 +159,9 @@
     </div>
     <form action="contact_form.php" method="post" id="kontakt">
       <label for="name">Navn:</label>
-      <input type="text" id="name" name="name" class="contact-form--name" placeholder="Indtast dit navn">
+      <input type="text" id="name" name="name" class="contact-form--name" placeholder="Indtast dit navn" required>
       <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" class="contact-form--email" placeholder="Indtast din e-mail-adresse">
+      <input type="email" id="email" name="email" class="contact-form--email" placeholder="Indtast din e-mail-adresse" required>
       <button class="contact-form--button" type="submit">
         <i class="icon-arrow-right"></i>
         Kontakt mig
@@ -176,8 +176,8 @@
 $(document).ready(function() { 
     var options = { 
         target:        '.footer--content-secondary',   // target element(s) to be updated with server response 
-        beforeSubmit:  showRequest,  // pre-submit callback
-        success:       showResponse  // post-submit callback
+        //beforeSubmit:  showRequest,  // pre-submit callback
+        //success:       showResponse  // post-submit callback
  
         // other available options: 
         //url:       url         // override for form's 'action' attribute 
@@ -204,7 +204,7 @@ function showRequest(formData, jqForm, options) {
     // DOM element for the form do this: 
     // var formElement = jqForm[0]; 
  
-    alert('About to submit: \n\n' + queryString);
+    //alert('About to submit: \n\n' + queryString);
  
     // here we could return false to prevent the form from being submitted; 
     // returning anything other than false will allow the form submit to continue 
@@ -224,8 +224,8 @@ function showResponse(responseText, statusText, xhr, $form)  {
     // property set to 'json' then the first argument to the success callback 
     // is the json data object returned by the server 
  
-    alert('status: ' + statusText + '\n\nresponseText: \n' + responseText + 
-        '\n\nThe output div should have already been updated with the responseText.');
+    //alert('status: ' + statusText + '\n\nresponseText: \n' + responseText + 
+    //    '\n\nThe output div should have already been updated with the responseText.');
 } 
 </script> 
 </body>
