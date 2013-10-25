@@ -819,12 +819,12 @@ body {
   *zoom: 1;
   padding-top: 75px;
 }
-/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 body:before, body:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 body:after {
   clear: both;
 }
@@ -1074,12 +1074,12 @@ figcaption {
   background-image: url("/images/header-background.jpg");
   background-repeat: no-repeat;
 }
-/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .primary-content:before, .primary-content:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .primary-content:after {
   clear: both;
 }
@@ -1257,12 +1257,12 @@ figcaption {
   padding-bottom: 70px;
   background: url("/images/dot-large.png") 0 bottom repeat-x;
 }
-/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .secondary-content:before, .secondary-content:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .secondary-content:after {
   clear: both;
 }
@@ -1436,12 +1436,12 @@ figcaption {
   *zoom: 1;
   background: url("/images/wrench.png") right top no-repeat;
 }
-/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .prices--inner:before, .prices--inner:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .prices--inner:after {
   clear: both;
 }
@@ -1511,12 +1511,12 @@ figcaption {
   padding-bottom: 70px;
   background: url("/images/dot-large.png") 0 bottom repeat-x;
 }
-/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .info:before, .info:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .info:after {
   clear: both;
 }
@@ -1651,12 +1651,12 @@ figcaption {
   *zoom: 1;
   margin-bottom: 350px;
 }
-/* line 46, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 46, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .footer:before, .footer:after {
   content: "";
   display: table;
 }
-/* line 50, ../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
+/* line 50, ../../../../../../../Library/Ruby/Gems/1.8/gems/zen-grids-1.4/stylesheets/zen/_grids.scss */
 .footer:after {
   clear: both;
 }
@@ -1784,6 +1784,30 @@ figcaption {
     float: none;
     width: 100%;
   }
+}
+
+/* Error message
+   ========================================================================== */
+/* line 562, ../sass/layout/_layout.scss */
+.message--success, .message--error {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 15px;
+  color: white;
+}
+
+/* line 571, ../sass/layout/_layout.scss */
+.message--success {
+  background-color: #59a214;
+}
+
+/* line 577, ../sass/layout/_layout.scss */
+.message--error {
+  background-color: #a32e10;
 }
 
 /**
