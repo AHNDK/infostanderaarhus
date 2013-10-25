@@ -45,8 +45,8 @@ figcaption {
   font-size: 500%;
 
   @include last-breakpoint() {
-    bottom: -10px;
-    right: -15px;
+    bottom: -20px;
+    right: -25px;
   }
 }
 
