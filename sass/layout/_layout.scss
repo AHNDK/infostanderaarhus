@@ -535,6 +535,7 @@ figcaption {
 .contact-form--button {
   @extend %action-button;
   @extend %button-small;
+  @extend .icon-arrow-right;
 
   float: right;
 

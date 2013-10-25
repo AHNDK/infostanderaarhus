@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/css/infostanderaarhus.styles.css">
   <link rel="stylesheet" href="/css/infostander-icons.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="http://malsup.github.com/jquery.form.js"></script>
   <script src="/scripts/scrolling.min.js"></script>
 </head>
 <body id="top">
@@ -150,17 +151,76 @@
         Udfyld formularen og vi vender tilbage til dig hurtigst muligt!
       </p>
     </div>
-    <form>
+    <form action="contact_form.php" method="post" id="contactForm">
       <label for="name">Navn:</label>
-      <input type="text" id="name" class="contact-form--name">
+      <input type="text" id="name" name="name" class="contact-form--name" placeholder="Skriv dit navn her">
       <label for="email">E-mail:</label>
-      <input type="email" id="email" class="contact-form--email">
-      <button class="contact-form--button">
+      <input type="email" id="email" name="email" class="contact-form--email" placeholder="Skriv din e-mail adresse her">
+      <button class="contact-form--button" type="submit">
         <i class="icon-arrow-right"></i>
         Kontakt mig
       </button>
     </form>
   </section>
 </footer>
+
+<script> 
+// wait for the DOM to be loaded
+// prepare the form when the DOM is ready 
+$(document).ready(function() { 
+    var options = { 
+        target:        '.footer--content-secondary',   // target element(s) to be updated with server response 
+        beforeSubmit:  showRequest,  // pre-submit callback
+        success:       showResponse  // post-submit callback
+ 
+        // other available options: 
+        //url:       url         // override for form's 'action' attribute 
+        //type:      type        // 'get' or 'post', override for form's 'method' attribute 
+        //dataType:  null        // 'xml', 'script', or 'json' (expected server response type) 
+        //clearForm: true        // clear all form fields after successful submit 
+        //resetForm: true        // reset the form after successful submit 
+ 
+        // $.ajax options can be used here too, for example: 
+        //timeout:   3000 
+    }; 
+ 
+    // bind form using 'ajaxForm' 
+    $('#contactForm').ajaxForm(options);
+}); 
+ 
+// pre-submit callback 
+function showRequest(formData, jqForm, options) { 
+    // formData is an array; here we use $.param to convert it to a string to display it 
+    // but the form plugin does this for you automatically when it submits the data 
+    var queryString = $.param(formData);
+ 
+    // jqForm is a jQuery object encapsulating the form element.  To access the 
+    // DOM element for the form do this: 
+    // var formElement = jqForm[0]; 
+ 
+    alert('About to submit: \n\n' + queryString);
+ 
+    // here we could return false to prevent the form from being submitted; 
+    // returning anything other than false will allow the form submit to continue 
+    return true; 
+} 
+ 
+// post-submit callback 
+function showResponse(responseText, statusText, xhr, $form)  { 
+    // for normal html responses, the first argument to the success callback 
+    // is the XMLHttpRequest object's responseText property 
+ 
+    // if the ajaxForm method was passed an Options Object with the dataType 
+    // property set to 'xml' then the first argument to the success callback 
+    // is the XMLHttpRequest object's responseXML property 
+ 
+    // if the ajaxForm method was passed an Options Object with the dataType 
+    // property set to 'json' then the first argument to the success callback 
+    // is the json data object returned by the server 
+ 
+    alert('status: ' + statusText + '\n\nresponseText: \n' + responseText + 
+        '\n\nThe output div should have already been updated with the responseText.');
+} 
+</script> 
 </body>
 </html>
