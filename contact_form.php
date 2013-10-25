@@ -23,17 +23,17 @@ if (!empty($name) && !empty($email)) {
   $header .= "reply-to:".$email;
 
   if (mail($recipient, $subject, $message, $header)) {
-    print "<h1>Vi takker for din henvendelse</h1>";
+    print '<div class="message--success"><h1>Vi takker for din henvendelse</h1>';
     print "<p>Du h&oslash;rer fra os hurtigst muligt</p>";
     print "<p>Venlig hilsen</p>";
-    print "<p>Infostander Aarhus</p>";
+    print "<p>Infostander Aarhus</p></div>";
   } else {
-    print "<h1>&Oslash;v! vores server meldte fejl.</h1>";
+    print '<div class="message--error"><h1>&Oslash;v! vores server meldte fejl.</h1>';
     print "<p>Det lykkedes ikke for vores server at sende os en notifikation om din henvendelse.</p>";
     print "<p>Det er vi rigtig kede af,</p>";
-    print "<p>kontakt os venligst direkte p&aring; email: ". $recipient . " s&aring; kan vi b&aring;de kigge p&aring; fejlen og hj&aelig;lpe dig.</p>";
+    print "<p>kontakt os venligst direkte p&aring; email: ". $recipient . " s&aring; kan vi b&aring;de kigge p&aring; fejlen og hj&aelig;lpe dig.</p></div>";
   }
 
 } else {
-  print "Vi kunne ikke behandle din henvendelse da formularen ikke blev udfyldt.";
+  print '<div class="message--error">Vi kunne ikke behandle din henvendelse da formularen ikke blev udfyldt.</div>';
 }
