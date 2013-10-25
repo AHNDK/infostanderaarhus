@@ -2,10 +2,11 @@
 
 $name = strip_tags($_POST["name"]);
 $email = strip_tags($_POST["email"]);
+$spam_check = $_POST["message"];
 
 $recipient = "rfrey@aarhus.dk"; //Hvem skal have mailen?
 
-if (!empty($name) && !empty($email)) {
+if ( (!empty($name) && !empty($email)) && empty($spam_check) )  {
   $subject = "Jeg vil gerne kontaktes vedr. Infostander Aarhus"; //Emnefeltet til emailen.
 
   $message = "<h1>" . $name . " vil gerne kontaktes</h1>";
@@ -24,9 +25,7 @@ if (!empty($name) && !empty($email)) {
 
   if (mail($recipient, $subject, $message, $header)) {
     print '<div class="message--success"><h1>Vi takker for din henvendelse</h1>';
-    print "<p>Du h&oslash;rer fra os hurtigst muligt</p>";
-    print "<p>Venlig hilsen</p>";
-    print "<p>Infostander Aarhus</p></div>";
+    print "<p>Du h&oslash;rer fra os hurtigst muligt.</p></div>";
   } else {
     print '<div class="message--error"><h1>&Oslash;v! vores server meldte fejl.</h1>';
     print "<p>Det lykkedes ikke for vores server at sende os en notifikation om din henvendelse.</p>";
