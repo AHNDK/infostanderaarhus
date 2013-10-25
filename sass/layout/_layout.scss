@@ -35,18 +35,26 @@ figcaption {
 
 
 .top-link {
-  bottom: 100px;
+  @extend %base-button;
+  @extend %button-smaller;
+  @include border-radius(4px 0 0 4px);
+
+  bottom: 25px;
   position: fixed;
-  right: 100px;
+  right: 0;
   z-index: 99;
 
   display: none;
 
-  font-size: 500%;
+  background-color: $gray-darker;
 
-  @include last-breakpoint() {
-    bottom: -20px;
-    right: -25px;
+  &:focus,
+  &:hover {
+    background-color: lighten($gray-darker, 5%);
+  }
+
+  &:active {
+    background-color: darken($gray-darker, 5%);
   }
 }
 

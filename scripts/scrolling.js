@@ -18,19 +18,14 @@ $(document).ready(function() {
   var topLink = $('.top-link');
 
   // Show or hide top link when scrolling
+  var offset = 220;
+  var duration = 500;
+
   $(window).scroll(function() {
-    if (!$('body').hasClass('js-scrolling') && ($(document).scrollTop() > 250)) {
-      // Add class to body
-      $('body').addClass('js-scrolling');
-
-      // Show arrow link
-      $(topLink).show();
-    } else if (!$('body').hasClass('js-scrolling')) {
-      // Remove class to body
-      $('body').removeClass('js-scrolling');
-
-      // Hide arrow link
-      $(topLink).hide();
+    if ($(this).scrollTop() > offset) {
+      $(topLink).fadeIn(duration);
+    } else {
+      $(topLink).fadeOut(duration);
     }
   });
 });
