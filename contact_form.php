@@ -8,12 +8,14 @@ $recipient = "rfrey@aarhus.dk"; //Hvem skal have mailen?
 if (!empty($name) && !empty($email)) {
   $subject = "Jeg vil gerne kontaktes vedr. Infostander Aarhus"; //Emnefeltet til emailen.
 
-  $message = "<h1>Jeg vil gerne kontaktes</h1>";
-  $message.= "<p>Der er kommet en henvendelse på infostanderaarhus.dk, du bedes kontakte:</p>";
+  $message = "<h1>" . $name . " vil gerne kontaktes</h1>";
+  $message.= "<p>Der er kommet en henvendelse fra " . $name . " på infostanderaarhus.dk, du bedes tage kontakte:</p>";
   $message.= "<ul>";
   $message.= "<li><strong>Navn:</strong> ". $name ."</li>";
   $message.= "<li><strong>Email:</strong> ". $email ."</li>";
   $message.= "</ul>";
+  $message.= "<p>Med venlig hilsen</p>";
+  $message.= "<p>Infostander hjemmesiden.</p>";
 
   $header  = "MIME-Version: 1.0" . "\r\n";
   $header .= "Content-type: text/html; charset=utf-8" . "\r\n";
