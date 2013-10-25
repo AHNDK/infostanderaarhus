@@ -853,15 +853,22 @@ figcaption {
   display: none;
   font-size: 500%;
 }
+@media only screen and (max-width: 480px) {
+  /* line 37, ../sass/layout/_layout.scss */
+  .top-link {
+    bottom: -10px;
+    right: -15px;
+  }
+}
 
-/* line 48, ../sass/layout/_layout.scss */
+/* line 53, ../sass/layout/_layout.scss */
 .header--inner, .primary-content--inner, .secondary-content, .prices, .info, .footer {
   max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 55, ../sass/layout/_layout.scss */
+/* line 60, ../sass/layout/_layout.scss */
 .header {
   background-color: rgba(255, 255, 255, 0.95);
   background-image: url("/images/header-colors.png");
@@ -891,12 +898,12 @@ figcaption {
   top: 0;
 }
 
-/* line 69, ../sass/layout/_layout.scss */
+/* line 74, ../sass/layout/_layout.scss */
 .header--inner {
   min-height: 80px;
 }
 
-/* line 75, ../sass/layout/_layout.scss */
+/* line 80, ../sass/layout/_layout.scss */
 .logo--link {
   float: left;
   width: 50%;
@@ -918,7 +925,7 @@ figcaption {
   margin-top: 15px;
 }
 @media only screen and (max-width: 865px) {
-  /* line 75, ../sass/layout/_layout.scss */
+  /* line 80, ../sass/layout/_layout.scss */
   .logo--link {
     float: left;
     width: 83.33333%;
@@ -940,7 +947,7 @@ figcaption {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 75, ../sass/layout/_layout.scss */
+  /* line 80, ../sass/layout/_layout.scss */
   .logo--link {
     float: left;
     width: 100%;
@@ -961,18 +968,18 @@ figcaption {
   }
 }
 
-/* line 93, ../sass/layout/_layout.scss */
+/* line 98, ../sass/layout/_layout.scss */
 .logo {
   max-width: 325px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 93, ../sass/layout/_layout.scss */
+  /* line 98, ../sass/layout/_layout.scss */
   .logo {
     max-width: 100%;
   }
 }
 
-/* line 101, ../sass/layout/_layout.scss */
+/* line 106, ../sass/layout/_layout.scss */
 .navigation {
   float: right;
   width: 50%;
@@ -997,47 +1004,47 @@ figcaption {
   text-align: right;
   /* Links in navigation */
 }
-/* line 112, ../sass/layout/_layout.scss */
+/* line 117, ../sass/layout/_layout.scss */
 .navigation a {
   margin-left: 50px;
 }
-/* line 116, ../sass/layout/_layout.scss */
+/* line 121, ../sass/layout/_layout.scss */
 .navigation a:link {
   color: gray;
   text-decoration: none;
 }
-/* line 121, ../sass/layout/_layout.scss */
+/* line 126, ../sass/layout/_layout.scss */
 .navigation a:visited {
   color: #404040;
 }
-/* line 125, ../sass/layout/_layout.scss */
+/* line 130, ../sass/layout/_layout.scss */
 .navigation a:hover {
   color: #007aa3;
 }
-/* line 129, ../sass/layout/_layout.scss */
+/* line 134, ../sass/layout/_layout.scss */
 .navigation a:focus {
   color: #0099cc;
 }
 @media only screen and (max-width: 865px) {
-  /* line 101, ../sass/layout/_layout.scss */
+  /* line 106, ../sass/layout/_layout.scss */
   .navigation {
     display: none;
   }
 }
 
-/* line 139, ../sass/layout/_layout.scss */
+/* line 144, ../sass/layout/_layout.scss */
 .js-scrolling .navigation--top {
   display: inline-block;
 }
 
-/* line 144, ../sass/layout/_layout.scss */
+/* line 149, ../sass/layout/_layout.scss */
 .navigation--top {
   display: none;
 }
 
 /* Primary content
    ========================================================================== */
-/* line 152, ../sass/layout/_layout.scss */
+/* line 157, ../sass/layout/_layout.scss */
 .primary-content {
   clear: both;
   *position: relative;
@@ -1062,13 +1069,13 @@ figcaption {
   clear: both;
 }
 @media only screen and (max-width: 710px) {
-  /* line 152, ../sass/layout/_layout.scss */
+  /* line 157, ../sass/layout/_layout.scss */
   .primary-content {
     margin-bottom: 40px;
   }
 }
 
-/* line 173, ../sass/layout/_layout.scss */
+/* line 178, ../sass/layout/_layout.scss */
 .primary-content--image {
   float: left;
   width: 41.66667%;
@@ -1093,7 +1100,7 @@ figcaption {
   position: absolute;
 }
 @media only screen and (max-width: 710px) {
-  /* line 173, ../sass/layout/_layout.scss */
+  /* line 178, ../sass/layout/_layout.scss */
   .primary-content--image {
     display: none;
   }
@@ -1101,7 +1108,7 @@ figcaption {
 
 /* Contact box
    ========================================================================== */
-/* line 192, ../sass/layout/_layout.scss */
+/* line 197, ../sass/layout/_layout.scss */
 .contact-box--content {
   float: right;
   width: 58.33333%;
@@ -1127,21 +1134,21 @@ figcaption {
   vertical-align: top;
 }
 @media only screen and (max-width: 1042px) {
-  /* line 192, ../sass/layout/_layout.scss */
+  /* line 197, ../sass/layout/_layout.scss */
   .contact-box--content {
     padding-top: 65px;
     padding-bottom: 65px;
   }
 }
 @media only screen and (max-width: 865px) {
-  /* line 192, ../sass/layout/_layout.scss */
+  /* line 197, ../sass/layout/_layout.scss */
   .contact-box--content {
     padding-top: 55px;
     padding-left: 35px;
   }
 }
 @media only screen and (max-width: 710px) {
-  /* line 192, ../sass/layout/_layout.scss */
+  /* line 197, ../sass/layout/_layout.scss */
   .contact-box--content {
     float: left;
     width: 100%;
@@ -1164,57 +1171,57 @@ figcaption {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 192, ../sass/layout/_layout.scss */
+  /* line 197, ../sass/layout/_layout.scss */
   .contact-box--content {
     padding-right: 20px;
     padding-left: 20px;
   }
 }
 
-/* line 227, ../sass/layout/_layout.scss */
+/* line 232, ../sass/layout/_layout.scss */
 .contact-box--heading {
   font-size: 300%;
 }
 @media only screen and (max-width: 945px) {
-  /* line 227, ../sass/layout/_layout.scss */
+  /* line 232, ../sass/layout/_layout.scss */
   .contact-box--heading {
     font-size: 220%;
   }
 }
 @media only screen and (max-width: 710px) {
-  /* line 227, ../sass/layout/_layout.scss */
+  /* line 232, ../sass/layout/_layout.scss */
   .contact-box--heading {
     display: none;
   }
 }
 
-/* line 239, ../sass/layout/_layout.scss */
+/* line 244, ../sass/layout/_layout.scss */
 .contact-box--lead {
   margin-bottom: 20px;
   font-size: 160%;
 }
 @media only screen and (max-width: 945px) {
-  /* line 239, ../sass/layout/_layout.scss */
+  /* line 244, ../sass/layout/_layout.scss */
   .contact-box--lead {
     font-size: 130%;
   }
 }
 
-/* line 249, ../sass/layout/_layout.scss */
+/* line 254, ../sass/layout/_layout.scss */
 .contact-box--text {
   margin-bottom: 30px;
   font-family: "Source Sans Pro Light";
   font-size: 130%;
 }
 @media only screen and (max-width: 945px) {
-  /* line 249, ../sass/layout/_layout.scss */
+  /* line 254, ../sass/layout/_layout.scss */
   .contact-box--text {
     font-size: 110%;
   }
 }
 
 @media only screen and (max-width: 945px) {
-  /* line 260, ../sass/layout/_layout.scss */
+  /* line 265, ../sass/layout/_layout.scss */
   .contact-box--link {
     padding-top: 10px;
     padding-right: 30px;
@@ -1226,7 +1233,7 @@ figcaption {
 
 /* Secondary content
    ========================================================================== */
-/* line 278, ../sass/layout/_layout.scss */
+/* line 283, ../sass/layout/_layout.scss */
 .secondary-content {
   clear: both;
   *position: relative;
@@ -1245,14 +1252,14 @@ figcaption {
   clear: both;
 }
 @media only screen and (max-width: 865px) {
-  /* line 278, ../sass/layout/_layout.scss */
+  /* line 283, ../sass/layout/_layout.scss */
   .secondary-content {
     margin-right: 20px;
     margin-left: 20px;
   }
 }
 @media only screen and (max-width: 710px) {
-  /* line 278, ../sass/layout/_layout.scss */
+  /* line 283, ../sass/layout/_layout.scss */
   .secondary-content {
     margin-bottom: 40px;
     padding-bottom: 40px;
@@ -1261,7 +1268,7 @@ figcaption {
 
 /* Focus boxes
    ========================================================================== */
-/* line 303, ../sass/layout/_layout.scss */
+/* line 308, ../sass/layout/_layout.scss */
 .focus-box--first {
   float: left;
   width: 33.33333%;
@@ -1280,7 +1287,7 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 307, ../sass/layout/_layout.scss */
+/* line 312, ../sass/layout/_layout.scss */
 .focus-box--second {
   float: left;
   width: 33.33333%;
@@ -1299,7 +1306,7 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 311, ../sass/layout/_layout.scss */
+/* line 316, ../sass/layout/_layout.scss */
 .focus-box--third {
   float: right;
   width: 33.33333%;
@@ -1318,7 +1325,7 @@ figcaption {
   _overflow-y: visible;
 }
 
-/* line 317, ../sass/layout/_layout.scss */
+/* line 322, ../sass/layout/_layout.scss */
 .focus-box--first,
 .focus-box--second,
 .focus-box--third {
@@ -1326,7 +1333,7 @@ figcaption {
   padding-left: 0;
 }
 @media only screen and (max-width: 865px) {
-  /* line 317, ../sass/layout/_layout.scss */
+  /* line 322, ../sass/layout/_layout.scss */
   .focus-box--first,
   .focus-box--second,
   .focus-box--third {
@@ -1334,7 +1341,7 @@ figcaption {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 317, ../sass/layout/_layout.scss */
+  /* line 322, ../sass/layout/_layout.scss */
   .focus-box--first,
   .focus-box--second,
   .focus-box--third {
@@ -1360,7 +1367,7 @@ figcaption {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 333, ../sass/layout/_layout.scss */
+  /* line 338, ../sass/layout/_layout.scss */
   .focus-box--first,
   .focus-box--second {
     background: url("/images/dot-small.png") 0 bottom repeat-x;
@@ -1369,13 +1376,13 @@ figcaption {
   }
 }
 
-/* line 342, ../sass/layout/_layout.scss */
+/* line 347, ../sass/layout/_layout.scss */
 .focus-box--content {
   margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 945px) {
-  /* line 346, ../sass/layout/_layout.scss */
+  /* line 351, ../sass/layout/_layout.scss */
   .focus-box--link {
     padding-top: 10px;
     padding-right: 25px;
@@ -1387,28 +1394,28 @@ figcaption {
 
 /* Prices
    ========================================================================== */
-/* line 364, ../sass/layout/_layout.scss */
+/* line 369, ../sass/layout/_layout.scss */
 .prices {
   margin-bottom: 70px;
   padding-bottom: 70px;
   background: url("/images/dot-large.png") 0 bottom repeat-x;
 }
 @media only screen and (max-width: 865px) {
-  /* line 364, ../sass/layout/_layout.scss */
+  /* line 369, ../sass/layout/_layout.scss */
   .prices {
     margin-right: 20px;
     margin-left: 20px;
   }
 }
 @media only screen and (max-width: 710px) {
-  /* line 364, ../sass/layout/_layout.scss */
+  /* line 369, ../sass/layout/_layout.scss */
   .prices {
     margin-bottom: 40px;
     padding-bottom: 20px;
   }
 }
 
-/* line 383, ../sass/layout/_layout.scss */
+/* line 388, ../sass/layout/_layout.scss */
 .prices--inner {
   *position: relative;
   *zoom: 1;
@@ -1424,18 +1431,18 @@ figcaption {
   clear: both;
 }
 @media only screen and (max-width: 480px) {
-  /* line 383, ../sass/layout/_layout.scss */
+  /* line 388, ../sass/layout/_layout.scss */
   .prices--inner {
     background: none;
   }
 }
 
-/* line 393, ../sass/layout/_layout.scss */
+/* line 398, ../sass/layout/_layout.scss */
 .prices--heading {
   font-size: 220%;
 }
 
-/* line 397, ../sass/layout/_layout.scss */
+/* line 402, ../sass/layout/_layout.scss */
 .prices--content {
   float: left;
   width: 58.33333%;
@@ -1456,7 +1463,7 @@ figcaption {
   padding-right: 0;
 }
 @media only screen and (max-width: 480px) {
-  /* line 397, ../sass/layout/_layout.scss */
+  /* line 402, ../sass/layout/_layout.scss */
   .prices--content {
     clear: left;
     float: left;
@@ -1481,7 +1488,7 @@ figcaption {
 
 /* Info
    ========================================================================== */
-/* line 412, ../sass/layout/_layout.scss */
+/* line 417, ../sass/layout/_layout.scss */
 .info {
   *position: relative;
   *zoom: 1;
@@ -1499,26 +1506,26 @@ figcaption {
   clear: both;
 }
 @media only screen and (max-width: 865px) {
-  /* line 412, ../sass/layout/_layout.scss */
+  /* line 417, ../sass/layout/_layout.scss */
   .info {
     margin-right: 20px;
     margin-left: 20px;
   }
 }
 @media only screen and (max-width: 710px) {
-  /* line 412, ../sass/layout/_layout.scss */
+  /* line 417, ../sass/layout/_layout.scss */
   .info {
     margin-bottom: 40px;
     padding-bottom: 20px;
   }
 }
 
-/* line 432, ../sass/layout/_layout.scss */
+/* line 437, ../sass/layout/_layout.scss */
 .info--heading {
   font-size: 220%;
 }
 
-/* line 436, ../sass/layout/_layout.scss */
+/* line 441, ../sass/layout/_layout.scss */
 .info--content-primary {
   float: left;
   width: 50%;
@@ -1539,16 +1546,16 @@ figcaption {
   padding-right: 0;
   padding-right: 50px;
 }
-/* line 442, ../sass/layout/_layout.scss */
+/* line 447, ../sass/layout/_layout.scss */
 .info--content-primary .info--list {
   margin-bottom: 30px;
 }
-/* line 446, ../sass/layout/_layout.scss */
+/* line 451, ../sass/layout/_layout.scss */
 .info--content-primary li {
   list-style: disc;
 }
 @media only screen and (max-width: 480px) {
-  /* line 436, ../sass/layout/_layout.scss */
+  /* line 441, ../sass/layout/_layout.scss */
   .info--content-primary {
     clear: left;
     float: left;
@@ -1572,7 +1579,7 @@ figcaption {
   }
 }
 
-/* line 459, ../sass/layout/_layout.scss */
+/* line 464, ../sass/layout/_layout.scss */
 .info--content-secondary {
   float: right;
   width: 50%;
@@ -1593,7 +1600,7 @@ figcaption {
   padding-right: 0;
 }
 @media only screen and (max-width: 480px) {
-  /* line 459, ../sass/layout/_layout.scss */
+  /* line 464, ../sass/layout/_layout.scss */
   .info--content-secondary {
     clear: left;
     float: left;
@@ -1616,14 +1623,14 @@ figcaption {
   }
 }
 
-/* line 470, ../sass/layout/_layout.scss */
+/* line 475, ../sass/layout/_layout.scss */
 .info--emphasized {
   margin-bottom: 30px;
 }
 
 /* Footer
    ========================================================================== */
-/* line 480, ../sass/layout/_layout.scss */
+/* line 485, ../sass/layout/_layout.scss */
 .footer {
   *position: relative;
   *zoom: 1;
@@ -1639,21 +1646,21 @@ figcaption {
   clear: both;
 }
 @media only screen and (max-width: 865px) {
-  /* line 480, ../sass/layout/_layout.scss */
+  /* line 485, ../sass/layout/_layout.scss */
   .footer {
     margin-right: 20px;
     margin-left: 20px;
   }
 }
 
-/* line 492, ../sass/layout/_layout.scss */
+/* line 497, ../sass/layout/_layout.scss */
 .footer--lead {
   background: url("/images/dot-small.png") 0 bottom repeat-x;
   margin-bottom: 30px;
   padding-bottom: 10px;
 }
 
-/* line 499, ../sass/layout/_layout.scss */
+/* line 504, ../sass/layout/_layout.scss */
 .footer--content-primary {
   float: left;
   width: 50%;
@@ -1675,7 +1682,7 @@ figcaption {
   padding-right: 50px;
 }
 @media only screen and (max-width: 480px) {
-  /* line 499, ../sass/layout/_layout.scss */
+  /* line 504, ../sass/layout/_layout.scss */
   .footer--content-primary {
     clear: left;
     float: left;
@@ -1701,7 +1708,7 @@ figcaption {
   }
 }
 
-/* line 516, ../sass/layout/_layout.scss */
+/* line 521, ../sass/layout/_layout.scss */
 .footer--content-secondary {
   float: right;
   width: 50%;
@@ -1722,7 +1729,7 @@ figcaption {
   padding-right: 0;
 }
 @media only screen and (max-width: 480px) {
-  /* line 516, ../sass/layout/_layout.scss */
+  /* line 521, ../sass/layout/_layout.scss */
   .footer--content-secondary {
     clear: left;
     float: left;
@@ -1745,19 +1752,19 @@ figcaption {
   }
 }
 
-/* line 527, ../sass/layout/_layout.scss */
+/* line 532, ../sass/layout/_layout.scss */
 .footer--map {
   margin-bottom: 30px;
 }
 
 /* Contact form
    ========================================================================== */
-/* line 535, ../sass/layout/_layout.scss */
+/* line 540, ../sass/layout/_layout.scss */
 .contact-form--button {
   float: right;
 }
 @media only screen and (max-width: 480px) {
-  /* line 535, ../sass/layout/_layout.scss */
+  /* line 540, ../sass/layout/_layout.scss */
   .contact-form--button {
     float: none;
     width: 100%;
