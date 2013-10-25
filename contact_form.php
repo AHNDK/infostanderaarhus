@@ -20,8 +20,8 @@ if ( (!empty($name) && !empty($email)) && empty($spam_check) )  {
 
   $header  = "MIME-Version: 1.0" . "\r\n";
   $header .= "Content-type: text/html; charset=utf-8" . "\r\n";
-  $header .= "from: Infostander kontaktformular <www@aakb.dk>";
-  $header .= "reply-to:".$email;
+  $header .= "From: Infostander kontaktformular <www@aakb.dk>" . "\r\n";
+  $header .= "Reply-To: " . $email;
 
   if (mail($recipient, $subject, $message, $header)) {
     print '<div class="message--success"><h1>Vi takker for din henvendelse</h1>';
