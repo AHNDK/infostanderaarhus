@@ -18,19 +18,14 @@ $(document).ready(function() {
   var topLink = $('.top-link');
 
   // Show or hide top link when scrolling
+  var offset = 220;
+  var duration = 500;
+
   $(window).scroll(function() {
-    if ($(document).scrollTop() > 250) {
-      // Add class to body
-      $('body').addClass('js-scrolling');
-
-      // Show arrow link
-      $(topLink).show('fast');
+    if ($(this).scrollTop() > offset) {
+      $(topLink).fadeIn(duration);
     } else {
-      // Remove class to body
-      $('body').removeClass('js-scrolling');
-
-      // Hide arrow link
-      $(topLink).hide('fast');
+      $(topLink).fadeOut(duration);
     }
   });
 });

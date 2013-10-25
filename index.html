@@ -12,9 +12,9 @@
 </head>
 <body id="top">
 <header class="header" role="banner">
-  <a href="#top" class="top-link"><i class="icon-arrow-up"></i></a>
+  <a href="#top" class="top-link"><i class="icon-arrow-up"></i> Toppen</a>
   <div class="header--inner">
-    <a href="/" class="logo--link"><img src="../images/logo.png" alt="Infostander Aarhus logo" class="logo"></a>
+    <a href="#top" class="logo--link"><img src="../images/logo.png" alt="Infostander Aarhus logo" class="logo"></a>
     <nav class="navigation">
       <a href="#top" title="Til toppen" class="navigation--top">Til toppen</a>
       <a href="#info" title="Info">Info</a>
@@ -141,7 +141,7 @@
     <strong>Telefon:</strong> +45 8940 5000
   </section>
   <section class="footer--content-secondary">
-    <h2 id="kontakt" class="footer--heading">Kontakt</h2>
+    <h2 class="footer--heading">Kontakt</h2>
     <div class="footer--lead">
       <p>
         Ring eller skriv og book en tid til annoncering – så er du sikker på at få den bedste eksponering af dit
@@ -151,7 +151,7 @@
         Udfyld formularen og vi vender tilbage til dig hurtigst muligt!
       </p>
     </div>
-    <form action="contact_form.php" method="post" id="contactForm">
+    <form action="contact_form.php" method="post" id="kontakt">
       <label for="name">Navn:</label>
       <input type="text" id="name" name="name" class="contact-form--name" placeholder="Skriv dit navn her">
       <label for="email">E-mail:</label>
@@ -185,7 +185,7 @@ $(document).ready(function() {
     }; 
  
     // bind form using 'ajaxForm' 
-    $('#contactForm').ajaxForm(options);
+    $('#kontakt').ajaxForm(options);
 }); 
  
 // pre-submit callback 
