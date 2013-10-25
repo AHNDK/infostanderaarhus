@@ -548,7 +548,6 @@ figcaption {
 .contact-form--button {
   @extend %action-button;
   @extend %button-small;
-  @extend .icon-arrow-right;
 
   float: right;
 
@@ -556,4 +555,27 @@ figcaption {
     float: none;
     width: 100%;
   }
+}
+
+/* Error message
+   ========================================================================== */
+%message {
+  @include border-radius(4px);
+
+  margin-bottom: 30px;
+  padding: 15px;
+
+  color: $white;
+}
+
+.message--success {
+  @extend %message;
+
+  background-color: $green;
+}
+
+.message--error {
+  @extend %message;
+
+  background-color: $red;
 }
