@@ -7,8 +7,10 @@
   <link rel="stylesheet" href="/css/infostanderaarhus.styles.css">
   <link rel="stylesheet" href="/css/infostander-icons.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="http://malsup.github.com/jquery.form.js"></script>
   <script src="/scripts/scrolling.min.js"></script>
+  <!--[if lt IE 9]>
+  <script src="/scripts/html5shiv.js"></script>
+  <![endif]-->
 </head>
 <body id="top">
 <header class="header" role="banner">
@@ -152,13 +154,13 @@
       </p>
     </div>
     <div class="message"></div>
-    <form action="contact_form.php" method="post" id="kontakt">
+    <form action="contact_form.php" method="post" id="contactForm">
       <label for="name">Navn:</label>
-      <input type="text" id="name" name="name" class="contact-form--name" placeholder="Indtast dit navn" required>
+      <input type="text" id="name" name="name" class="contact-form--name" placeholder="Indtast dit navn">
       <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" class="contact-form--email" placeholder="Indtast din e-mail-adresse" required>
+      <input type="email" id="email" name="email" class="contact-form--email" placeholder="Indtast din e-mail-adresse"  >
       <input type="hidden" id="message" name="message" value="">
-      <button class="contact-form--button" type="submit">
+      <button class="contact-form--button" type="submit" id="contactSubmitButton">
         <i class="icon-arrow-right"></i>
         Kontakt mig
       </button>
@@ -166,17 +168,29 @@
   </section>
 </footer>
 
-<script> 
-$(document).ready(function() { 
-  // Using http://jquery.malsup.com/form/ so go there for documentation
-  var options = { 
-    target:        '.message',   // target element(s) to be updated with server response 
-    //beforeSubmit:  showRequest,  // pre-submit callback
-    //success:       showResponse  // post-submit callback
-  }; 
+<script>
 
-  // bind form using 'ajaxForm' 
-  $('#kontakt').ajaxForm(options);
+function updateMessage(target, status) {
+  target.addClass(status);
+}
+
+$(document).ready(function() { 
+  var target = $('.message');
+
+  $("#contactSubmitButton").click(function() {
+    $.ajax({
+      type: "POST",
+      url: "contact_form.php",
+      data: $("#contactForm").serialize(), // serializes the form's elements.
+      success: updateMessage(target, 'message--success'),
+      error: updateMessage(target, 'message--error')
+    }).done(function(data) {
+      target.html(data);
+    });
+
+    return false; // avoid to execute the actual submit of the form.
+  });
+
 }); 
 </script> 
 </body>
