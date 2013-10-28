@@ -17,7 +17,7 @@ if ( (!empty($name) && !empty($email)) && empty($spam_check) )  {
 
   $header  = "MIME-Version: 1.0" . "\r\n";
   $header .= "Content-type: text/html; charset=utf-8" . "\r\n";
-  $header .= "from: Infostander kontaktformular <www@aakb.dk>";
+  $header .= "from: Infostander kontaktformular <www@aakb.dk>" . "\r\n";
   $header .= "reply-to:".$email;
 
   if (mail($recipient, $subject, $message, $header)) {
