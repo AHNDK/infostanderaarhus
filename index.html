@@ -54,14 +54,6 @@
     </div>
     <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Information</a>
   </section>
-  <section class="focus-box--third">
-    <h2 class="focus-box--heading">Galleri</h2>
-    <div class="focus-box--content">
-      <p>Cras mattis consectetur purus sit amet fermentum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-      <p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper.</p>
-    </div>
-    <a href="#galleri" class="focus-box--link"><i class="icon-arrow-right"></i>Galleri</a>
-  </section>
 </div>
 <div class="prices">
   <div class="prices--inner">
@@ -180,11 +172,11 @@ function updateMessage(target, status) {
 $(document).ready(function() {
   var target = $('.message');
 
-  $("#contactSubmitButton").live("click", function() {
+  $("#contactSubmitButton").click(function() {
     $.ajax({
       type: "POST",
       url: "contact_form.php",
-      data: $("#kontakt").serialize() // serializes the form's elements.
+      data: $("#kontakt").serialize(), // serializes the form's elements.
       dataType: "json"
     }).done(function(data) {
       if (data.status) {

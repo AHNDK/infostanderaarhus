@@ -314,20 +314,15 @@ figcaption {
    ========================================================================== */
 
 .focus-box--first {
-  @include zen-grid-item(4, 1);
+  @include zen-grid-item(6, 1);
 }
 
 .focus-box--second {
-  @include zen-grid-item(4, 5);
-}
-
-.focus-box--third {
-  @include zen-grid-item(4, 1, right);
+  @include zen-grid-item(6, 1, right);
 }
 
 .focus-box--first,
-.focus-box--second,
-.focus-box--third {
+.focus-box--second {
   padding-right: 60px;
   padding-left: 0;
 
