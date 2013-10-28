@@ -6,11 +6,11 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="/css/infostanderaarhus.styles.css">
   <link rel="stylesheet" href="/css/infostander-icons.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="/scripts/scrolling.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="/scripts/scrolling.min.js" type="application/javascript"></script>
   <!--[if lt IE 9]>
   <script src="/scripts/html5shiv.js"></script>
-  <script src="/scripts/selectivizr-min.js"></script>
+  <script src="/scripts/selectivizr.min.js"></script>
   <![endif]-->
 </head>
 <body id="top">
@@ -169,15 +169,15 @@
   </section>
 </footer>
 
-<script>
+<script type="application/javascript">
 
 function updateMessage(target, status) {
-  target.removeAttr('class');
-
-  target.addClass(status);
+  target
+    .removeAttr('class')
+    .addClass(status);
 }
 
-$(document).ready(function() { 
+$(document).ready(function() {
   var target = $('.message');
 
   $("#contactSubmitButton").click(function() {
@@ -198,7 +198,7 @@ $(document).ready(function() {
     return false; // avoid to execute the actual submit of the form.
   });
 
-}); 
-</script> 
+});
+</script>
 </body>
 </html>

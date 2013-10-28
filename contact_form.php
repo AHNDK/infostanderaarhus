@@ -6,10 +6,10 @@ $name = strip_tags($_POST["name"]);
 $email = strip_tags($_POST["email"]);
 $spam_check = $_POST["message"];
 
-$recipient = "mail@magnify.dk";
+$recipient = "infostander@aarhus.dk";
 
 if ( (!empty($name) && !empty($email)) && empty($spam_check) )  {
-  $subject = "Jeg vil gerne kontaktes vedr. Infostander Aarhus"; //Emnefeltet til emailen.
+  $subject = "Jeg vil gerne kontaktes vedr. Infostander Aarhus";
 
   $message = "<h1>Jeg vil gerne kontaktes</h1>";
   $message.= "<p>Der er kommet en henvendelse på infostanderaarhus.dk, du bedes kontakte:</p>";
