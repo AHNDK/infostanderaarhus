@@ -10,6 +10,7 @@
   <script src="/scripts/scrolling.min.js"></script>
   <!--[if lt IE 9]>
   <script src="/scripts/html5shiv.js"></script>
+  <script src="/scripts/selectivizr-min.js"></script>
   <![endif]-->
 </head>
 <body id="top">
@@ -154,11 +155,11 @@
       </p>
     </div>
     <div class="message"></div>
-    <form action="contact_form.php" method="post" id="contactForm">
+    <form action="contact_form.php" method="post" id="kontakt">
       <label for="name">Navn:</label>
-      <input type="text" id="name" name="name" class="contact-form--name" placeholder="Indtast dit navn">
+      <input type="text" id="name" name="name" class="contact-form--name" placeholder="Indtast dit navn" required>
       <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" class="contact-form--email" placeholder="Indtast din e-mail-adresse"  >
+      <input type="email" id="email" name="email" class="contact-form--email" placeholder="Indtast din e-mail-adresse" required>
       <input type="hidden" id="message" name="message" value="">
       <button class="contact-form--button" type="submit" id="contactSubmitButton">
         <i class="icon-arrow-right"></i>
@@ -171,6 +172,8 @@
 <script>
 
 function updateMessage(target, status) {
+  target.removeAttr('class');
+
   target.addClass(status);
 }
 
@@ -181,11 +184,15 @@ $(document).ready(function() {
     $.ajax({
       type: "POST",
       url: "contact_form.php",
-      data: $("#contactForm").serialize(), // serializes the form's elements.
-      success: updateMessage(target, 'message--success'),
-      error: updateMessage(target, 'message--error')
+      data: $("#kontakt").serialize(), // serializes the form's elements.
     }).done(function(data) {
-      target.html(data);
+      if (data.status) {
+        updateMessage(target, 'message--success');
+      } else {
+        updateMessage(target, 'message--error');
+      }
+
+      target.html(data.data);
     });
 
     return false; // avoid to execute the actual submit of the form.

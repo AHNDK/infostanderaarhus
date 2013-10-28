@@ -1,11 +1,14 @@
 <?php
 
+header('Content-type: application/json');
+
 $name = strip_tags($_POST["name"]);
 $email = strip_tags($_POST["email"]);
+$spam_check = $_POST["message"];
 
 $recipient = "mail@magnify.dk";
 
-if (!empty($name) && !empty($email)) {
+if ( (!empty($name) && !empty($email)) && empty($spam_check) )  {
   $subject = "Jeg vil gerne kontaktes vedr. Infostander Aarhus"; //Emnefeltet til emailen.
 
   $message = "<h1>Jeg vil gerne kontaktes</h1>";
@@ -21,17 +24,18 @@ if (!empty($name) && !empty($email)) {
   $header .= "reply-to:".$email;
 
   if (mail($recipient, $subject, $message, $header)) {
-    print "Tak for din henvendelse, du h&oslash;rer fra os snarest.";
-  } else {
-    print "Der skete en fejl og det lykkedes desværre ikke at sende din henvendelse.";
-    print "<br /><br />";
-    print "<a href=\"#kontakt\">Klik her for at prøve igen</a>. husk at alle felter skal udfyldes.";
-    print "<br /><br />";
-    print "Hvis du stadig oplever fejl, så kontakt os på p&aring; ". $recipient . ".";
+    print json_encode(array("status" => TRUE, "data" => "Tak for din henvendelse, du h&oslash;rer fra os snarest."));
 
-    http_response_code(406);
+  } else {
+    $response .= "Der skete en fejl og det lykkedes desværre ikke at sende din henvendelse.";
+    $response .= "<br /><br />";
+    $response .= "<a href=\"#kontakt\">Klik her for at prøve igen</a>. husk at alle felter skal udfyldes.";
+    $response .= "<br /><br />";
+    $response .= "Hvis du stadig oplever fejl, så kontakt os på p&aring; " . $recipient . ".";
+
+    print json_encode(array("status" => FALSE,"data" => $response));
   }
 
 } else {
-  print "Du skal udfylde alle felter i formularen, prøv venligst igen.";
+  print json_encode(array("status" => FALSE, "data" => "Du skal udfylde alle felter i formularen, prøv venligst igen."));
 }
