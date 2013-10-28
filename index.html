@@ -161,7 +161,7 @@
   </section>
 </footer>
 
-<script type="application/javascript">
+<script type="text/javascript">
 
 function updateMessage(target, status) {
   target
@@ -172,25 +172,25 @@ function updateMessage(target, status) {
 $(document).ready(function() {
   var target = $('.message');
 
-  $("#contactSubmitButton").click(function() {
+  $("#contactSubmitButton").click(function(e) {
     $.ajax({
       type: "POST",
       url: "contact_form.php",
       data: $("#kontakt").serialize(), // serializes the form's elements.
       dataType: "json"
     }).done(function(data) {
-      if (data.status) {
-        updateMessage(target, 'message--success');
-      } else {
-        updateMessage(target, 'message--error');
-      }
+        if (data.status) {
+          updateMessage(target, 'message--success');
+        } else {
+          updateMessage(target, 'message--error');
+        }
 
-      target.html(data.data);
-    });
+        target.html(data.data);
+      });
 
+    e.preventDefault();
     return false; // avoid to execute the actual submit of the form.
   });
-
 });
 </script>
 </body>
