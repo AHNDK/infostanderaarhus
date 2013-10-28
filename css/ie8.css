@@ -1,0 +1,13 @@
+img,
+.primary-content--image {
+  width: auto;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.primary-content {
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='./images/header-background.jpg', sizingMethod='scale');
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/header-background.jpg', sizingMethod='scale')";
+}

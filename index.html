@@ -9,8 +9,8 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="/scripts/scrolling.min.js" type="application/javascript"></script>
   <!--[if lt IE 9]>
+  <link rel="stylesheet" href="/css/ie8.css">
   <script src="/scripts/html5shiv.js"></script>
-  <script src="/scripts/selectivizr.min.js"></script>
   <![endif]-->
 </head>
 <body id="top">
@@ -180,11 +180,12 @@ function updateMessage(target, status) {
 $(document).ready(function() {
   var target = $('.message');
 
-  $("#contactSubmitButton").click(function() {
+  $("#contactSubmitButton").live("click", function() {
     $.ajax({
       type: "POST",
       url: "contact_form.php",
-      data: $("#kontakt").serialize(), // serializes the form's elements.
+      data: $("#kontakt").serialize() // serializes the form's elements.
+      dataType: "json"
     }).done(function(data) {
       if (data.status) {
         updateMessage(target, 'message--success');

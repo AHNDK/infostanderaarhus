@@ -1,7 +1,4 @@
 <?php
-
-header('Content-type: application/json');
-
 $name = strip_tags($_POST["name"]);
 $email = strip_tags($_POST["email"]);
 $spam_check = $_POST["message"];
