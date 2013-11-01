@@ -366,6 +366,14 @@ figcaption {
   &:hover {
     background-color: lighten($blue, 25);
   }
+
+  @include third-breakpoint() {
+    font-size: 250%;
+  }
+
+  @include last-breakpoint() {
+    font-size: 250%;
+  }
 }
 
 .focus-box--content {
