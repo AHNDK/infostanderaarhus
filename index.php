@@ -51,6 +51,14 @@
     <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Inspiration</a>
   </section>
 </div>
+<div class="gallery">
+  <h2 id="gallery" class="gallery--heading">Galleri &amp; inspiration</h2>
+  <ul class="gallery--list">
+    <li class="gallery--item"><a href="#"><img src="gallery/gallery-1.jpg"></a></li>
+    <li class="gallery--item"><a href="#"><img src="gallery/gallery-2.jpg"></a></li>
+    <li class="gallery--item"><a href="#"><img src="gallery/gallery-3.jpg"></a></li>
+  </ul>
+</div>
 <div class="prices">
   <div class="prices--inner">
     <i class="prices--content-image icon-tag"></i>
