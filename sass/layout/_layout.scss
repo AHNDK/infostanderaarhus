@@ -433,6 +433,16 @@ figcaption {
   .gallery--item:nth-of-type(3) {
     @include zen-nested-container();
   }
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
 }
 
 
