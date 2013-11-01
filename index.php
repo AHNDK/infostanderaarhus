@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<head>
-  <title>Infostander Aarhus</title>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width">
-  <link rel="stylesheet" href="/css/infostanderaarhus.styles.css">
-  <link rel="stylesheet" href="/css/infostander-icons.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script src="/scripts/scrolling.min.js" type="application/javascript"></script>
-  <!--[if lt IE 9]>
-  <link rel="stylesheet" href="/css/ie8.css">
-  <script src="/scripts/html5shiv.js"></script>
-  <![endif]-->
-</head>
+<?php
+  @include $_SERVER['DOCUMENT_ROOT']. '/inc/head.inc';
+?>
 <body id="top">
 <header class="header" role="banner">
   <a href="#top" class="top-link"><i class="icon-arrow-up"></i> Toppen</a>
@@ -20,8 +8,8 @@
     <a href="#top" class="logo--link"><img src="../images/logo.png" alt="Infostander Aarhus logo" class="logo"></a>
     <nav class="navigation">
       <a href="#top" title="Til toppen" class="navigation--top">Til toppen</a>
-      <a href="#info" title="Info">Info</a>
       <a href="#priser" title="Priser">Priser</a>
+      <a href="#info" title="Info">Info</a>
       <a href="#kontakt" title="Kontakt">Kontakt</a>
     </nav>
   </div>
@@ -39,40 +27,38 @@
 </div>
 <div class="secondary-content">
   <section class="focus-box--first">
-    <h2 class="focus-box--heading">Priser</h2>
+    <a href="#priser"><i class="focus-box--icon icon-tag"></i></a>
+    <h3 class="focus-box--heading"><a href="#priser">Priser</a></h3>
     <div class="focus-box--content">
-      <p>Der kan købes visning af spot døgnet rundt i 7 eller 14 dage, opsætning af grafik er med i prisen.</p>
-      <p>Har du specielle ønsker til annoncering så <a href="#kontakt">kontakt os</a>, så finder vi en løsning der passer til dit behov.</p>
+      <p>Der kan købes visning af spot i 7 eller 14 dage, inkl. opsætning af grafik.</p>
     </div>
     <a href="#priser" class="focus-box--link"><i class="icon-arrow-right"></i>Se priser</a>
   </section>
   <section class="focus-box--second">
-    <h2 class="focus-box--heading">Information</h2>
+    <a href="#info"><i class="focus-box--icon icon-info"></i></a>
+    <h3 class="focus-box--heading"><a href="#info">Information</a></h3>
     <div class="focus-box--content">
-      <p>Få mere information om vores produkt og læs mere om hvorfor annoncering på infostanderne er så effektiv.</p>
-      <p>Med annoncering på infostanderne opnår du god disponering og mulighed for løbende opdatering af din annonce.</p>
+      <p>Få mere information om og læs hvorfor du skal annoncere på infostanderne.</p>
     </div>
-    <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Mere information</a>
+    <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Information</a>
+  </section>
+  <section class="focus-box--third">
+    <a href="#galleri"><i class="focus-box--icon icon-picture"></i></a>
+    <h3 class="focus-box--heading"><a href="#galleri">Inspiration & galleri</a></h3>
+    <div class="focus-box--content">
+      <p>Se eksempler fra infostanderne og få inspiration i vores galleri.</p>
+    </div>
+    <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Inspiration</a>
   </section>
 </div>
 <div class="prices">
   <div class="prices--inner">
+    <i class="prices--content-image icon-tag"></i>
     <div class="prices--content">
-      <h3  id="priser" class="prices--heading">Priser og tekniske informationer</h3>
-      <p>
-        Det er muligt at købe visning af et spot døgnet rundt i enten 7 eller 14 dage.<br>
-        <strong>7 dage:</strong> 8.000,-<br>
-        <strong>14 dage:</strong> 15.000 kr.
-      <p>
-        Inklusiv i prisen er opsætning af grafik. Det er også muligt selv at levere billedet til standerne.
-        Vi tilbyder selvfølgelig gratis rådgivning, så I opnår den bedste visning på infostanderne.
-      </p>
-      <p>
-        Billedet der vises på infostanderne skal leveres i følgende format:<br>
-        <strong>Filformat:</strong> JPEG<br>
-        <strong>Opløsning:</strong> 256×384 pixels – 72 dpi<br>
-        <strong>Farver:</strong> RGB
-      </p>
+      <h2 id="priser" class="prices--heading">Priser</h2>
+      <p>Bestil nu og få en uges visning for 8000,- eller 14 dage for 15000,-</p>
+      <p>Har du behov for at annoncere i en længere periode laver vi et tilbud til dig. Alle priser er inkl. opsætning af grafik og administrationsomkostninger og ekskl. moms.</p>
+      <a href="#kontakt" class="prices--contact-link"><i class="icon-arrow-right"></i>Kontakt</a>
     </div>
   </div>
 </div>
@@ -139,11 +125,12 @@
     <h2 class="footer--heading">Kontakt</h2>
     <div class="footer--lead">
       <p>
-        Ring eller skriv og book en tid til annoncering – så er du sikker på at få den bedste eksponering af dit
+        Kontakt os for at booke en tid til annoncering – så er du sikker på at få den bedste eksponering af dit
         arrangement.
       </p>
+      <p class="footer--focus">Ring <strong>8940 5000</strong> eller udfyld formularen</p>
       <p>
-        Udfyld formularen og vi vender tilbage til dig hurtigst muligt!
+        Så lover vi at vende tilbage til dig hurtigst muligt.
       </p>
     </div>
     <div class="message"></div>

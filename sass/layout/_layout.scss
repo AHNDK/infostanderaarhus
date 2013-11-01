@@ -313,17 +313,24 @@ figcaption {
    ========================================================================== */
 
 .focus-box--first {
-  @include zen-grid-item(6, 1);
+  @include zen-grid-item(2.5, 1.5);
 }
 
 .focus-box--second {
-  @include zen-grid-item(6, 1, right);
+  @include zen-grid-item(2.5, 5.5);
+}
+
+.focus-box--third {
+  @include zen-grid-item(2.5, 9.5);
 }
 
 .focus-box--first,
-.focus-box--second {
-  padding-right: 60px;
+.focus-box--second,
+.focus-box--third {
+  padding-right: 0;
   padding-left: 0;
+
+  text-align: center;
 
   @include third-breakpoint() {
     padding-right: 20px;
@@ -346,13 +353,32 @@ figcaption {
   }
 }
 
-.focus-box--content {
+.focus-box--icon {
+  border-radius: 100%;
+  display: inline-block;
   margin-bottom: 30px;
+  padding: 40px 30px;
+
+  background-color: lighten($blue, 50);
+  font-size: 500%;
+  color: $white;
+
+  &:hover {
+    background-color: lighten($blue, 25);
+  }
+}
+
+.focus-box--content {
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
 }
 
 .focus-box--link {
   @extend %link-button;
   @extend %button-small;
+
+  display: block;
 
   @include second-breakpoint() {
     padding-top: 10px;
@@ -370,6 +396,8 @@ figcaption {
 
 .prices {
   @extend %layout-wrapper;
+
+  position: relative;
 
   margin-bottom: 70px;
   padding-bottom: 70px;
@@ -389,12 +417,6 @@ figcaption {
 
 .prices--inner {
   @include zen-grid-container();
-
-  background: url('/images/wrench.png') right top no-repeat;
-
-  @include last-breakpoint() {
-    background: none;
-  }
 }
 
 .prices--heading {
@@ -402,16 +424,28 @@ figcaption {
 }
 
 .prices--content {
-  @include zen-grid-item(7, 1);
-  @include zen-nested-container();
+  @include zen-grid-item(8, 1);
 
-  @include last-breakpoint() {
-    @include zen-clear();
-    @include zen-grid-item(12, 1);
-    @include zen-nested-container();
-  }
+  padding-left: 0;
 }
 
+.prices--content-image {
+  bottom: 25px;
+  position: absolute;
+  right: 0;
+
+  max-height: 275px;
+  overflow: hidden;
+
+  color: transparentize($gray, .75);
+  font-size: 2500%;
+  z-index: -1;
+}
+
+.prices--contact-link {
+  @extend %link-button;
+  @extend %button-small;
+}
 
 /* Info
    ========================================================================== */
@@ -494,6 +528,10 @@ figcaption {
     margin-right: 20px;
     margin-left: 20px;
   }
+}
+
+.footer--focus {
+  font-size: $font-size-largest;
 }
 
 .footer--lead {
