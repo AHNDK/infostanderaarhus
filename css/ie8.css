@@ -16,6 +16,11 @@ img,
   position: relative;
 }
 
+.gallery--item {
+  float: left;
+  width: 30%;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="date"],

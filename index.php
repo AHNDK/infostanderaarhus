@@ -27,7 +27,7 @@
 </div>
 <div class="secondary-content">
   <section class="focus-box--first">
-    <a href="#priser"><i class="focus-box--icon icon-tag"></i></a>
+    <a href="#priser" class="focus-box--icon"><i class="icon-tag"></i></a>
     <h3 class="focus-box--heading"><a href="#priser">Priser</a></h3>
     <div class="focus-box--content">
       <p>Der kan købes visning af spot i 7 eller 14 dage, inkl. opsætning af grafik.</p>
@@ -35,7 +35,7 @@
     <a href="#priser" class="focus-box--link"><i class="icon-arrow-right"></i>Se priser</a>
   </section>
   <section class="focus-box--second">
-    <a href="#info"><i class="focus-box--icon icon-info"></i></a>
+    <a href="#info" class="focus-box--icon"><i class="icon-info"></i></a>
     <h3 class="focus-box--heading"><a href="#info">Information</a></h3>
     <div class="focus-box--content">
       <p>Få mere information om og læs hvorfor du skal annoncere på infostanderne.</p>
@@ -43,7 +43,7 @@
     <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Information</a>
   </section>
   <section class="focus-box--third">
-    <a href="#galleri"><i class="focus-box--icon icon-picture"></i></a>
+    <a href="#galleri" class="focus-box--icon"><i class="icon-picture"></i></a>
     <h3 class="focus-box--heading"><a href="#galleri">Inspiration & galleri</a></h3>
     <div class="focus-box--content">
       <p>Se eksempler fra infostanderne og få inspiration i vores galleri.</p>
@@ -54,9 +54,9 @@
 <div class="gallery">
   <h2 id="gallery" class="gallery--heading">Galleri &amp; inspiration</h2>
   <ul class="gallery--list">
-    <li class="gallery--item"><a href="#"><img src="gallery/gallery-1.jpg"></a></li>
-    <li class="gallery--item"><a href="#"><img src="gallery/gallery-2.jpg"></a></li>
-    <li class="gallery--item"><a href="#"><img src="gallery/gallery-3.jpg"></a></li>
+    <li class="gallery--item-first"><a href="#"><img src="gallery/gallery-1.jpg"></a></li>
+    <li class="gallery--item-second"><a href="#"><img src="gallery/gallery-2.jpg"></a></li>
+    <li class="gallery--item-third"><a href="#"><img src="gallery/gallery-3.jpg"></a></li>
   </ul>
 </div>
 <div class="prices">
@@ -72,36 +72,16 @@
 </div>
 <div class="info">
   <div class="info--content-primary">
-    <h3 id="info" class="info--heading">Info om annoncering</h3>
-    <p>
-      Med annoncer på Aarhus Kommunes digitale infostandere kommer du i kontakt med titusindvis af potentielle
-      besøgende. Vi tager os af opsætning af grafik, vejleder dig i processen og sørger for eksponeringen.
-    </p>
-    <h4 class="heading--small">Hvem må annoncere?</h4>
-    <p>
-      Der må annonceres for kulturelle og sportslige events, hvor alle byens borgere kan deltage samt kommunale
-      kampagner og skoler må annoncere. Annoncen må ikke indeholde reklamer eller kommercielle budskaber, stødende tekst
-      eller billeder.
-    </p>
-    <h5>Ved annoncering får I</h5>
-    <ul class="info--list">
-      <li>Visning på lysende LED skærme (2 × 3 meter)</li>
-      <li>Visning på otte strategisk placerede infostandere</li>
-      <li>Visning døgnet rundt</li>
-    </ul>
-    <h4 class="heading--small">Fleksibilitet og gennemslagskraft</h4>
-    <p>
-      Hos ITK Design sørger vi får at du får en fleksibel løsning med stor gennemslagskraft. Under visningsperioden kan
-      vi ændre/tilføje tekst. For eksempel kan vi skrive: Næsten udsolgt eller ”Fremragende”, skrev pressen for at skabe
-      ny interesse for dit arrangement.
-    </p>
+    <h3 id="info" class="info--heading">Information</h3>
+    <p>Hvis du er arrangør for kulturelle og sportslige events, hvor alle byens borgere kan deltage eller en skoleinstitution kan du annoncere på de digitale infostandere.</p>
+    <p>De digitale infostandere er placeret ved otte af de mest trafikerede indfaldsveje til Aarhus (Grenåvej, Randersvej, Christian X’s Vej, Edwin Rahrs Vej, Silkeborgvej, Viborgvej, Skander-borgvej og Oddervej).
+    Infostanderne er synlige både for fodgængere og cyklister såvel som bilister – og de kan ses tydeligt i både dagtimerne, om aftenen og natten. De godt to gange tre meter lysende LED-skærme sender klare og tydelige budskaber til de godt 200.000 trafikanter der kører forbi hver dag.</p>
     <h5>Fordelen ved digitale spots er</h5>
     <ul>
-      <li>Spots er tydelige i hele visningsperioden og bliver ikke påvirket af vind og vejr</li>
-      <li>Spots ses meget tydeligt om aftenen og om natten</li>
-      <li>Spots får øget opmærksomhed i kraft af dynamikken i visningen</li>
-      <li>Spots er fleksible og kan ændres undervejs i visningsperioden</li>
-      <li>Spots er et meget klart og tydeligt, visuelt budskab</li>
+      <li>Visning for 200.000 trafikanter hver dag</li>
+      <li>Visning på otte strategisk placerede infostandere</li>
+      <li>Visning døgnet rundt</li>
+      <li>Visning på lysende LED skærme (2 × 3 meter)</li>
     </ul>
   </div>
   <div class="info--content-secondary">
