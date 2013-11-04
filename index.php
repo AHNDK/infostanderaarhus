@@ -109,7 +109,7 @@
     <strong>E-mail:</strong> <a href="mailto:infostander@aarhus.dk">infostander@aarhus.dk</a><br>
     <strong>Telefon:</strong> +45 8940 5000
   </section>
-  <section class="footer--content-secondary">
+  <section class="footer--content-secondary" id="kontakt">
     <h2 class="footer--heading">Kontakt</h2>
     <div class="footer--lead">
       <p>
@@ -122,7 +122,7 @@
       </p>
     </div>
     <div class="message"></div>
-    <form action="contact_form.php" method="post" id="kontakt">
+    <form action="contact_form.php" method="post" id="contact-form">
       <label for="name">Navn:</label>
       <input type="text" id="name" name="name" class="contact-form--name" placeholder="Indtast dit navn" required>
       <label for="email">E-mail:</label>
@@ -151,7 +151,7 @@ $(document).ready(function() {
     $.ajax({
       type: "POST",
       url: "contact_form.php",
-      data: $("#kontakt").serialize(), // serializes the form's elements.
+      data: $("#contact-form").serialize(), // serializes the form's elements.
       dataType: "json"
     }).done(function(data) {
         if (data.status) {
