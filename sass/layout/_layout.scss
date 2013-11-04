@@ -8,6 +8,7 @@
 body {
   @include zen-grid-container();
 
+  margin-bottom: 30px;
   padding-top: 75px;
 }
 
@@ -605,8 +606,6 @@ figcaption {
 .footer {
   @include zen-grid-container();
   @extend %layout-wrapper;
-
-  margin-bottom: 30px;
 
   @include third-breakpoint() {
     margin-right: 20px;
