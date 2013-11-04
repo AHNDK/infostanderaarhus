@@ -14,18 +14,4 @@ $(document).ready(function() {
       }
     }
   });
-
-  var topLink = $('.top-link');
-
-  // Show or hide top link when scrolling
-  var offset = 220;
-  var duration = 500;
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > offset) {
-      $(topLink).fadeIn(duration);
-    } else {
-      $(topLink).fadeOut(duration);
-    }
-  });
 });

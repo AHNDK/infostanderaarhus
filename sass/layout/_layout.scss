@@ -33,36 +33,6 @@ figcaption {
   color: $gray-darker;
 }
 
-
-.top-link {
-  @extend %base-button;
-  @extend %button-smaller;
-  @include border-radius(4px 4px 0 0);
-  @include box-sizing(border-box);
-
-  bottom: 0;
-  position: fixed;
-  left: 50%;
-  right: 50%;
-  z-index: 99;
-
-
-  display: none;
-  margin-left: -75px;
-  width: 150px;
-
-  background-color: $gray-darker;
-
-  &:focus,
-  &:hover {
-    background-color: lighten($gray-darker, 5%);
-  }
-
-  &:active {
-    background-color: darken($gray-darker, 5%);
-  }
-}
-
 %layout-wrapper {
   max-width: 1200px;
   margin-right: auto;
@@ -151,16 +121,6 @@ figcaption {
   @include third-breakpoint() {
     display: none;
   }
-}
-
-.js-scrolling {
-  .navigation--top {
-    display: inline-block;
-  }
-}
-
-.navigation--top {
-  display: none;
 }
 
 
