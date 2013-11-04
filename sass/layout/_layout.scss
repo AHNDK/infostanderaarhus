@@ -321,9 +321,11 @@ figcaption {
   @include zen-grid-item(2.5, 1.5);
 
   @include third-breakpoint() {
-    @include zen-clear();
-    @include zen-grid-item(12, 1);
+    @include zen-grid-item(5, 1.5);
 
+  }
+
+  @include last-breakpoint() {
     margin-bottom: 40px;
     padding-bottom: 40px;
 
@@ -335,8 +337,7 @@ figcaption {
   @include zen-grid-item(2.5, 5.5);
 
   @include third-breakpoint() {
-    @include zen-clear();
-    @include zen-grid-item(12, 1);
+    @include zen-grid-item(5, 1.5, right);
   }
 }
 
@@ -359,8 +360,6 @@ figcaption {
 
   @include third-breakpoint() {
     padding-right: 20px;
-
-    text-align: left;
   }
 
   @include last-breakpoint() {
@@ -394,7 +393,7 @@ figcaption {
     background-color: lighten($blue, 25);
   }
 
-  @include third-breakpoint() {
+  @include last-breakpoint() {
     display: none;
   }
 }
