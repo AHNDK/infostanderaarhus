@@ -8,8 +8,9 @@
     <a href="#top" class="logo--link"><img src="../images/logo.png" alt="Infostander Aarhus logo" class="logo"></a>
     <nav class="navigation">
       <a href="#top" title="Til toppen" class="navigation--top">Til toppen</a>
+      <a href="#galleri" title="Galleri & inspiration">Galleri & inspiration</a>
       <a href="#priser" title="Priser">Priser</a>
-      <a href="#info" title="Info">Info</a>
+      <a href="#info" title="Info">Information</a>
       <a href="#kontakt" title="Kontakt">Kontakt</a>
     </nav>
   </div>
@@ -52,7 +53,7 @@
   </section>
 </div>
 <div class="gallery">
-  <h2 id="gallery" class="gallery--heading">Galleri &amp; inspiration</h2>
+  <h2 id="galleri" class="gallery--heading">Galleri &amp; inspiration</h2>
   <ul class="gallery--list">
     <li class="gallery--item-first"><a href="gallery/gallery-1.jpg"><img src="gallery/gallery-1.jpg"></a></li>
     <li class="gallery--item-second"><a href="gallery/gallery-2.jpg"><img src="gallery/gallery-2.jpg"></a></li>
