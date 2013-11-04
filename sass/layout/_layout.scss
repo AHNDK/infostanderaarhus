@@ -606,8 +606,6 @@ figcaption {
   @include zen-grid-container();
   @extend %layout-wrapper;
 
-  margin-bottom: 350px;
-
   @include third-breakpoint() {
     margin-right: 20px;
     margin-left: 20px;
