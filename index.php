@@ -115,7 +115,7 @@
         Kontakt os for at booke en tid til annoncering – så er du sikker på at få den bedste eksponering af dit
         arrangement.
       </p>
-      <p class="footer--focus">Ring <strong>8940 5000</strong> eller udfyld formularen</p>
+      <p class="footer--focus">Ring <a href="tel:89405000"><strong>89 40 50 00</strong></a> eller udfyld formularen</p>
       <p>
         Så lover vi at vende tilbage til dig hurtigst muligt.
       </p>
