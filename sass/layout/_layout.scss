@@ -465,7 +465,7 @@ figcaption {
     overflow: hidden;
     position: relative;
 
-    &:hover:before {
+    a:hover:before {
       @include border-radius(100%);
       @include box-shadow(0 0 25px 10px transparentize($black, .8) inset);
 
@@ -497,6 +497,14 @@ figcaption {
   .gallery--item-third {
     @include zen-nested-container();
     @extend .gallery--item;
+
+    @include last-breakpoint() {
+      @include zen-clear();
+      @include zen-grid-item(9, 2.5);
+      @include zen-nested-container();
+
+      margin-bottom: 40px;
+    }
   }
 }
 

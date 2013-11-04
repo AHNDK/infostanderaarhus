@@ -54,9 +54,9 @@
 <div class="gallery">
   <h2 id="gallery" class="gallery--heading">Galleri &amp; inspiration</h2>
   <ul class="gallery--list">
-    <li class="gallery--item-first"><a href="#"><img src="gallery/gallery-1.jpg"></a></li>
-    <li class="gallery--item-second"><a href="#"><img src="gallery/gallery-2.jpg"></a></li>
-    <li class="gallery--item-third"><a href="#"><img src="gallery/gallery-3.jpg"></a></li>
+    <li class="gallery--item-first"><a href="gallery/gallery-1.jpg"><img src="gallery/gallery-1.jpg"></a></li>
+    <li class="gallery--item-second"><a href="gallery/gallery-2.jpg"><img src="gallery/gallery-2.jpg"></a></li>
+    <li class="gallery--item-third"><a href="gallery/gallery-3.jpg"><img src="gallery/gallery-3.jpg"></a></li>
   </ul>
 </div>
 <div class="prices">
