@@ -2,8 +2,9 @@ $(document).ready(function() {
   $('.gallery-slider').bxSlider({
     mode: 'horizontal',
     slideWidth: 100,
-    minSlides: 2,
-    maxSlides: 7,
+    minSlides: 1,
+    maxSlides: 6,
+    moveSlides: 3,
     slideMargin: 30,
     controls: true,
     pager: false,

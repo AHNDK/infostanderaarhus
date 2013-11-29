@@ -442,6 +442,10 @@ figcaption {
   margin-top: 30px;
   margin-bottom: 90px;
 
+  @include fourth-breakpoint() {
+    margin-bottom: 30px;
+  }
+
   .gallery--item {
     @include border-radius(100%);
 
@@ -497,8 +501,7 @@ figcaption {
 .bx-wrapper {
   clear: both;
   position: relative;
-  margin: 0 auto 60px;
-  padding: 0;
+  padding-bottom: 30px;
 
   *zoom: 1;
 }
@@ -522,7 +525,7 @@ figcaption {
   background: url("../images/controls.png") no-repeat;
 
   @include first-breakpoint() {
-    left: 10px;
+    left: -35px;
   }
 }
 
@@ -532,7 +535,7 @@ figcaption {
   background: url("../images/controls.png") no-repeat -73px 0;
 
   @include first-breakpoint() {
-    right: 10px;
+    right: -35px;
   }
 }
 
@@ -547,7 +550,7 @@ figcaption {
 .bx-wrapper .bx-controls-direction a {
   position: absolute;
   top: 50%;
-  margin-top: -32px;
+  margin-top: -45px;
   outline: 0;
   width: 65px;
   height: 65px;
