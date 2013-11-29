@@ -3,7 +3,7 @@ $(document).ready(function() {
     mode: 'horizontal',
     slideWidth: 100,
     minSlides: 2,
-    maxSlides: 6,
+    maxSlides: 7,
     slideMargin: 30,
     controls: true,
     pager: false,

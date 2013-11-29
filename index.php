@@ -59,15 +59,26 @@
     <li class="gallery--item-third"><a href="gallery/gallery-3.jpg"><img src="gallery/gallery-3.jpg"></a></li>
   </ul>
   <div class="gallery-slider">
-    <div class="slide"><img src="gallery/gallery-1.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-2.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-3.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-1.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-2.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-3.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-1.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-2.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-3.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-1.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-2.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-3.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-4.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-5.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-6.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-7.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-8.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-9.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-10.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-11.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-12.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-13.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-14.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-15.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-16.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-17.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-18.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-19.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-20.jpg"></div>
   </div>
 </div>
 <div class="prices">
