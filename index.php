@@ -79,6 +79,8 @@
     <div class="slide"><img src="gallery/gallery-small-18.jpg"></div>
     <div class="slide"><img src="gallery/gallery-small-19.jpg"></div>
     <div class="slide"><img src="gallery/gallery-small-20.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-21.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-small-22.jpg"></div>
   </div>
 </div>
 <div class="prices">
