@@ -60,7 +60,7 @@ figcaption {
 }
 
 .logo--link {
-  @include zen-grid-item(6, 1);
+  @include zen-grid-item(4, 1);
   @include zen-nested-container();
 
   margin-top: 15px;
@@ -86,7 +86,7 @@ figcaption {
 }
 
 .navigation {
-  @include zen-grid-item(7, 1, right);
+  @include zen-grid-item(8, 1, right);
   @include zen-nested-container();
 
   margin-top: 25px;
@@ -134,6 +134,10 @@ figcaption {
 .aak-logo,
 .aak-logo-big {
   float: right;
+
+  @include second-breakpoint() {
+    display: none;
+  }
 }
 
 .aak-logo {
