@@ -88,7 +88,7 @@ figcaption {
 }
 
 .navigation {
-  @include zen-grid-item(6, 1, right);
+  @include zen-grid-item(7, 1, right);
   @include zen-nested-container();
 
   margin-top: 25px;
@@ -119,10 +119,23 @@ figcaption {
     color: $link-color;
   }
 
+  .navigation--first {
+    margin-left: 0;
+  }
+
   @include third-breakpoint() {
     display: none;
   }
 }
+
+
+.aak--logo {
+  margin-top: -10px;
+  margin-left: 50px;
+
+  float: right;
+}
+
 
 
 /* Primary content

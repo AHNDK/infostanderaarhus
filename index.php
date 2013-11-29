@@ -6,10 +6,11 @@
   <div class="header--inner">
     <a href="#top" class="logo--link"><img src="../images/logo.png" alt="Infostander Aarhus logo" class="logo"></a>
     <nav class="navigation">
-      <a href="#galleri" title="Galleri & inspiration">Galleri & inspiration</a>
+      <a href="#galleri" title="Galleri & inspiration" class="navigation--first">Galleri & inspiration</a>
       <a href="#priser" title="Priser">Priser</a>
       <a href="#info" title="Info">Information</a>
       <a href="#kontakt" title="Kontakt">Kontakt</a>
+      <img src="../images/aak-logo.png" alt="Aarhus Kommune" class="aak--logo">
     </nav>
   </div>
 </header>
@@ -18,8 +19,8 @@
     <img src="/images/infostander.png" class="primary-content--image" alt="Billede af infostander">
     <section class="contact-box--content">
       <h1 class="contact-box--heading">Infostander Aarhus</h1>
-      <p class="contact-box--lead">Annoncér dit næste arrangement ved byens indfaldsveje.</p>
-      <p class="contact-box--text">Kontakt os i dag og find ud af hvad du har af muligheder for annoncering til konkurrencedygtige priser.</p>
+      <p class="contact-box--lead">Annoncér dit arrangement ved byens indfaldsveje.</p>
+      <p class="contact-box--text">Kontakt os i dag og find ud af hvad du har af muligheder.</p>
       <a href="#kontakt" class="contact-box--link"><i class="icon-arrow-right"></i>Kontakt</a>
     </section>
   </div>
