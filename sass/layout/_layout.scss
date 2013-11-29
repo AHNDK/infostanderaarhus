@@ -129,11 +129,18 @@ figcaption {
 }
 
 
-.aak--logo {
+
+/* AAK logo
+   ========================================================================== */
+
+.aak-logo,
+.aak-logo-big {
+  float: right;
+}
+
+.aak-logo {
   margin-top: -10px;
   margin-left: 50px;
-
-  float: right;
 }
 
 

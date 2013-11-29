@@ -10,7 +10,7 @@
       <a href="#priser" title="Priser">Priser</a>
       <a href="#info" title="Info">Information</a>
       <a href="#kontakt" title="Kontakt">Kontakt</a>
-      <img src="../images/aak-logo.png" alt="Aarhus Kommune" class="aak--logo">
+      <img src="../images/aak-logo.png" alt="Aarhus Kommune" class="aak-logo">
     </nav>
   </div>
 </header>
@@ -103,7 +103,9 @@
 <footer class="footer" role="contentinfo">
   <section class="footer--content-primary">
     <img src="/images/address-map.png" class="footer--map" alt="Kort med ITK Designs fysiske placering">
-    <h2>ITK Design</h2>
+    <img src="../images/aak-logo-big.png" alt="Aarhus Kommune" class="aak-logo-big">
+    <h2>ITK</h2>
+    Aarhus Kommune<br>
     Møllegade 1<br>
     8000 Aarhus C<br>
     <strong>E-mail:</strong> <a href="mailto:infostander@aarhus.dk">infostander@aarhus.dk</a><br>
