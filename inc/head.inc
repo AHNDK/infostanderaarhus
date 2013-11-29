@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="/css/infostander-icons.css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
   <script src="/scripts/scrolling.min.js" type="application/javascript"></script>
+  <script src="/scripts/jquery.bxslider.min.js" type="application/javascript"></script>
+  <script src="/scripts/slider.min.js" type="application/javascript"></script>
   <!--[if lt IE 9]>
   <link rel="stylesheet" href="/css/ie8.css">
   <script src="/scripts/html5shiv.js"></script>

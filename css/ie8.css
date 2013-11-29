@@ -21,6 +21,10 @@ img,
   width: 30%;
 }
 
+.gallery-slider {
+  display: none;
+}
+
 input[type="text"],
 input[type="password"],
 input[type="date"],

@@ -38,7 +38,7 @@
     <a href="#info" class="focus-box--icon"><i class="icon-info"></i></a>
     <h3 class="focus-box--heading"><a href="#info">Information</a></h3>
     <div class="focus-box--content">
-      <p>Få mere information om infostanderne.</p>
+      <p>Få mere information om infostanderne.<br><br></p>
     </div>
     <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Information</a>
   </section>
@@ -46,7 +46,7 @@
     <a href="#galleri" class="focus-box--icon"><i class="icon-picture"></i></a>
     <h3 class="focus-box--heading"><a href="#galleri">Inspiration & galleri</a></h3>
     <div class="focus-box--content">
-      <p>Se eksempler fra infostanderne.</p>
+      <p>Se eksempler fra infostanderne.<br><br></p>
     </div>
     <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Inspiration</a>
   </section>
@@ -58,6 +58,17 @@
     <li class="gallery--item-second"><a href="gallery/gallery-2.jpg"><img src="gallery/gallery-2.jpg"></a></li>
     <li class="gallery--item-third"><a href="gallery/gallery-3.jpg"><img src="gallery/gallery-3.jpg"></a></li>
   </ul>
+  <div class="gallery-slider">
+    <div class="slide"><img src="gallery/gallery-1.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-2.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-3.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-1.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-2.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-3.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-1.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-2.jpg"></div>
+    <div class="slide"><img src="gallery/gallery-3.jpg"></div>
+  </div>
 </div>
 <div class="prices">
   <div class="prices--inner">
