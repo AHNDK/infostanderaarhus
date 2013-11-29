@@ -38,7 +38,7 @@
     <a href="#info" class="focus-box--icon"><i class="icon-info"></i></a>
     <h3 class="focus-box--heading"><a href="#info">Information</a></h3>
     <div class="focus-box--content">
-      <p>Få mere information om og læs hvorfor du skal annoncere på infostanderne.</p>
+      <p>Få mere information om infostanderne.</p>
     </div>
     <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Information</a>
   </section>
@@ -46,7 +46,7 @@
     <a href="#galleri" class="focus-box--icon"><i class="icon-picture"></i></a>
     <h3 class="focus-box--heading"><a href="#galleri">Inspiration & galleri</a></h3>
     <div class="focus-box--content">
-      <p>Se eksempler fra infostanderne og få inspiration i vores galleri.</p>
+      <p>Se eksempler fra infostanderne.</p>
     </div>
     <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Inspiration</a>
   </section>
@@ -64,8 +64,13 @@
     <i class="prices--content-image icon-tag"></i>
     <div class="prices--content">
       <h2 id="priser" class="prices--heading">Priser</h2>
-      <p>Bestil nu og få en uges visning for 8000,- eller 14 dage for 15000,-</p>
-      <p>Har du behov for at annoncere i en længere periode laver vi et tilbud til dig. Alle priser er inkl. opsætning af grafik og administrationsomkostninger og ekskl. moms.</p>
+        <p>
+          1 uges visning = 8.000 kr.<br>
+          2 ugers visning = 15.000 kr.
+        </p>
+        <p>Kontakt os for at høre på pris, hvis der er behov for at annoncere i en længere periode.</p>
+        <p>Alle priser er excl. moms og incl. administrationsomkostninger og opsætning af grafik.</p>
+      </p>
       <a href="#kontakt" class="prices--contact-link"><i class="icon-arrow-right"></i>Kontakt</a>
     </div>
   </div>
@@ -73,31 +78,65 @@
 <div class="info">
   <div class="info--content-primary">
     <h3 id="info" class="info--heading">Information</h3>
-    <p>Hvis du er arrangør for kulturelle og sportslige events, hvor alle byens borgere kan deltage eller en skoleinstitution kan du annoncere på de digitale infostandere.</p>
-    <p>De digitale infostandere er placeret ved otte af de mest trafikerede indfaldsveje til Aarhus (Grenåvej, Randersvej, Christian X’s Vej, Edwin Rahrs Vej, Silkeborgvej, Viborgvej, Skander-borgvej og Oddervej).
-    Infostanderne er synlige både for fodgængere og cyklister såvel som bilister – og de kan ses tydeligt i både dagtimerne, om aftenen og natten. De godt to gange tre meter lysende LED-skærme sender klare og tydelige budskaber til de godt 200.000 trafikanter der kører forbi hver dag.</p>
-    <h5>Fordelen ved digitale spots er</h5>
+    <p>InfostanderAarhus kan benyttes til markedsføring af kulturelle og sportslige events, hvor alle byens borgere kan deltage. De digitale infostandere er placeret ved otte af de mest trafikerede indfaldsveje til Aarhus (Grenåvej, Randersvej, Christian X’s Vej, Edwin Rahrs Vej, Silkeborgvej, Viborgvej, Skanderborgvej og Oddervej).</p>
+    <p>Infostanderne er synlige for både fodgængere og cyklister, og de kan ses tydeligt døgnet rundt. Skærmene er 2 meter brede og 3 meter brede, og de lysende LED-skærme sender klare og tydelige budskaber til de mere end 200.000 trafikanter der kører forbi hver dag.</p>
+    <p>De digitale infostandere viser som udgangspunkt rullende 5 spots ad gangen, og de 8 infostandere viser den samme spotrække.</p>
+    <h5>Fordelen ved digitale spots</h5>
     <ul>
-      <li>Visning for 200.000 trafikanter hver dag</li>
-      <li>Visning på otte strategisk placerede infostandere</li>
+      <li>Eksponering for mere end 200.000 trafikanter hver dag</li>
+      <li>Visning på 8 strategisk placerede infostandere</li>
       <li>Visning døgnet rundt</li>
-      <li>Visning på lysende LED skærme (2 × 3 meter)</li>
+      <li>Visning på lysende LED-skærme (2 x 3 meter)</li>
     </ul>
+    <h5>Hvem kan annoncere via Infostander Aarhus?</h5>
+    <p>Servicen kan benyttes af alle, der arrangerer kulturelle og sportslige events, hvor alle byens borgere kan deltage, samt kommunale kampagner.</p>
+    <h5>Retningslinier for annoncering</h5>
+    <ul>
+      <li>Events skal understøtte byens brand</li>
+      <li>De af politiet opsatte retningslinier skal overholdes</li>
+      <li>Spots må ikke indeholde stødende billeder eller tekst</li>
+      <li>
+        Der må ikke være reklamer eller kommercielle budskaber på spots, men:
+        <ul>
+          <li>Der må reklameres for et arrangement i byen, hvor der skal betales entré</li>
+          <li>Der må henvises til billetsalg vedrørende et arrangement via en hjemmeside eller henvisning til et billetsalgssted</li>
+          <li>Der må bruges virksomhedsnavne, hvis det indgår i eventtitel, som f.eks. GF World Cup</li>
+          <li>Logoer fra sponsorer må figurere på spots med sekundær placering</li>
+        </ul>
+      </li>
+    </ul>
+    <h5>Praktiske forhold</h5>
+    <p>Følgende materiale skal leverer pr. mail senest 4 uger før spottet skal vises:</p>
+    <ul>
+      <li>Baggrundsbillede skal du levere i den bedst mulige opløsning (jpeg-fil). Informer om hvilken del af billedet der skal bruges</li>
+      <li>Teksten bør være korte og præcise budskaber. Du skal også her specificere, hvor teksten skal stå, om den skal stå med store eller små bogstaver og hvordan den skal sættes op; i linier, i en tekstboble, top, bund osv.</li>
+      <li>Det væsentlige er: Hvad, hvor, hvornår!</li>
+      <li>Et eventuelt logo skal du sende som en billedfil (jpeg-fil)</li>
+    </ul>
+    <p>Det er også muligt selv at levere grafikken der skal vises.</p>
   </div>
   <div class="info--content-secondary">
     <figure>
       <img src="/images/infostandere-placering.png" alt="Kort over placering af infostandere">
       <figcaption>Kort over placering af infostandere ved indfaldsvejene ved Aarhus. Hver dag kører der i gennemsnit 200.000 trafikanter forbi infostanderne.</figcaption>
     </figure>
-    <p>
-      Informationsstanderne kan benyttes af alle, der arrangerer kulturelle og sportslige events, hvor alle byens
-      borgere kan deltage samt kommunale kampagner og skoler må annoncere.
-    </p>
-    <p>
-      Infoskærmene måler godt 2 × 3 meter. De digitale informationsstandere viser som udgangspunkt rullende fem spots ad
-      gangen, og de 8 infostandere viser den samme spotrække.
-    </p>
-    <p class="info--emphasized">Har du spørgsmål eller ønsker du at booke annoncering så <a href="#kontakt">kontakt os!</a></p>
+    <h5>Gode råd, hvis du selv producerer annoncen</h5>
+    <ul>
+      <li>Skriv korte og enkle budskaber – Det er begrænset hvor meget tekst, de forbipasserende kan nå at læse</li>
+      <li>Lys tekst fungerer godt på en mørk baggrund</li>
+      <li>Brug stor skriftstørrelse – varierer fra font til font</li>
+      <li>Ønsker du en lys baggrund, så undgå at lave den helt hvid. Vores erfaring viser, at en 100% hvid baggrund kommer til at lyse så kraftigt, at teksten bliver meget utydelig, uanset hvor stor skriften er</li>
+      <li>Når du har produceret din annonce er det en god idé at se på det i halv størrelse på computerskærmen. Hvis spottet fungerer i denne størrelse, fungerer det med stor sandsynlighed også på infostanderne</li>
+    </ul>
+    <h5>Krav til billedfiler</h5>
+    <ul>
+      <li>Filformat: JPEG</li>
+      <li>Opløsning: 256 x 384 – 72 dpi</li>
+      <li>Farver: RGB</li>
+    </ul>
+    <p>Har du spørgsmål eller ønsker du at booke annoncering, så <a href="#kontakt" title="Kontakt os">kontakt os</a>!</p>
+    <p><i>Infostander Aarhus er et initiativ iværksat af Aarhus Kommune med henblik på at sikre eksponeringsmuligheder for byens eventoperatører, og derved styrke Aarhus som eventby frem mod blandt andet Aarhus kom Kulturhovedstad 2017.</i></p>
+    <p><i>Priserne er fastsat med henblik på at dække omkostninger til etablering og drift af infostanderne, samt løbende administrationsomkostninger, herunder markedsføring, salg, grafisk arbejde og systemadministration. Eventuelt overskud anvendes til aktiviteter der støtter op omkring Aarhus som Kulturhovedstad i 2017.</i></p>
   </div>
 </div>
 <footer class="footer" role="contentinfo">
@@ -115,8 +154,7 @@
     <h2 class="footer--heading">Kontakt</h2>
     <div class="footer--lead">
       <p>
-        Kontakt os for at booke en tid til annoncering – så er du sikker på at få den bedste eksponering af dit
-        arrangement.
+        Kontakt os for at booke en tid til annoncering.
       </p>
       <p class="footer--focus">Ring <a href="tel:89405000"><strong>8940 5000</strong></a> eller udfyld formularen</p>
       <p>
