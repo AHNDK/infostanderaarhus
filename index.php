@@ -103,7 +103,7 @@
   <div class="info--content-primary">
     <h3 id="info" class="info--heading">Information</h3>
     <p>InfostanderAarhus kan benyttes til markedsføring af kulturelle og sportslige events, hvor alle byens borgere kan deltage. De digitale infostandere er placeret ved otte af de mest trafikerede indfaldsveje til Aarhus (Grenåvej, Randersvej, Christian X’s Vej, Edwin Rahrs Vej, Silkeborgvej, Viborgvej, Skanderborgvej og Oddervej).</p>
-    <p>Infostanderne er synlige for både fodgængere og cyklister, og de kan ses tydeligt døgnet rundt. Skærmene er 2 meter brede og 3 meter brede, og de lysende LED-skærme sender klare og tydelige budskaber til de mere end 200.000 trafikanter der kører forbi hver dag.</p>
+    <p>Infostanderne er synlige for både fodgængere og cyklister, og de kan ses tydeligt døgnet rundt. Skærmene er 2 meter brede og 3 meter høje, og de lysende LED-skærme sender klare og tydelige budskaber til de mere end 200.000 trafikanter der kører forbi hver dag.</p>
     <p>De digitale infostandere viser som udgangspunkt rullende 5 spots ad gangen, og de 8 infostandere viser den samme spotrække.</p>
     <h5>Fordelen ved digitale spots</h5>
     <ul>
