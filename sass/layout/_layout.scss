@@ -650,6 +650,14 @@ figcaption {
   font-size: $font-size-mega;
 }
 
+
+.info--content-primary,
+.info--content-secondary {
+  li {
+    list-style: disc;
+  }
+}
+
 .info--content-primary {
   @include zen-grid-item(6, 1);
   @include zen-nested-container();
@@ -658,10 +666,6 @@ figcaption {
 
   .info--list {
     margin-bottom: 30px;
-  }
-
-  li {
-    list-style: disc;
   }
 
   @include last-breakpoint() {

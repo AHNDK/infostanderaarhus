@@ -30,7 +30,7 @@
     <a href="#priser" class="focus-box--icon"><i class="icon-tag"></i></a>
     <h3 class="focus-box--heading"><a href="#priser">Priser</a></h3>
     <div class="focus-box--content">
-      <p>Der kan købes visning af spot i 7 eller 14 dage, inkl. opsætning af grafik.</p>
+      <p>Der kan købes annoncering i 7 eller 14 dage, inkl. opsætning af grafik.</p>
     </div>
     <a href="#priser" class="focus-box--link"><i class="icon-arrow-right"></i>Se priser</a>
   </section>
@@ -38,7 +38,7 @@
     <a href="#info" class="focus-box--icon"><i class="icon-info"></i></a>
     <h3 class="focus-box--heading"><a href="#info">Information</a></h3>
     <div class="focus-box--content">
-      <p>Få mere information om infostanderne.<br><br></p>
+      <p>Få yderligere information om infostanderne.</p>
     </div>
     <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Information</a>
   </section>
@@ -46,7 +46,7 @@
     <a href="#galleri" class="focus-box--icon"><i class="icon-picture"></i></a>
     <h3 class="focus-box--heading"><a href="#galleri">Inspiration & galleri</a></h3>
     <div class="focus-box--content">
-      <p>Se eksempler fra infostanderne.<br><br></p>
+      <p>Se eksempler på tidligere annoncering på infostanderne.</p>
     </div>
     <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Inspiration</a>
   </section>
@@ -59,28 +59,28 @@
     <li class="gallery--item-third"><a href="gallery/gallery-3.jpg"><img src="gallery/gallery-3.jpg"></a></li>
   </ul>
   <div class="gallery-slider">
-    <div class="slide"><img src="gallery/gallery-small-1.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-2.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-3.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-4.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-5.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-6.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-7.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-8.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-9.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-10.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-11.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-12.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-13.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-14.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-15.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-16.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-17.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-18.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-19.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-20.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-21.jpg"></div>
-    <div class="slide"><img src="gallery/gallery-small-22.jpg"></div>
+    <div class="slide"><a href="gallery/gallery-small-1.jpg"><img src="gallery/gallery-small-1.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-2.jpg"><img src="gallery/gallery-small-2.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-3.jpg"><img src="gallery/gallery-small-3.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-4.jpg"><img src="gallery/gallery-small-4.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-5.jpg"><img src="gallery/gallery-small-5.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-6.jpg"><img src="gallery/gallery-small-6.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-7.jpg"><img src="gallery/gallery-small-7.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-8.jpg"><img src="gallery/gallery-small-8.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-9.jpg"><img src="gallery/gallery-small-9.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-10.jpg"><img src="gallery/gallery-small-10.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-11.jpg"><img src="gallery/gallery-small-11.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-12.jpg"><img src="gallery/gallery-small-12.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-13.jpg"><img src="gallery/gallery-small-13.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-14.jpg"><img src="gallery/gallery-small-14.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-15.jpg"><img src="gallery/gallery-small-15.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-16.jpg"><img src="gallery/gallery-small-16.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-17.jpg"><img src="gallery/gallery-small-17.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-18.jpg"><img src="gallery/gallery-small-18.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-19.jpg"><img src="gallery/gallery-small-19.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-20.jpg"><img src="gallery/gallery-small-20.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-21.jpg"><img src="gallery/gallery-small-21.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-22.jpg"><img src="gallery/gallery-small-22.jpg"></a></div>
   </div>
 </div>
 <div class="prices">
