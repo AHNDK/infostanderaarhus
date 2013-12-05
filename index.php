@@ -61,7 +61,7 @@
   <div class="gallery-slider">
     <div class="slide"><a href="gallery/gallery-small-1.jpg"><img src="gallery/gallery-small-1.jpg"></a></div>
     <div class="slide"><a href="gallery/gallery-small-2.jpg"><img src="gallery/gallery-small-2.jpg"></a></div>
-    <div class="slide"><a href="gallery/gallery-3.jpg"><img src="gallery/gallery-small-3.jpg"></a></div>
+    <div class="slide"><a href="gallery/gallery-small-3.jpg"><img src="gallery/gallery-small-3.jpg"></a></div>
     <div class="slide"><a href="gallery/gallery-small-4.jpg"><img src="gallery/gallery-small-4.jpg"></a></div>
     <div class="slide"><a href="gallery/gallery-small-5.jpg"><img src="gallery/gallery-small-5.jpg"></a></div>
     <div class="slide"><a href="gallery/gallery-small-6.jpg"><img src="gallery/gallery-small-6.jpg"></a></div>
