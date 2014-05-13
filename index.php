@@ -135,7 +135,7 @@
       <li>Baggrundsbillede skal du levere i den bedst mulige opløsning (jpeg-fil). Informer om hvilken del af billedet der skal bruges</li>
       <li>Teksten bør være korte og præcise budskaber. Du skal også her specificere, hvor teksten skal stå, om den skal stå med store eller små bogstaver og hvordan den skal sættes op; i linier, i en tekstboble, top, bund osv.</li>
       <li>Det væsentlige er: Hvad, hvor, hvornår!</li>
-      <li>Et eventuelt logo skal du sende som en billedfil (jpeg-fil)</li>
+      <li>Et eventuelt logo skal du sende som pdf, eps eller ai</li>
     </ul>
     <p>Det er også muligt selv at levere grafikken der skal vises.</p>
   </div>
@@ -155,7 +155,7 @@
     <h5>Krav til billedfiler</h5>
     <ul>
       <li>Filformat: JPEG</li>
-      <li>Opløsning: 256 x 384 – 72 dpi</li>
+      <li>Opløsning: 256 x 384 – 72 ppi</li>
       <li>Farver: RGB</li>
     </ul>
     <p>Har du spørgsmål eller ønsker du at booke annoncering, så <a href="#kontakt" title="Kontakt os">kontakt os</a>!</p>
