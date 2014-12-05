@@ -48,7 +48,7 @@
     <div class="focus-box--content">
       <p>Se eksempler på tidligere annoncering på infostanderne.</p>
     </div>
-    <a href="#info" class="focus-box--link"><i class="icon-arrow-right"></i>Inspiration</a>
+    <a href="#galleri" class="focus-box--link"><i class="icon-arrow-right"></i>Inspiration</a>
   </section>
 </div>
 <div class="gallery">
