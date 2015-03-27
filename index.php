@@ -113,11 +113,13 @@
       <li>Visning på lysende LED-skærme (2 x 3 meter)</li>
     </ul>
     <h5>Hvem kan annoncere via Infostander Aarhus?</h5>
-    <p>Servicen kan benyttes af alle, der arrangerer kulturelle og sportslige events, hvor alle byens borgere kan deltage, samt kommunale kampagner.</p>
-    <h5>Retningslinier for annoncering</h5>
+    <p>Servicen kan benyttes af alle, der arrangerer kulturelle og sportslige events, hvor alle byens borgere kan deltage, uddannelsesinstitutioner i Aarhus samt kommunale kampagner.</p>
+    <h5>Retningslinjer for annoncering</h5>
     <ul>
       <li>Events skal understøtte byens brand</li>
-      <li>De af politiet opsatte retningslinier skal overholdes</li>
+      <li>Der kan kun annonceres for events, der afholdes i Aarhus kommune og som Aarhus Kommune har hjemmel til at støtte</li>
+      <li>Uddannelsesinstitutioner i Aarhus Kommune kan annoncere på standerne</li>
+      <li>De af politiet opsatte retningslinjer skal overholdes</li>
       <li>Spots må ikke indeholde stødende billeder eller tekst</li>
       <li>
         Der må ikke være reklamer eller kommercielle budskaber på spots, men:
@@ -155,12 +157,13 @@
     <h5>Krav til billedfiler</h5>
     <ul>
       <li>Filformat: JPEG</li>
-      <li>Opløsning: 256 x 384 – 72 ppi</li>
+      <li>Opløsning: 256 x 384 pixels – 72 ppi</li>
       <li>Farver: RGB</li>
     </ul>
     <p>Har du spørgsmål eller ønsker du at booke annoncering, så <a href="#kontakt" title="Kontakt os">kontakt os</a>!</p>
     <p><i>Infostander Aarhus er et initiativ iværksat af Aarhus Kommune med henblik på at sikre eksponeringsmuligheder for byens eventoperatører, og derved styrke Aarhus som eventby frem mod blandt andet Aarhus kom Kulturhovedstad 2017.</i></p>
     <p><i>Priserne er fastsat med henblik på at dække omkostninger til etablering og drift af infostanderne, samt løbende administrationsomkostninger, herunder markedsføring, salg, grafisk arbejde og systemadministration. Eventuelt overskud anvendes til aktiviteter der støtter op omkring Aarhus som Kulturhovedstad i 2017.</i></p>
+    <p><i>Aarhus Kommune forbeholder sig rettigheden til at bruge muligheden for at vise en 6. annonce, såfremt der er brug for det. Det 6. spor vil udelukkende blive brugt til kommunale kampagner med grundlæggende oplysninger til borgerne. Der vil maks. blive vist 6 annoncer på standerne og min. 3 annoncer.</i></p>
   </div>
 </div>
 <footer class="footer" role="contentinfo">
