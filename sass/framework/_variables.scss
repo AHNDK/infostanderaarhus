@@ -1,0 +1,75 @@
+/**
+ * Variables
+ *
+ * @author magnify
+ */
+
+
+/* Zen Grid variables
+   ========================================================================== */
+
+$zen-column-count: 12;
+$zen-gutter-width: 30px;
+$box-sizing-polyfill-path: "/scripts/boxsizing.htc";
+
+
+/* Standard color definitions
+   ========================================================================== */
+
+$white:                          #fff !default;
+$black:                          #000 !default;
+$gray:                           #d5d5d5 !default;
+$gray-light:                     lighten($gray, 10%) !default;
+$gray-lighter:                   lighten($gray, 15%) !default;
+$gray-dark:                      darken($gray, 10%) !default;
+$gray-darker:                    darken($gray, 25%) !default;
+$gray-darkest:                   darken($gray, 35%) !default;
+$red:                            #a32e10;
+$green:                          #59a214;
+$blue:                           #0099cc;
+$yellow:                         #f0cb28;
+
+
+
+/* Typography
+   ========================================================================== */
+$font-body:                       "Source Sans Pro", "Helvetica Neue", Helvetica, "Lucida Sans Unicode", Arial, sans-serif;
+$font-color-primary:              #242424;
+
+
+/* Font variables
+   ========================================================================== */
+
+$base-font-size:                  16px;
+$base-line-height:                24px;
+
+
+
+/* Font sizes
+   ========================================================================== */
+
+$font-size-giga:                  300%;
+$font-size-mega:                  220%;
+$font-size-largest:               170%;
+$font-size-larger:                160%;
+$font-size-large:                 130%;
+$font-size-medium:                110%;
+$font-size-reset:                 100%;
+$font-size-small:                 85%;
+$font-size-tiny:                  75%;
+
+
+/* Layout
+   ========================================================================== */
+
+$base-border-radius:              4px;
+$border-dottet-large:             url('/images/dot-large.png') 0 bottom repeat-x;
+$border-dottet-small:             url('/images/dot-small.png') 0 bottom repeat-x;
+
+
+
+/* Links
+   ========================================================================== */
+
+$link-color:                      #0099CC;
+$link-color-hover:                darken(#0099CC, 8%);

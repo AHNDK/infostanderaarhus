@@ -1,0 +1,64 @@
+/**
+ * Mixins
+ *
+ * @author magnify
+ */
+
+
+/* Breakpoints
+   ========================================================================== */
+
+$first-breakpoint:                1042px;
+$second-breakpoint:               945px;
+$third-breakpoint:                865px;
+$fourth-breakpoint:               710px;
+$last-breakpoint:                 480px;
+
+/* Media query
+   ========================================================================== */
+
+@mixin respond-to($media) {
+  @if $media == first-breakpoint {
+    @media only screen and (max-width: $first-breakpoint) { @content; }
+  }
+
+  @else if $media == second-breakpoint {
+    @media only screen and (max-width: $second-breakpoint) { @content; }
+  }
+
+  @else if $media == third-breakpoint {
+    @media only screen and (max-width: $third-breakpoint) { @content; }
+  }
+
+  @else if $media == fourth-breakpoint {
+    @media only screen and (max-width: $fourth-breakpoint) { @content; }
+  }
+
+  @else if $media == last-breakpoint {
+    @media only screen and (max-width: $last-breakpoint) { @content; }
+  }
+}
+
+
+/* Breakpoints
+   ========================================================================== */
+
+@mixin first-breakpoint {
+  @include respond-to(first-breakpoint) { @content; }
+}
+
+@mixin second-breakpoint {
+  @include respond-to(second-breakpoint) { @content; }
+}
+
+@mixin third-breakpoint {
+  @include respond-to(third-breakpoint) { @content; }
+}
+
+@mixin fourth-breakpoint {
+  @include respond-to(fourth-breakpoint) { @content; }
+}
+
+@mixin last-breakpoint {
+  @include respond-to(last-breakpoint) { @content; }
+}

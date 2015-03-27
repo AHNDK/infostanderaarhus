@@ -1,0 +1,794 @@
+/**
+ * Layout
+ *
+ * @author magnify
+ */
+
+
+body {
+  @include zen-grid-container();
+
+  margin-bottom: 30px;
+  padding-top: 75px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  /* Correct for font line height */
+  margin-top: -9px;
+}
+
+figure {
+  background: $border-dottet-small;
+}
+
+figcaption {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  color: $gray-darker;
+}
+
+%layout-wrapper {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.header {
+  background-color: transparentize($white, .05);
+  background-image: url('/images/header-colors.png');
+  background-position: left bottom ;
+  background-repeat: repeat-x;
+
+  @include zen-grid-item(12, 1);
+  @include background-size(100% auto);
+
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+
+.header--inner {
+  @extend %layout-wrapper;
+
+  min-height: 80px;
+}
+
+.logo--link {
+  @include zen-grid-item(4, 1);
+  @include zen-nested-container();
+
+  margin-top: 15px;
+
+  @include third-breakpoint() {
+    @include zen-grid-item(10, 1);
+    @include zen-nested-container();
+  }
+
+  @include last-breakpoint() {
+    @include zen-grid-item(12, 1);
+
+    margin-top: 22px;
+  }
+}
+
+.logo {
+  max-width: 325px;
+
+  @include last-breakpoint() {
+    max-width: 100%;
+  }
+}
+
+.navigation {
+  @include zen-grid-item(8, 1, right);
+  @include zen-nested-container();
+
+  margin-top: 25px;
+
+  font-family: "Source Sans Pro Light";
+  font-size: 120%;
+  text-align: right;
+
+  /* Links in navigation */
+  a {
+    margin-left: 50px;
+  }
+
+  a:link {
+    color: lighten($black, 50%);
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: lighten($black, 25%);
+  }
+
+  a:hover {
+    color: $link-color-hover;
+  }
+
+  a:focus {
+    color: $link-color;
+  }
+
+  .navigation--first {
+    margin-left: 0;
+  }
+
+  @include third-breakpoint() {
+    display: none;
+  }
+}
+
+
+
+/* AAK logo
+   ========================================================================== */
+
+.aak-logo,
+.aak-logo-big {
+  float: right;
+
+  @include second-breakpoint() {
+    display: none;
+  }
+}
+
+.aak-logo {
+  margin-top: -10px;
+  margin-left: 50px;
+}
+
+
+
+/* Primary content
+   ========================================================================== */
+
+.primary-content {
+  @include zen-clear(both);
+  @include zen-grid-container();
+  @include background-size(cover);
+
+  margin-bottom: 70px;
+  position: relative;
+
+  background-image: url('/images/header-background.jpg');
+  background-repeat: no-repeat;
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+  }
+}
+
+.primary-content--inner {
+  @extend %layout-wrapper;
+}
+
+.primary-content--image {
+  @include zen-grid-item(5, 1);
+
+  bottom: 0;
+  display: inline-block;
+  margin-top: 50px;
+  max-width: 450px;
+  padding-right: 50px;
+  position: absolute;
+
+  @include fourth-breakpoint() {
+    display: none;
+  }
+}
+
+
+/* Contact box
+   ========================================================================== */
+
+.contact-box--content {
+  @include zen-grid-item(7, 1, right);
+  @include box-sizing(border-box);
+
+  display: inline-block;
+  padding-top: 125px;
+  padding-bottom: 125px;
+
+  vertical-align: top;
+
+  @include first-breakpoint() {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+
+  @include third-breakpoint() {
+    padding-top: 55px;
+    padding-left: 35px;
+  }
+
+  @include fourth-breakpoint() {
+    @include zen-grid-item(12, 1);
+
+    background-color: transparentize($white, .5);
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  @include last-breakpoint() {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.contact-box--heading {
+  font-size: $font-size-giga;
+
+  @include second-breakpoint() {
+    font-size: $font-size-mega;
+  }
+
+  @include fourth-breakpoint() {
+    display: none;
+  }
+}
+
+.contact-box--lead {
+  margin-bottom: 20px;
+
+  font-size: $font-size-larger;
+
+  @include second-breakpoint() {
+    font-size: $font-size-large;
+  }
+}
+
+.contact-box--text {
+  margin-bottom: 30px;
+
+  font-family: "Source Sans Pro Light";
+  font-size: $font-size-large;
+
+  @include second-breakpoint() {
+    font-size: $font-size-medium;
+  }
+}
+
+.contact-box--link {
+  @extend %action-button;
+  @extend %button-large;
+
+  @include second-breakpoint() {
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+
+    font-size: $font-size-larger;
+  }
+}
+
+
+/* Secondary content
+   ========================================================================== */
+
+.secondary-content {
+  @include zen-clear(both);
+  @include zen-grid-container();
+  @extend %layout-wrapper;
+
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+
+  background: $border-dottet-large;
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+
+/* Focus boxes
+   ========================================================================== */
+
+.focus-box--first {
+  @include zen-grid-item(2.5, 1.5);
+
+  @include third-breakpoint() {
+    @include zen-grid-item(5, 1.5);
+
+  }
+
+  @include last-breakpoint() {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+
+    background: $border-dottet-small;
+  }
+}
+
+.focus-box--second {
+  @include zen-grid-item(2.5, 5.5);
+
+  @include third-breakpoint() {
+    @include zen-grid-item(5, 1.5, right);
+  }
+}
+
+.focus-box--third {
+  @include zen-grid-item(2.5, 9.5);
+
+  @include third-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+  }
+}
+
+.focus-box--first,
+.focus-box--second,
+.focus-box--third {
+  padding-right: 0;
+  padding-left: 0;
+
+  text-align: center;
+
+  @include third-breakpoint() {
+    padding-right: 20px;
+  }
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+    @include zen-nested-container();
+  }
+}
+
+
+.focus-box--third {
+  @include third-breakpoint() {
+    display: none;
+  }
+}
+
+.focus-box--icon {
+  border-radius: 100%;
+  display: inline-block;
+  margin-bottom: 30px;
+  padding: 40px 30px;
+
+  background-color: lighten($blue, 50);
+  font-size: 500%;
+
+  i[class^="icon-"] {
+    color: $white;
+  }
+
+  &:hover {
+    background-color: lighten($blue, 25);
+  }
+
+  @include last-breakpoint() {
+    display: none;
+  }
+}
+
+.focus-box--content {
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+}
+
+.focus-box--link {
+  @extend %link-button;
+  @extend %button-small;
+
+  display: block;
+
+  @include second-breakpoint() {
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+
+    font-size: $font-size-medium;
+  }
+
+  @include third-breakpoint() {
+    display: inline-block;
+  }
+}
+
+
+/* Gallery
+   ========================================================================== */
+
+.gallery {
+  @include zen-grid-container();
+  @extend %layout-wrapper;
+
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+
+  background: $border-dottet-large;
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+.gallery--heading {
+  text-align: center;
+}
+
+.gallery--list {
+  @include zen-grid-item(12, 1);
+  @include zen-nested-container();
+
+  margin-top: 30px;
+  margin-bottom: 90px;
+
+  @include fourth-breakpoint() {
+    margin-bottom: 30px;
+  }
+
+  .gallery--item {
+    @include border-radius(100%);
+
+    overflow: hidden;
+    position: relative;
+
+    a:hover:before {
+      @include border-radius(100%);
+      @include box-shadow(0 0 25px 10px transparentize($black, .8) inset);
+
+      position: absolute;
+
+      display: block;
+      height: 100%;
+      width: 100%;
+
+      content: "";
+      cursor: pointer;
+    }
+  }
+
+  .gallery--item-first {
+    @include zen-grid-item(3, 1.5);
+  }
+
+  .gallery--item-second {
+    @include zen-grid-item(3, 5.5);
+  }
+
+  .gallery--item-third {
+    @include zen-grid-item(3, 1.5, right);
+  }
+
+  .gallery--item-first,
+  .gallery--item-second,
+  .gallery--item-third {
+    @include zen-nested-container();
+    @extend .gallery--item;
+
+    @include last-breakpoint() {
+      @include zen-clear();
+      @include zen-grid-item(9, 2.5);
+      @include zen-nested-container();
+
+      margin-bottom: 40px;
+    }
+  }
+}
+
+/* Gallery slider (http://bxslider.com)
+   ========================================================================== */
+
+.bx-wrapper {
+  clear: both;
+  position: relative;
+  padding-bottom: 30px;
+
+  *zoom: 1;
+}
+
+
+.bx-wrapper .bx-loading {
+  min-height: 50px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+
+  background: url("../images/loader.gif") center center no-repeat $white;
+}
+
+.bx-wrapper .bx-prev {
+  left: -100px;
+
+  background: url("../images/controls.png") no-repeat;
+
+  @include first-breakpoint() {
+    left: -35px;
+  }
+}
+
+.bx-wrapper .bx-next {
+  right: -100px;
+
+  background: url("../images/controls.png") no-repeat -73px 0;
+
+  @include first-breakpoint() {
+    right: -35px;
+  }
+}
+
+.bx-wrapper .bx-prev:hover {
+  background-position: 0 -74px;
+}
+
+.bx-wrapper .bx-next:hover {
+  background-position: -73px -74px;
+}
+
+.bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  outline: 0;
+  width: 65px;
+  height: 65px;
+  z-index: 9999;
+
+  text-indent: -9999px;
+}
+
+
+/* Prices
+   ========================================================================== */
+
+.prices {
+  @include zen-grid-container();
+  @extend %layout-wrapper;
+
+  position: relative;
+
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+
+  background: $border-dottet-large;
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.prices--inner {
+  @include zen-grid-container();
+}
+
+.prices--heading {
+  font-size: $font-size-mega;
+}
+
+.prices--content {
+  @include zen-grid-item(8, 1);
+
+  padding-left: 0;
+
+  @include third-breakpoint() {
+    @include zen-grid-item(12, 1);
+    @include zen-nested-container();
+  }
+}
+
+.prices--content-image {
+  bottom: 25px;
+  position: absolute;
+  right: 0;
+
+  max-height: 275px;
+  overflow: hidden;
+
+  color: transparentize($gray, .75);
+  font-size: 2500%;
+  z-index: -1;
+}
+
+.prices--contact-link {
+  @extend %link-button;
+  @extend %button-small;
+}
+
+
+/* Info
+   ========================================================================== */
+
+.info {
+  @include zen-grid-container();
+  @extend %layout-wrapper;
+
+  margin-bottom: 70px;
+  padding-bottom: 70px;
+
+  background: $border-dottet-large;
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @include fourth-breakpoint() {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+  }
+}
+
+.info--heading {
+  font-size: $font-size-mega;
+}
+
+
+.info--content-primary,
+.info--content-secondary {
+  li {
+    list-style: disc;
+  }
+}
+
+.info--content-primary {
+  @include zen-grid-item(6, 1);
+  @include zen-nested-container();
+
+  padding-right: 50px;
+
+  .info--list {
+    margin-bottom: 30px;
+  }
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+    @include zen-nested-container();
+
+    margin-bottom: 30px;
+  }
+}
+
+.info--content-secondary {
+  @include zen-grid-item(6, 1, right);
+  @include zen-nested-container();
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+    @include zen-nested-container();
+  }
+}
+
+.info--emphasized {
+  @extend strong;
+
+  margin-bottom: 30px;
+}
+
+
+/* Footer
+   ========================================================================== */
+
+.footer {
+  @include zen-grid-container();
+  @extend %layout-wrapper;
+
+  @include third-breakpoint() {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+.footer--focus {
+  font-size: $font-size-largest;
+}
+
+.footer--lead {
+  background: $border-dottet-small;
+
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.footer--content-primary {
+  @include zen-grid-item(6, 1);
+  @include zen-nested-container();
+
+  padding-right: 50px;
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+    @include zen-nested-container();
+
+    background: $border-dottet-small;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+.footer--content-secondary {
+  @include zen-grid-item(6, 1, right);
+  @include zen-nested-container();
+
+  @include last-breakpoint() {
+    @include zen-clear();
+    @include zen-grid-item(12, 1);
+    @include zen-nested-container();
+  }
+}
+
+.footer--map {
+  margin-bottom: 30px;
+}
+
+
+/* Contact form
+   ========================================================================== */
+
+.contact-form--button {
+  @extend %action-button;
+  @extend %button-small;
+
+  float: right;
+
+  @include last-breakpoint() {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+/* Error message
+   ========================================================================== */
+
+%message {
+  @include border-radius(4px);
+
+  margin-bottom: 30px;
+  padding: 15px;
+
+  color: $white;
+}
+
+.message--success {
+  @extend %message;
+
+  background-color: $green;
+}
+
+.message--error {
+  @extend %message;
+
+  background-color: $red;
+}
