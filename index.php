@@ -175,7 +175,7 @@
     Møllegade 1<br>
     8000 Aarhus C<br>
     <strong>E-mail:</strong> <a href="mailto:infostander@aarhus.dk">infostander@aarhus.dk</a><br>
-    <strong>Telefon:</strong> +45 8940 5000
+    <strong>Telefon:</strong> +45 4185 6563
   </section>
   <section class="footer--content-secondary" id="kontakt">
     <h2 class="footer--heading">Kontakt</h2>
@@ -183,7 +183,7 @@
       <p>
         Kontakt os for at booke en tid til annoncering.
       </p>
-      <p class="footer--focus">Ring <a href="tel:89405000"><strong>8940 5000</strong></a> eller udfyld formularen</p>
+      <p class="footer--focus">Ring <a href="tel:41856563"><strong>4185 6563</strong></a> eller udfyld formularen</p>
       <p>
         Så lover vi at vende tilbage til dig hurtigst muligt.
       </p>
