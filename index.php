@@ -172,7 +172,7 @@
     <img src="../images/aak-logo-big.png" alt="Aarhus Kommune" class="aak-logo-big">
     <h2>ITK</h2>
     Aarhus Kommune<br>
-    Møllegade 1<br>
+    Hack Kampmanns Plads 2<br>
     8000 Aarhus C<br>
     <strong>E-mail:</strong> <a href="mailto:infostander@aarhus.dk">infostander@aarhus.dk</a><br>
     <strong>Telefon:</strong> +45 4185 6563
