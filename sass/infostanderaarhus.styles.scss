@@ -7,11 +7,11 @@
 
 
 // Include compass
-@import "compass/css3";
+@import "../node_modules/compass-mixins/lib/compass/css3";
 
 
 // Grid - http://zengrids.com
-@import "zen";
+@import "../compass-zen-grids/stylesheets/zen";
 
 
 // Include framework
