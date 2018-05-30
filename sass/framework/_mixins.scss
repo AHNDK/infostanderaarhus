@@ -14,6 +14,9 @@ $third-breakpoint:                865px;
 $fourth-breakpoint:               710px;
 $last-breakpoint:                 480px;
 
+$breakpoint-1200: 1200px;
+$breakpoint-1060: 1060px;
+
 /* Media query
    ========================================================================== */
 
@@ -36,6 +39,14 @@ $last-breakpoint:                 480px;
 
   @else if $media == last-breakpoint {
     @media only screen and (max-width: $last-breakpoint) { @content; }
+  }
+
+  @else if $media == breakpoint-1200 {
+    @media only screen and (max-width: $breakpoint-1200) { @content; }
+  }
+
+  @else if $media == breakpoint-1060 {
+    @media only screen and (max-width: $breakpoint-1060) { @content; }
   }
 }
 
@@ -61,4 +72,12 @@ $last-breakpoint:                 480px;
 
 @mixin last-breakpoint {
   @include respond-to(last-breakpoint) { @content; }
+}
+
+@mixin breakpoint-1200 {
+  @include respond-to(breakpoint-1200) { @content; }
+}
+
+@mixin breakpoint-1060 {
+  @include respond-to(breakpoint-1060) { @content; }
 }
