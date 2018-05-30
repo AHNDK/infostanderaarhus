@@ -4,3 +4,4 @@
 
 * Changed texts and added/removed images.
 * Added instructions for compiling with node.
+* Removed google analytics.
