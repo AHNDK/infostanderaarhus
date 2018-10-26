@@ -331,27 +331,14 @@
         Kontakt os for at booke annoncering på infostandere eller leje Havneskærmen.
       </p>
       <p class="footer--focus">Ring <a
-            href="tel:41856563"><strong>4185 6563</strong></a> eller udfyld formularen
+            href="tel:41856563"><strong>4185 6563</strong></a> eller på mail <a
+        href="mailto:infostander@aarhus.dk">infostander@aarhus.dk</a>
       </p>
       <p>
         Så vender vi tilbage til dig hurtigst muligt.
       </p>
     </div>
     <div class="message"></div>
-    <form action="contact_form.php" method="post" id="contact-form">
-      <label for="name">Navn:</label>
-      <input type="text" id="name" name="name" class="contact-form--name"
-             placeholder="Indtast dit navn" required>
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" class="contact-form--email"
-             placeholder="Indtast din e-mail-adresse" required>
-      <input type="hidden" id="message" name="message" value="">
-      <button class="contact-form--button" type="submit"
-              id="contactSubmitButton">
-        <i class="icon-arrow-right"></i>
-        Send
-      </button>
-    </form>
   </section>
 </footer>
 
