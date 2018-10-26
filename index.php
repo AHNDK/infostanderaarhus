@@ -326,7 +326,7 @@
   </section>
   <section class="footer--content-secondary" id="kontakt">
     <h2 class="footer--heading">Kontakt</h2>
-    <div class="footer--lead">
+    <div class="footer--lead" style="background:none;">
       <p>
         Kontakt os for at booke annoncering på infostandere eller leje Havneskærmen.
       </p>
