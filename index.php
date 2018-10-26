@@ -330,8 +330,8 @@
       <p>
         Kontakt os for at booke annoncering på infostandere eller leje Havneskærmen.
       </p>
-      <p class="footer--focus">Ring <a
-            href="tel:41856563"><strong>4185 6563</strong></a> eller på mail <a
+      <p class="footer--focus" style="line-height: 1.2em">Ring <a
+            href="tel:41856563"><strong>4185 6563</strong></a> eller på <a
         href="mailto:infostander@aarhus.dk">infostander@aarhus.dk</a>
       </p>
       <p>
