@@ -322,7 +322,7 @@
     8000 Aarhus C<br>
     <strong>E-mail:</strong> <a
         href="mailto:infostander@aarhus.dk">infostander@aarhus.dk</a><br>
-    <strong>Telefon:</strong> +45 4185 6563
+    <strong>Telefon:</strong> +45 4185 9326
   </section>
   <section class="footer--content-secondary" id="kontakt">
     <h2 class="footer--heading">Kontakt</h2>
@@ -331,7 +331,7 @@
         Kontakt os for at booke annoncering på infostandere eller leje Havneskærmen.
       </p>
       <p class="footer--focus" style="line-height: 1.2em">Ring <a
-            href="tel:41856563"><strong>4185 6563</strong></a> eller på <a
+            href="tel:41859326"><strong>4185 9326</strong></a> eller på <a
         href="mailto:infostander@aarhus.dk">infostander@aarhus.dk</a>
       </p>
       <p>
