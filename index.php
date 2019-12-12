@@ -246,7 +246,7 @@
     <br/><br/>
 
     <h5>Løsning 2 – visning via tilkobling af eget udstyr, uden lyd</h5>
-    <p>Tilkobling af egen computer er muligt via vores AV-RACK.</p>
+    <p> Tilkobling af egen computer er muligt via vores AV-RACK.</p>
     <p>Video input: et HDMI-kabel er tilstede. Hvis den medbragte computer ikke understøtter HDMI, skal man selv medbringe en konverter.</p>
     <p>Opløsning: op til 4K. Output signal fra den medbragte computer bliver scaleret ned til 900x540 pixels via vores AV-RACK.</p>
 
